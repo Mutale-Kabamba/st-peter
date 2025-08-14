@@ -9,35 +9,84 @@
   <link href="https://fonts.googleapis.com/css?family=Roboto:400,700&display=swap" rel="stylesheet">
 </head>
 <body>
-  <nav class="navbar">
-    <a href="index.html" class="logo">St. Peter Parish</a>
-    <button id="menu-toggle" class="hamburger">&#9776;</button>
-    <ul class="nav-links" id="nav-links">
-      <li><a href="about.html">About</a></li>
-      <li><a href="mass-times.html">Mass Times</a></li>
-      <li><a href="ministries.html">Ministries</a></li>
-      <li><a href="contact.html">Contact</a></li>
-    </ul>
-  </nav>
-  <header class="hero">
-    <img src="assets/images/hero-church.jpg" alt="St. Peter Church" class="hero-img">
-    <div class="hero-content">
+  <!-- Header -->
+  <header class="site-header">
+    <div class="branding">
+      <img src="assets/img/logo.png" alt="Parish Logo" class="parish-logo" style="display:none;" />
       <h1>St. Peter The Apostle - Airport Parish</h1>
-      <p class="subtitle">Welcome to our parish community! All are welcome.</p>
     </div>
+    <nav class="main-nav">
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About Us</a></li>
+        <li><a href="mass-times.html">Mass Times</a></li>
+        <li><a href="ministries.html">Ministries</a></li>
+        <li><a href="#">Bulletins</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+    <button class="mobile-menu-toggle" aria-label="Open menu">
+      <span class="hamburger"></span>
+    </button>
   </header>
-  <main class="main-content">
-    <section class="mass-times-section">
-      <h2>Mass Times</h2>
-      <a href="mass-times.html" class="btn-accent">View Full Schedule</a>
-    </section>
-    <section class="events-section">
-      <h2>Upcoming Events</h2>
-      <div id="events-list"></div>
-    </section>
-  </main>
-  <footer>
-    <p>&copy; 2025 St. Peter The Apostle - Airport Parish</p>
+
+  <!-- Hero Section -->
+  <section class="hero" style="background-image: url('assets/img/hero-church.jpg');">
+    <div class="hero-content">
+      <h2>St. Peter The Apostle - Airport Parish</h2>
+      <p class="subtitle">A welcoming and vibrant community of faith</p>
+    </div>
+  </section>
+
+  <!-- Key Information Section -->
+  <section class="key-info">
+    <a href="mass-times.html" class="cta-btn">View Mass & Confession Times</a>
+    <div class="mission-statement">
+      <p>We are committed to living and sharing the Gospel, fostering spiritual growth, and serving our community with love and compassion.</p>
+    </div>
+  </section>
+
+  <!-- Parish Announcements Section -->
+  <section class="announcements-section">
+    <h2>Parish Announcements</h2>
+    <ul id="announcements-list">
+      <!-- Announcements will be loaded here -->
+    </ul>
+  </section>
+
+  <!-- Upcoming Events Section -->
+  <section class="events-section">
+    <h2>Upcoming Events</h2>
+    <ul id="events-list">
+      <!-- Events will be loaded here -->
+    </ul>
+  </section>
+
+  <!-- Daily Readings Section -->
+  <section class="readings-section">
+    <h2>Daily Readings</h2>
+    <label for="readings-date">Select Date:</label>
+    <input type="date" id="readings-date" name="readings-date" />
+    <div id="readings-content">
+      <!-- Readings will be loaded here -->
+    </div>
+  </section>
+
+
+  <!-- Footer -->
+  <footer class="site-footer">
+    <div class="contact-details">
+      <p>123 Airport Road, City, Country</p>
+      <p>Phone: (123) 456-7890 | Email: info@airportparish.org</p>
+    </div>
+    <div class="footer-links">
+      <a href="#" target="_blank">Facebook</a>
+      <a href="#" target="_blank">Twitter</a>
+      <a href="#" target="_blank">Diocesan Website</a>
+    </div>
+    <div class="copyright">
+      <p>&copy; 2025 St. Peter The Apostle - Airport Parish. All rights reserved.</p>
+    </div>
   </footer>
   <script src="assets/js/main.js"></script>
 </body>
