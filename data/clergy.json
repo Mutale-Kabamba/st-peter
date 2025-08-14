@@ -1,0 +1,14 @@
+[
+  {
+    "name": "Rev. Fr. John Doe",
+    "title": "Pastor",
+    "bio": "Fr. John has been the shepherd of St. Peter The Apostle - Airport Parish since 2022. He is dedicated to fostering a vibrant and prayerful community.",
+    "photoUrl": "/assets/images/clergy-pastor.jpg"
+  },
+  {
+    "name": "Deacon Michael Smith",
+    "title": "Permanent Deacon",
+    "bio": "Deacon Michael assists the parish with liturgical functions, charitable works, and faith formation. He has been a beloved member of the parish for over 15 years.",
+    "photoUrl": "/assets/images/clergy-deacon.jpg"
+  }
+]
