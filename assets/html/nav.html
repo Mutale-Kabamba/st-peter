@@ -1,0 +1,226 @@
+<nav class="main-nav">
+  <div class="nav-content">
+    <a href="index.html" class="nav-logo">
+      <img src="assets/img/logo.png" alt="St. Peter Parish Logo" height="40" />
+      <span class="nav-title">St. Peter Parish</span>
+    </a>
+    <ul class="nav-links" id="nav-links">
+  <li><a href="index.html" class="nav-link" id="nav-home">Home</a></li>
+  <li><a href="about.html" class="nav-link" id="nav-about">About Us</a></li>
+  <li><a href="mass-times.html" class="nav-link" id="nav-mass">Mass Times</a></li>
+  <li><a href="ministries.html" class="nav-link" id="nav-ministries">Ministries</a></li>
+  <li><a href="bulletin.html" class="nav-link" id="nav-bulletin">Bulletins</a></li>
+  <li><a href="contact.html" class="contact-btn nav-link" id="nav-contact">Contact</a></li>
+    </ul>
+    <button id="menu-toggle" class="mobile-menu-toggle" aria-label="Open menu">
+      <span class="hamburger"></span>
+    </button>
+  </div>
+</nav>
+
+<style>
+  .main-nav {
+    background: #181818;
+    box-shadow: 0 2px 16px rgba(0,0,0,0.12);
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 100;
+    width: 100vw;
+    margin: 0;
+    border-radius: 0;
+  }
+  body {
+    margin: 0;
+    padding: 0;
+  }
+  .nav-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 0.7rem 2.2rem;
+    box-sizing: border-box;
+  }
+  .nav-logo {
+    display: flex;
+    align-items: center;
+    gap: 0.7rem;
+    text-decoration: none;
+  }
+  .nav-logo img {
+    height: 40px;
+    width: auto;
+    border-radius: 8px;
+    background: #fff;
+    box-shadow: 0 1px 4px rgba(0,0,0,0.08);
+    object-fit: contain;
+    margin-right: 0.3rem;
+  }
+  .nav-title {
+    color: #fff;
+    font-size: 1.35rem;
+    font-weight: 700;
+    letter-spacing: 1px;
+    margin-top: 2px;
+  }
+  .nav-links {
+    display: flex;
+    gap: 2.2rem;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    align-items: center;
+  }
+  .nav-links li a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 1.08rem;
+    padding: 0.3rem 0.9rem;
+    border-radius: 8px;
+    transition: background 0.2s, color 0.2s;
+    border: none;
+    outline: none;
+    display: inline-block;
+  }
+  .nav-links li a:hover {
+    background: #222;
+    color: #e6ff4a;
+  }
+  .nav-links li a.active {
+    background: #e6ff4a;
+    color: #181818 !important;
+    font-weight: 700;
+    box-shadow: 0 1px 6px rgba(0,0,0,0.08);
+    border: 2px solid #e6ff4a;
+  }
+  .nav-links li .contact-btn.active {
+    background: #181818;
+    color: #e6ff4a !important;
+    border: 2px solid #e6ff4a;
+  }
+  .nav-links li .contact-btn {
+    background: #e6ff4a;
+    color: #181818;
+    font-weight: 700;
+    border-radius: 18px;
+    padding: 0.3rem 1.2rem;
+    box-shadow: 0 1px 6px rgba(0,0,0,0.08);
+    border: 2px solid #e6ff4a;
+    transition: background 0.2s, color 0.2s, border 0.2s;
+  }
+  .nav-links li .contact-btn:hover {
+    background: #181818;
+    color: #e6ff4a;
+    border: 2px solid #e6ff4a;
+  }
+  .mobile-menu-toggle {
+    display: none;
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 0.5rem;
+    margin-left: 1rem;
+  }
+  .hamburger {
+    display: block;
+    width: 28px;
+    height: 3px;
+    background: #fff;
+    position: relative;
+    border-radius: 2px;
+  }
+  .hamburger::before, .hamburger::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    width: 28px;
+    height: 3px;
+    background: #fff;
+    border-radius: 2px;
+    transition: 0.3s;
+  }
+  .hamburger::before {
+    top: -8px;
+  }
+  .hamburger::after {
+    top: 8px;
+  }
+  @media (max-width: 900px) {
+    .nav-content {
+      flex-direction: row;
+      justify-content: space-between;
+      padding: 0.7rem 1rem;
+    }
+    .nav-logo {
+      margin-right: 0;
+    }
+    .nav-links {
+      position: absolute;
+      top: 60px;
+      left: 0;
+      right: 0;
+      background: #181818;
+      flex-direction: column;
+      gap: 0;
+      display: none;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.07);
+      border-radius: 0 0 18px 18px;
+    }
+    .nav-links.open {
+      display: flex;
+    }
+    .nav-links li a {
+      padding: 1rem 2rem;
+      font-size: 1.15rem;
+      border-radius: 0;
+      border-bottom: 1px solid #fff2;
+    }
+    .nav-links li a.active {
+      background: #e6ff4a;
+      color: #181818 !important;
+      font-weight: 700;
+      border: 2px solid #e6ff4a;
+    }
+    .nav-links li .contact-btn.active {
+      background: #181818;
+      color: #e6ff4a !important;
+      border: 2px solid #e6ff4a;
+    }
+    .nav-links li .contact-btn {
+      margin: 0.7rem 0;
+      border-radius: 18px;
+      font-size: 1.15rem;
+      padding: 0.7rem 2rem;
+    }
+    .mobile-menu-toggle {
+      display: block;
+    }
+  }
+</style>
+<script>
+// After loading nav.html
+loadHTML('#nav-container', 'assets/html/nav.html');
+loadHTML('#footer-container', 'assets/html/footer.html');
+
+// Highlight active nav link
+document.addEventListener('DOMContentLoaded', function() {
+  const path = window.location.pathname.split('/').pop();
+  if (path === 'index.html' || path === '') {
+    document.getElementById('nav-home')?.classList.add('active');
+  } else if (path === 'about.html') {
+    document.getElementById('nav-about')?.classList.add('active');
+  } else if (path === 'mass-times.html') {
+    document.getElementById('nav-mass')?.classList.add('active');
+  } else if (path === 'ministries.html') {
+    document.getElementById('nav-ministries')?.classList.add('active');
+  } else if (path === 'bulletin.html') {
+    document.getElementById('nav-bulletin')?.classList.add('active');
+  } else if (path === 'contact.html') {
+    document.getElementById('nav-contact')?.classList.add('active');
+  }
+});
+</script>
