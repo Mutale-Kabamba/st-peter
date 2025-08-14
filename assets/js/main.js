@@ -1,3 +1,178 @@
+
+let bulletins = [];
+
+function parseBulletinFilename(name) {
+  // Example: homily-2025-08-01-Homily for the Transfiguration of the Lord.pdf
+  // Main format: type-year-month-day(-Document Name).pdf
+  const regex = /(homily|report|announcement|lesson)[-_](\d{4})[-_](\d{2})[-_](\d{2})(?:[-_](.+?))?\.pdf$/i;
+  const match = name.match(regex);
+  if (!match) {
+    // If not matching, just show the filename as title and section as 'other'
+    return { title: name.replace(/_/g, ' ').replace(/\.pdf$/i, ''), section: 'other', month: null, year: null };
+  }
+  const sectionMap = {
+    homily: 'homilies',
+    report: 'reports',
+    announcement: 'announcements',
+    lesson: 'lessons'
+  };
+  const section = sectionMap[match[1].toLowerCase()] || 'other';
+  const year = parseInt(match[2]);
+  const month = parseInt(match[3]);
+  const day = parseInt(match[4]);
+  let title = '';
+  const formattedDate = `${day} ${getMonthName(month)} ${year}`;
+  if (match[5]) {
+    // Use the document name after the main format, plus the date
+    title = `${match[5].replace(/_/g, ' ')} (${formattedDate})`;
+  } else {
+    // Fallback to formatted date
+    title = `${match[1].charAt(0).toUpperCase() + match[1].slice(1)} - ${formattedDate}`;
+  }
+  return { title, section, month, year };
+}
+
+function getMonthName(m) {
+  return ["January","February","March","April","May","June","July","August","September","October","November","December"][m-1];
+}
+
+function loadBulletins() {
+  fetch('/api/bulletins')
+    .then(res => res.json())
+    .then(files => {
+      bulletins = files.map(f => {
+        const meta = parseBulletinFilename(f.name);
+        return { ...meta, url: f.url };
+      });
+      filterBulletins();
+    });
+}
+
+function filterBulletins() {
+  const section = document.getElementById('bulletin-section').value;
+  const month = document.getElementById('bulletin-month').value;
+  const year = document.getElementById('bulletin-year').value;
+  const results = document.getElementById('bulletin-results');
+  let filtered = [];
+  if (section === 'all' && month === 'all' && year === 'all') {
+    // Show recent 2 from each section
+    const sections = ['homilies', 'reports', 'announcements', 'lessons'];
+    sections.forEach(sec => {
+      let items = bulletins.filter(b => b.section === sec)
+        .sort((a, b) => (b.year - a.year) || (b.month - a.month));
+      filtered = filtered.concat(items.slice(0, 2));
+    });
+  } else {
+    filtered = bulletins.filter(b => {
+      return (section === 'all' || b.section === section)
+        && (month === 'all' || b.month == month)
+        && (year === 'all' || b.year == year);
+    });
+  }
+  results.innerHTML = filtered.length ?
+    '<ul class="bulletin-list">' + filtered.map(b => `<li><a href="${b.url}" target="_blank">${b.title}</a></li>`).join('') + '</ul>' :
+    '<p class="no-bulletins">No bulletins found for selected filters.</p>';
+}
+// Bulletin page styles
+const style = document.createElement('style');
+style.innerHTML = `
+  .main-content {
+    max-width: 600px;
+    margin: 2rem auto;
+    background: #fff;
+    border-radius: 12px;
+    box-shadow: 0 2px 12px rgba(0,0,0,0.07);
+    padding: 2rem;
+  }
+  .bulletin-filters {
+    display: flex;
+    gap: 1rem;
+    flex-wrap: wrap;
+    align-items: center;
+    margin-bottom: 1.5rem;
+  }
+  .bulletin-filters label {
+    font-weight: 500;
+    margin-right: 0.3rem;
+  }
+  .bulletin-filters select {
+    padding: 0.3rem 0.7rem;
+    border-radius: 6px;
+    border: 1px solid #bbb;
+    background: #f8f8f8;
+    font-size: 1rem;
+  }
+  .bulletin-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  .bulletin-list li {
+    margin-bottom: 0.8rem;
+    font-size: 1.08rem;
+    padding: 0.5rem 0.7rem;
+    border-radius: 6px;
+    transition: background 0.2s;
+  }
+  .bulletin-list li:hover {
+    background: #f0f4fa;
+  }
+  .bulletin-list a {
+    color: #0a2a4d;
+    text-decoration: underline;
+    font-weight: 500;
+  }
+  .no-bulletins {
+    color: #a00;
+    font-style: italic;
+    margin-top: 1rem;
+  }
+`;
+document.head.appendChild(style);
+
+document.addEventListener('DOMContentLoaded', () => {
+  // ...existing code...
+  if (document.getElementById('bulletin-section')) {
+    document.getElementById('bulletin-section').addEventListener('change', filterBulletins);
+    document.getElementById('bulletin-month').addEventListener('change', filterBulletins);
+    document.getElementById('bulletin-year').addEventListener('change', filterBulletins);
+    loadBulletins();
+  }
+});
+// Dynamically load nav and footer HTML
+function loadHTML(selector, url) {
+  fetch(url)
+    .then(response => response.text())
+    .then(data => {
+      document.querySelector(selector).innerHTML = data;
+    });
+}
+
+document.addEventListener('DOMContentLoaded', () => {
+  loadHTML('#nav-container', 'assets/html/nav.html');
+  loadHTML('#footer-container', 'assets/html/footer.html');
+
+  // Highlight active nav link after nav loads
+  fetch('assets/html/nav.html')
+    .then(() => {
+      setTimeout(() => {
+        const path = window.location.pathname.split('/').pop();
+        if (path === 'index.html' || path === '') {
+          document.getElementById('nav-home')?.classList.add('active');
+        } else if (path === 'about.html') {
+          document.getElementById('nav-about')?.classList.add('active');
+        } else if (path === 'mass-times.html') {
+          document.getElementById('nav-mass')?.classList.add('active');
+        } else if (path === 'ministries.html') {
+          document.getElementById('nav-ministries')?.classList.add('active');
+        } else if (path === 'bulletin.html') {
+          document.getElementById('nav-bulletin')?.classList.add('active');
+        } else if (path === 'contact.html') {
+          document.getElementById('nav-contact')?.classList.add('active');
+        }
+      }, 100);
+    });
+});
 document.addEventListener('DOMContentLoaded', () => {
   // Hamburger menu logic
   const menuToggle = document.getElementById('menu-toggle');
