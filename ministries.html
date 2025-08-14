@@ -9,24 +9,45 @@
   <link href="https://fonts.googleapis.com/css?family=Roboto:400,700&display=swap" rel="stylesheet">
 </head>
 <body>
-  <nav class="navbar">
-    <a href="index.html" class="logo">St. Peter Parish</a>
-    <button id="menu-toggle" class="hamburger">&#9776;</button>
-    <ul class="nav-links" id="nav-links">
-      <li><a href="about.html">About</a></li>
-      <li><a href="mass-times.html">Mass Times</a></li>
-      <li><a href="ministries.html">Ministries</a></li>
-      <li><a href="contact.html">Contact</a></li>
-    </ul>
-  </nav>
+  <!-- Header -->
+  <header class="site-header">
+    <div class="branding">
+      <img src="assets/img/logo.png" alt="Parish Logo" class="parish-logo" style="display:none;" />
+      <h1>St. Peter The Apostle - Airport Parish</h1>
+    </div>
+    <nav class="main-nav">
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About Us</a></li>
+        <li><a href="mass-times.html">Mass Times</a></li>
+        <li><a href="ministries.html">Ministries</a></li>
+        <li><a href="#">Bulletins</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+    <button class="mobile-menu-toggle" aria-label="Open menu">
+      <span class="hamburger"></span>
+    </button>
+  </header>
   <main class="main-content">
     <section>
       <h1>Parish Ministries</h1>
       <div id="ministries-list"></div>
     </section>
   </main>
-  <footer>
-    <p>&copy; 2025 St. Peter The Apostle - Airport Parish</p>
+  <footer class="site-footer">
+    <div class="contact-details">
+      <p>123 Airport Road, City, Country</p>
+      <p>Phone: (123) 456-7890 | Email: info@airportparish.org</p>
+    </div>
+    <div class="footer-links">
+      <a href="#" target="_blank">Facebook</a>
+      <a href="#" target="_blank">Twitter</a>
+      <a href="#" target="_blank">Diocesan Website</a>
+    </div>
+    <div class="copyright">
+      <p>&copy; 2025 St. Peter The Apostle - Airport Parish. All rights reserved.</p>
+    </div>
   </footer>
   <script src="assets/js/main.js"></script>
 </body>

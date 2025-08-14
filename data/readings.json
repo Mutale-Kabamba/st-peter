@@ -1,0 +1,1541 @@
+[
+  {
+    "date": "2025-01-01",
+    "title": "Solemnity: Mary, Mother of God (Octave of Christmas)",
+    "readings": [
+      {"label": "First Reading", "reference": "Numbers 6:22-27", "text": "Moses receives the blessing for the Israelites."},
+      {"label": "Psalm", "reference": "Psalms 67:2-3, 5, 6, 8", "text": "May God bless us in his mercy."},
+      {"label": "Second Reading", "reference": "Galatians 4:4-7", "text": "God sent his Son, born of a woman."},
+      {"label": "Alleluia", "reference": "Hebrews 1:1-2", "text": "God spoke to us through the Son."},
+      {"label": "Gospel", "reference": "Luke 2:16-21", "text": "Mary kept all these things, reflecting on them in her heart."}
+    ]
+  },
+  {
+    "date": "2025-01-02",
+    "title": "Memorial: Basil the Great and Gregory Nazianzen, Bishops, Doctors",
+    "readings": [
+      {"label": "First Reading", "reference": "1 John 2:22-28", "text": "Let what you heard from the beginning remain in you."},
+      {"label": "Psalm", "reference": "Psalms 98:1, 2-3ab, 3cd-4", "text": "All the ends of the earth have seen the saving power of God."},
+      {"label": "Alleluia", "reference": "Hebrews 1:1-2", "text": "God spoke to us through the Son."},
+      {"label": "Gospel", "reference": "John 1:19-28", "text": "I am the voice of one crying out in the desert."}
+    ]
+  },
+  {
+    "date": "2025-01-03",
+    "title": "Feast: Christmas Weekday/Holy Name of Jesus",
+    "readings": [
+      {"label": "First Reading", "reference": "1 John 2:29-3:6", "text": "Everyone who acts in righteousness is begotten by God."},
+      {"label": "Psalm", "reference": "Psalms 98:1, 3cd-4, 5-6", "text": "All the ends of the earth have seen the saving power of God."},
+      {"label": "Alleluia", "reference": "John 1:14a, 12a", "text": "The Word became flesh and dwelt among us."},
+      {"label": "Gospel", "reference": "John 1:29-34", "text": "Behold the Lamb of God, who takes away the sin of the world."}
+    ]
+  },
+  {
+    "date": "2025-01-04",
+    "title": "Memorial: Elizabeth Ann Seton, Religious",
+    "readings": [
+      {"label": "First Reading", "reference": "1 John 3:7-10", "text": "Whoever does not act in righteousness does not belong to God."},
+      {"label": "Psalm", "reference": "Psalms 98:1, 7-8, 9", "text": "All the ends of the earth have seen the saving power of God."},
+      {"label": "Alleluia", "reference": "Hebrews 1:1-2", "text": "God spoke to us through the Son."},
+      {"label": "Gospel", "reference": "John 1:35-42", "text": "We have found the Messiah."}
+    ]
+  },
+  {
+    "date": "2025-01-06",
+    "title": "Feast: Christmas Weekday/André Bessette, Religious",
+    "readings": [
+      {"label": "First Reading", "reference": "1 John 3:22-4:6", "text": "Test the spirits to see whether they are from God."},
+      {"label": "Psalm", "reference": "Psalms 2:7bc-8, 10-11", "text": "I will give you the nations for an inheritance."},
+      {"label": "Alleluia", "reference": "Matthew 4:23", "text": "Jesus proclaimed the Gospel of the kingdom."},
+      {"label": "Gospel", "reference": "Matthew 4:12-17, 23-25", "text": "He went around all of Galilee, teaching and curing."}
+    ]
+  },
+  {
+    "date": "2025-01-07",
+    "title": "Feast: Christmas Weekday/Raymond of Peñafort, Priest",
+    "readings": [
+      {"label": "First Reading", "reference": "1 John 4:7-10", "text": "Let us love one another, because love is of God."},
+      {"label": "Psalm", "reference": "Psalms 72:1-2, 3-4, 7-8", "text": "Justice shall flourish in his time, and fullness of peace."},
+      {"label": "Alleluia", "reference": "Luke 4:18", "text": "The Lord sent me to bring glad tidings to the poor."},
+      {"label": "Gospel", "reference": "Mark 6:34-44", "text": "They all ate and were satisfied."}
+    ]
+  },
+  {
+    "date": "2025-01-08",
+    "title": "Feast: Christmas Weekday",
+    "readings": [
+      {"label": "First Reading", "reference": "1 John 4:11-18", "text": "If we love one another, God remains in us."},
+      {"label": "Psalm", "reference": "Psalms 72:1-2, 10, 12-13", "text": "Lord, every nation on earth will adore you."},
+      {"label": "Alleluia", "reference": "1 Timothy 3:16", "text": "God was manifested in the flesh, vindicated in the Spirit."},
+      {"label": "Gospel", "reference": "Mark 6:45-52", "text": "Take courage, it is I, do not be afraid!"}
+    ]
+  },
+  {
+    "date": "2025-01-09",
+    "title": "Feast: Christmas Weekday",
+    "readings": [
+      {"label": "First Reading", "reference": "1 John 4:19-5:4", "text": "Whoever is begotten by God conquers the world."},
+      {"label": "Psalm", "reference": "Psalms 72:1-2, 14 and 15bc, 17", "text": "Lord, every nation on earth will adore you."},
+      {"label": "Alleluia", "reference": "Luke 4:18", "text": "The Lord sent me to bring glad tidings to the poor."},
+      {"label": "Gospel", "reference": "Luke 4:14-22", "text": "Today this Scripture passage is fulfilled in your hearing."}
+    ]
+  },
+  {
+    "date": "2025-01-10",
+    "title": "Feast: Christmas Weekday",
+    "readings": [
+      {"label": "First Reading", "reference": "1 John 5:5-13", "text": "Whoever possesses the Son has life."},
+      {"label": "Psalm", "reference": "Psalms 147:12-13, 14-15, 19-20", "text": "Praise the Lord, Jerusalem."},
+      {"label": "Alleluia", "reference": "Matthew 4:23", "text": "Jesus proclaimed the Gospel of the kingdom."},
+      {"label": "Gospel", "reference": "Luke 5:12-16", "text": "The leprosy left him immediately."}
+    ]
+  },
+  {
+    "date": "2025-01-11",
+    "title": "Feast: Christmas Weekday",
+    "readings": [
+      {"label": "First Reading", "reference": "1 John 5:14-21", "text": "We are in the one who is true, in his Son Jesus Christ."},
+      {"label": "Psalm", "reference": "Psalms 149:1-2, 3-4, 5 and 6a and 9b", "text": "The Lord takes delight in his people."},
+      {"label": "Alleluia", "reference": "Matthew 4:16", "text": "The people who sit in darkness have seen a great light."},
+      {"label": "Gospel", "reference": "John 3:22-30", "text": "He must increase; I must decrease."}
+    ]
+  },
+  {
+    "date": "2025-01-12",
+    "title": "Feast: Baptism of the Lord",
+    "readings": [
+      {"label": "First Reading", "reference": "Isaiah 42:1-4, 6-7 or Isaiah 40:1-5, 9-11", "text": "Here is my servant whom I uphold."},
+      {"label": "Psalm", "reference": "Psalms 104:1b-2, 3-4, 24-25, 27-28, 29-30", "text": "O bless the Lord, my soul."},
+      {"label": "Second Reading", "reference": "Titus 2:11-14; 3:4-7", "text": "He saved us through the bath of rebirth."},
+      {"label": "Alleluia", "reference": "Luke 3:16", "text": "One mightier than I is coming."},
+      {"label": "Gospel", "reference": "Luke 3:15-16, 21-22", "text": "You are my beloved Son; with you I am well pleased."}
+    ]
+  },
+  {
+    "date": "2025-01-13",
+    "title": "Feast: Ordinary Weekday/Hilary, Bishop, Doctor",
+    "readings": [
+      {"label": "First Reading", "reference": "Hebrews 1:1-6", "text": "Let all the angels of God worship him."},
+      {"label": "Psalm", "reference": "Psalms 97:1 and 2b, 6 and 7c, 9", "text": "Let all his angels worship him."},
+      {"label": "Alleluia", "reference": "Mark 1:15", "text": "The kingdom of God is at hand; repent and believe."},
+      {"label": "Gospel", "reference": "Mark 1:14-20", "text": "Come after me, and I will make you fishers of men."}
+    ]
+  },
+  {
+    "date": "2025-01-14",
+    "title": "Feast: Ordinary Weekday",
+    "readings": [
+      {"label": "First Reading", "reference": "Hebrews 2:5-12", "text": "He who consecrates and those who are being consecrated all have one origin."},
+      {"label": "Psalm", "reference": "Psalms 8:2ab and 5, 6-7, 8-9", "text": "You have given your Son rule over the works of your hands."},
+      {"label": "Alleluia", "reference": "1 Thessalonians 2:13", "text": "You received the word of God as it truly is."},
+      {"label": "Gospel", "reference": "Mark 1:21-28", "text": "He commands even the unclean spirits and they obey him."}
+    ]
+  },
+  {
+    "date": "2025-01-15",
+    "title": "Feast: Ordinary Weekday",
+    "readings": [
+      {"label": "First Reading", "reference": "Hebrews 2:14-18", "text": "He had to become like his brothers and sisters in every way."},
+      {"label": "Psalm", "reference": "Psalms 105:1-2, 3-4, 6-7, 8-9", "text": "The Lord remembers his covenant forever."},
+      {"label": "Alleluia", "reference": "John 10:27", "text": "My sheep hear my voice, says the Lord."},
+      {"label": "Gospel", "reference": "Mark 1:29-39", "text": "He cured many who were sick."}
+    ]
+  },
+  {
+    "date": "2025-01-16",
+    "title": "Feast: Ordinary Weekday",
+    "readings": [
+      {"label": "First Reading", "reference": "Hebrews 3:7-14", "text": "Encourage yourselves daily while it is still 'today.'"},
+      {"label": "Psalm", "reference": "Psalms 95:6-7c, 8-9, 10-11", "text": "If today you hear his voice, harden not your hearts."},
+      {"label": "Alleluia", "reference": "Matthew 4:23", "text": "Jesus proclaimed the Gospel of the kingdom."},
+      {"label": "Gospel", "reference": "Mark 1:40-45", "text": "The leprosy left him immediately."}
+    ]
+  },
+  {
+    "date": "2025-01-17",
+    "title": "Memorial: Anthony, Abbot",
+    "readings": [
+      {"label": "First Reading", "reference": "Hebrews 4:1-5, 11", "text": "Let us strive to enter into that rest."},
+      {"label": "Psalm", "reference": "Psalms 78:3 and 4bc, 6c-7, 8", "text": "Do not forget the works of the Lord!"},
+      {"label": "Alleluia", "reference": "Luke 7:16", "text": "A great prophet has arisen in our midst."},
+      {"label": "Gospel", "reference": "Mark 2:1-12", "text": "They were all astounded and glorified God."}
+    ]
+  },
+  {
+    "date": "2025-01-18",
+    "title": "Feast: Ordinary Weekday/Optional Memorial of the Blessed Virgin Mary",
+    "readings": [
+      {"label": "First Reading", "reference": "Hebrews 4:12-16", "text": "The word of God is living and effective."},
+      {"label": "Psalm", "reference": "Psalms 19:8, 9, 10, 15", "text": "Your words, Lord, are Spirit and life."},
+      {"label": "Alleluia", "reference": "Luke 4:18", "text": "The Lord sent me to bring glad tidings to the poor."},
+      {"label": "Gospel", "reference": "Mark 2:13-17", "text": "I did not come to call the righteous but sinners."}
+    ]
+  },
+  {
+    "date": "2025-01-19",
+    "title": "Feast: Second Sunday in Ordinary Time",
+    "readings": [
+      {"label": "First Reading", "reference": "Isaiah 62:1-5", "text": "You shall be a glorious crown in the hand of the Lord."},
+      {"label": "Psalm", "reference": "Psalms 96:1-2a, 2b-3, 7-8, 9-10", "text": "Proclaim his marvelous deeds to all the nations."},
+      {"label": "Second Reading", "reference": "1 Corinthians 12:4-11", "text": "There are different kinds of spiritual gifts but the same Spirit."},
+      {"label": "Alleluia", "reference": "2 Thessalonians 2:14", "text": "God has called us through the Gospel."},
+      {"label": "Gospel", "reference": "John 2:1-11", "text": "Jesus did this as the beginning of his signs at Cana in Galilee."}
+    ]
+  },
+  {
+    "date": "2025-01-20",
+    "title": "Feast: Ordinary Weekday/Fabian, Pope, Martyr/Sebastian, Martyr",
+    "readings": [
+      {"label": "First Reading", "reference": "Hebrews 5:1-10", "text": "He became the source of eternal salvation for all who obey him."},
+      {"label": "Psalm", "reference": "Psalms 110:1, 2, 3, 4", "text": "You are a priest forever, in the line of Melchizedek."},
+      {"label": "Alleluia", "reference": "Hebrews 4:12", "text": "The word of God is living and effective."},
+      {"label": "Gospel", "reference": "Mark 2:18-22", "text": "New wine is poured into fresh wineskins."}
+    ]
+  },
+  {
+    "date": "2025-01-21",
+    "title": "Memorial: Agnes, Virgin, Martyr",
+    "readings": [
+      {"label": "First Reading", "reference": "Hebrews 6:10-20", "text": "We have this hope as an anchor for the soul."},
+      {"label": "Psalm", "reference": "Psalms 111:1-2, 4-5, 9 and 10c", "text": "The Lord will remember his covenant forever."},
+      {"label": "Alleluia", "reference": "Ephesians 1:17-18", "text": "May the Father of our Lord Jesus Christ enlighten the eyes of our hearts."},
+      {"label": "Gospel", "reference": "Mark 2:23-28", "text": "The Son of Man is lord even of the sabbath."}
+    ]
+  },
+  {
+    "date": "2025-01-22",
+    "title": "Memorial: Day of Prayer For the Legal Protection of Unborn Children",
+    "readings": [
+      {"label": "First Reading", "reference": "Hebrews 7:1-3, 15-17", "text": "You are a priest forever, according to the order of Melchizedek."},
+      {"label": "Psalm", "reference": "Psalms 110:1, 2, 3, 4", "text": "You are a priest forever, in the line of Melchizedek."},
+      {"label": "Alleluia", "reference": "Matthew 4:23", "text": "Jesus proclaimed the Gospel of the kingdom."},
+      {"label": "Gospel", "reference": "Mark 3:1-6", "text": "Is it lawful to do good on the sabbath rather than to do evil?"}
+    ]
+  },
+  {
+    "date": "2025-01-23",
+    "title": "Feast: Ordinary Weekday/Vincent of Saragossa, Deacon, Martyr/Marianne Cope, Virgin",
+    "readings": [
+      {"label": "First Reading", "reference": "Hebrews 7:25-8:6", "text": "He is mediator of a better covenant."},
+      {"label": "Psalm", "reference": "Psalms 40:7-8a, 8b-9, 10, 17", "text": "Here am I, Lord; I come to do your will."},
+      {"label": "Alleluia", "reference": "2 Timothy 1:10", "text": "Our Savior Jesus Christ has destroyed death."},
+      {"label": "Gospel", "reference": "Mark 3:7-12", "text": "He had cured many and as a result, those who had diseases were pressing upon him."}
+    ]
+  },
+  {
+    "date": "2025-01-24",
+    "title": "Memorial: Francis De Sales, Bishop, Religious Founder, Doctor",
+    "readings": [
+      {"label": "First Reading", "reference": "Hebrews 8:6-13", "text": "I will establish a new covenant with the house of Israel."},
+      {"label": "Psalm", "reference": "Psalms 85:8 and 10, 11-12, 13-14", "text": "Kindness and truth shall meet."},
+      {"label": "Gospel", "reference": "Mark 3:13-19", "text": "He appointed twelve, whom he also named apostles."}
+    ]
+  },
+  {
+    "date": "2025-01-25",
+    "title": "Feast: Conversion of Paul, Apostle",
+    "readings": [
+      {"label": "First Reading", "reference": "Acts 22:3-16 or Acts 9:1-22", "text": "Saul, Saul, why are you persecuting me?"},
+      {"label": "Psalm", "reference": "Psalms 117:1bc, 2", "text": "Go out to all the world and tell the Good News."},
+      {"label": "Alleluia", "reference": "John 15:16", "text": "I chose you from the world, to go and bear fruit."},
+      {"label": "Gospel", "reference": "Mark 16:15-18", "text": "Go into the whole world and proclaim the Gospel."}
+    ]
+  },
+  {
+    "date": "2025-01-26",
+    "title": "Feast: Third Sunday in Ordinary Time",
+    "readings": [
+      {"label": "First Reading", "reference": "Nehemiah 8:2-4a, 5-6, 8-10", "text": "Today is holy to the Lord your God."},
+      {"label": "Psalm", "reference": "Psalms 19:8, 9, 10, 15", "text": "Your words, Lord, are Spirit and life."},
+      {"label": "Second Reading", "reference": "1 Corinthians 12:12-30 or 1 Corinthians 12:12-14, 27", "text": "You are Christ's body, and individually parts of it."},
+      {"label": "Alleluia", "reference": "Luke 4:18", "text": "The Lord sent me to bring glad tidings to the poor."},
+      {"label": "Gospel", "reference": "Luke 1:1-4; 4:14-21", "text": "Today this Scripture passage is fulfilled in your hearing."}
+    ]
+  },
+  {
+    "date": "2025-01-27",
+    "title": "Feast: Ordinary Weekday/Angela Merici, Virgin, Religious Founder",
+    "readings": [
+      {"label": "First Reading", "reference": "Hebrews 9:15, 24-28", "text": "Christ will appear a second time to bring salvation."},
+      {"label": "Psalm", "reference": "Psalms 98:1, 2-3ab, 3cd-4, 5-6", "text": "Sing to the Lord a new song, for he has done marvelous deeds."},
+      {"label": "Alleluia", "reference": "2 Timothy 1:10", "text": "Our Savior Jesus Christ has destroyed death."},
+      {"label": "Gospel", "reference": "Mark 3:22-30", "text": "If a house is divided against itself, that house will not be able to stand."}
+    ]
+  },
+  {
+    "date": "2025-01-28",
+    "title": "Memorial: Thomas Aquinas, Priest, Religious, Doctor",
+    "readings": [
+      {"label": "First Reading", "reference": "Hebrews 10:1-10", "text": "Behold, I come to do your will, O God."},
+      {"label": "Psalm", "reference": "Psalms 40:2 and 4ab, 7-8a, 10, 11", "text": "Here am I, Lord; I come to do your will."},
+      {"label": "Alleluia", "reference": "Matthew 11:25", "text": "Blessed are you, Father, Lord of heaven and earth."},
+      {"label": "Gospel", "reference": "Mark 3:31-35", "text": "Whoever does the will of God is my brother and sister and mother."}
+    ]
+  },
+  {
+    "date": "2025-01-29",
+    "title": "Feast: Ordinary Weekday",
+    "readings": [
+      {"label": "First Reading", "reference": "Hebrews 10:11-18", "text": "By one offering he has made perfect forever those who are being consecrated."},
+      {"label": "Psalm", "reference": "Psalms 110:1, 2, 3, 4", "text": "You are a priest forever, in the line of Melchizedek."},
+      {"label": "Gospel", "reference": "Mark 4:1-20", "text": "The sower sows the word."}
+    ]
+  },
+  {
+    "date": "2025-01-30",
+    "title": "Feast: Ordinary Weekday",
+    "readings": [
+      {"label": "First Reading", "reference": "Hebrews 10:19-25", "text": "Let us approach with a sincere heart and in absolute trust."},
+      {"label": "Psalm", "reference": "Psalms 24:1-2, 3-4ab, 5-6", "text": "Lord, this is the people that longs to see your face."},
+      {"label": "Alleluia", "reference": "Psalms 119:105", "text": "Your word is a lamp for my feet, a light for my path."},
+      {"label": "Gospel", "reference": "Mark 4:21-25", "text": "The measure with which you measure will be measured out to you."}
+    ]
+  },
+  {
+    "date": "2025-01-31",
+    "title": "Memorial: John Bosco, Priest, Religious Founder",
+    "readings": [
+      {"label": "First Reading", "reference": "Hebrews 10:32-39", "text": "You need endurance to do the will of God and receive what he has promised."},
+      {"label": "Psalm", "reference": "Psalms 37:3-4, 5-6, 23-24, 39-40", "text": "The salvation of the just comes from the Lord."},
+      {"label": "Alleluia", "reference": "Matthew 11:25", "text": "Blessed are you, Father, Lord of heaven and earth."},
+      {"label": "Gospel", "reference": "Mark 4:26-34", "text": "The kingdom of God is like a mustard seed."}
+    ]
+  },
+  {
+    "date": "2025-02-01",
+    "title": "Feast: Ordinary Weekday/Bridget of Ireland, Religious",
+    "readings": [
+      {"label": "First Reading", "reference": "Hebrews 11:1-3, 13-16", "text": "Faith is the realization of what is hoped for."},
+      {"label": "Psalm", "reference": "Psalms 145:2-3, 4-5, 10-11", "text": "I will praise your name forever, my king and my God."},
+      {"label": "Alleluia", "reference": "Matthew 4:23", "text": "Jesus preached the Gospel of the Kingdom."},
+      {"label": "Gospel", "reference": "Mark 4:35-41", "text": "Who then is this whom even wind and sea obey?"}
+    ]
+  },
+  {
+    "date": "2025-02-02",
+    "title": "Feast: Presentation of the Lord Feast (Sunday)",
+    "readings": [
+      {"label": "First Reading", "reference": "Malachi 3:1-4", "text": "The Lord will come to his temple."},
+      {"label": "Psalm", "reference": "Psalms 24:7, 8, 9, 10", "text": "Who is this king of glory? It is the Lord!"},
+      {"label": "Second Reading", "reference": "Hebrews 2:14-18", "text": "He had to become like his brothers in every way."},
+      {"label": "Alleluia", "reference": "Luke 2:32", "text": "A light of revelation to the Gentiles."},
+      {"label": "Gospel", "reference": "Luke 2:22-40", "text": "The child grew and became strong, filled with wisdom."}
+    ]
+  },
+  {
+    "date": "2025-02-03",
+    "title": "Feast: Ordinary Weekday/Blaise, Bishop, Martyr/Anskar, Bishop",
+    "readings": [
+      {"label": "First Reading", "reference": "Hebrews 11:32-40", "text": "Out of weakness they were made strong."},
+      {"label": "Psalm", "reference": "Psalms 31:20, 21, 22, 23, 24", "text": "Be strong and take heart, all you who hope in the Lord."},
+      {"label": "Alleluia", "reference": "Matthew 5:12ab", "text": "Rejoice and be glad; your reward will be great in heaven."},
+      {"label": "Gospel", "reference": "Mark 5:1-20", "text": "Go home to your family and announce to them all that the Lord has done for you."}
+    ]
+  },
+  {
+    "date": "2025-02-04",
+    "title": "Feast: Ordinary Weekday",
+    "readings": [
+      {"label": "First Reading", "reference": "Hebrews 12:1-4", "text": "Let us persevere in running the race that lies before us."},
+      {"label": "Psalm", "reference": "Psalms 22:26b-27, 28 and 30, 31-32", "text": "I will praise you, Lord, in the assembly of your people."},
+      {"label": "Alleluia", "reference": "Hebrews 4:12", "text": "The word of God is living and effective."},
+      {"label": "Gospel", "reference": "Mark 5:21-43", "text": "Little girl, I say to you, arise!"}
+    ]
+  },
+  {
+    "date": "2025-02-05",
+    "title": "Memorial: Agatha, Virgin, Martyr",
+    "readings": [
+      {"label": "First Reading", "reference": "Hebrews 12:4-7, 11-15", "text": "Endure your trials as discipline."},
+      {"label": "Psalm", "reference": "Psalms 103:1-2, 13-14, 17-18a", "text": "The Lord is kind and merciful."},
+      {"label": "Alleluia", "reference": "Second Corinthians 5:19", "text": "God reconciled the world to himself in Christ."},
+      {"label": "Gospel", "reference": "Mark 6:1-6", "text": "A prophet is not without honor except in his native place."}
+    ]
+  },
+  {
+    "date": "2025-02-06",
+    "title": "Memorial: Paul Miki and Companions, Martyrs",
+    "readings": [
+      {"label": "First Reading", "reference": "Hebrews 12:18-19, 21-24", "text": "You have approached Mount Zion and the city of the living God."},
+      {"label": "Psalm", "reference": "Psalms 48:2-3a, 3b-4, 9, 10-11", "text": "God is with us, our stronghold."},
+      {"label": "Alleluia", "reference": "John 10:27", "text": "My sheep hear my voice, says the Lord."},
+      {"label": "Gospel", "reference": "Mark 6:7-13", "text": "He sent them out two by two."}
+    ]
+  },
+  {
+    "date": "2025-02-07",
+    "title": "Feast: Ordinary Weekday",
+    "readings": [
+      {"label": "First Reading", "reference": "Hebrews 13:1-8", "text": "Jesus Christ is the same yesterday, today, and forever."},
+      {"label": "Psalm", "reference": "Psalms 27:1, 3, 5, 8b-9c", "text": "The Lord is my light and my salvation."},
+      {"label": "Alleluia", "reference": "Matthew 4:23", "text": "Jesus preached the Gospel of the Kingdom."},
+      {"label": "Gospel", "reference": "Mark 6:14-29", "text": "John, whom I beheaded, has been raised up."}
+    ]
+  },
+  {
+    "date": "2025-02-08",
+    "title": "Feast: Ordinary Weekday/Jerome Emiliani/Josephine Bakhita",
+    "readings": [
+      {"label": "First Reading", "reference": "Hebrews 13:15-17, 20-21", "text": "May the God of peace equip you with every good thing to do his will."},
+      {"label": "Psalm", "reference": "Psalms 23:1-3a, 3b-4, 5, 6", "text": "The Lord is my shepherd; there is nothing I shall want."},
+      {"label": "Alleluia", "reference": "John 15:16", "text": "I chose you from the world, to go and bear fruit."},
+      {"label": "Gospel", "reference": "Mark 6:30-34", "text": "They were like sheep without a shepherd."}
+    ]
+  },
+  {
+    "date": "2025-02-09",
+    "title": "Feast: Fifth Sunday in Ordinary Time (Sunday)",
+    "readings": [
+      {"label": "First Reading", "reference": "Isaiah 58:7-10", "text": "Your light shall break forth like the dawn."},
+      {"label": "Psalm", "reference": "Psalms 112:4-5, 6-7, 8-9", "text": "The just man is a light in darkness to the upright."},
+      {"label": "Second Reading", "reference": "First Corinthians 2:1-5", "text": "I came to you in weakness and fear."},
+      {"label": "Alleluia", "reference": "John 8:12", "text": "I am the light of the world, says the Lord."},
+      {"label": "Gospel", "reference": "Matthew 5:13-16", "text": "You are the salt of the earth."}
+    ]
+  },
+  {
+    "date": "2025-02-10",
+    "title": "Memorial: Scholastica, Virgin",
+    "readings": [
+      {"label": "First Reading", "reference": "Genesis 1:1-19", "text": "In the beginning, God created the heavens and the earth."},
+      {"label": "Psalm", "reference": "Psalms 104:1-2a, 5-6, 10, 12, 24, 35c", "text": "May the Lord be glad in his works."},
+      {"label": "Alleluia", "reference": "Matthew 4:23", "text": "Jesus preached the Gospel of the Kingdom."},
+      {"label": "Gospel", "reference": "Mark 6:53-56", "text": "All who touched him got well."}
+    ]
+  },
+  {
+    "date": "2025-02-11",
+    "title": "Feast: Ordinary Weekday/Our Lady of Lourdes",
+    "readings": [
+      {"label": "First Reading", "reference": "Genesis 1:20 - 2:4a", "text": "God created man in his image."},
+      {"label": "Psalm", "reference": "Psalms 8:4-5, 6-7, 8-9", "text": "O Lord, our Lord, how glorious is your name!"},
+      {"label": "Alleluia", "reference": "Matthew 4:23", "text": "Jesus preached the Gospel of the Kingdom."},
+      {"label": "Gospel", "reference": "Mark 7:1-13", "text": "You disregard God's commandment but cling to human tradition."}
+    ]
+  },
+  {
+    "date": "2025-02-12",
+    "title": "Feast: Ordinary Weekday",
+    "readings": [
+      {"label": "First Reading", "reference": "Genesis 2:4b-9, 15-17", "text": "The Lord God formed man from the dust of the ground."},
+      {"label": "Psalm", "reference": "Psalms 104:1-2a, 10, 11, 12, 13-14, 15", "text": "Bless the Lord, O my soul!"},
+      {"label": "Alleluia", "reference": "Matthew 4:23", "text": "Jesus preached the Gospel of the Kingdom."},
+      {"label": "Gospel", "reference": "Mark 7:14-23", "text": "Nothing that enters one from outside can defile."}
+    ]
+  },
+  {
+    "date": "2025-02-13",
+    "title": "Feast: Ordinary Weekday",
+    "readings": [
+      {"label": "First Reading", "reference": "Genesis 2:18-25", "text": "It is not good for the man to be alone."},
+      {"label": "Psalm", "reference": "Psalms 128:1-2, 3, 4-5", "text": "Blessed are those who fear the Lord."},
+      {"label": "Alleluia", "reference": "John 14:26", "text": "The Holy Spirit will teach you everything."},
+      {"label": "Gospel", "reference": "Mark 7:24-30", "text": "For saying this, you may go. The demon has gone out of your daughter."}
+    ]
+  },
+  {
+    "date": "2025-02-14",
+    "title": "Feast: Cyril, Monk, and Methodius, Bishop",
+    "readings": [
+      {"label": "First Reading", "reference": "Genesis 3:1-8", "text": "The serpent deceived Eve."},
+      {"label": "Psalm", "reference": "Psalms 32:1-2, 5, 6, 7", "text": "I turn to you, Lord, in time of trouble."},
+      {"label": "Alleluia", "reference": "John 14:6", "text": "I am the way and the truth and the life."},
+      {"label": "Gospel", "reference": "Mark 7:31-37", "text": "He makes the deaf hear and the mute speak."}
+    ]
+  },
+  {
+    "date": "2025-02-15",
+    "title": "Feast: Ordinary Weekday",
+    "readings": [
+      {"label": "First Reading", "reference": "Genesis 3:9-24", "text": "The Lord God banished Adam and Eve from the garden."},
+      {"label": "Psalm", "reference": "Psalms 90:2, 3-4, 5-6, 12-13", "text": "In every age, O Lord, you have been our refuge."},
+      {"label": "Alleluia", "reference": "John 10:27", "text": "My sheep hear my voice, says the Lord."},
+      {"label": "Gospel", "reference": "Mark 8:1-10", "text": "They ate and were satisfied."}
+    ]
+  },
+  {
+    "date": "2025-02-16",
+    "title": "Feast: Sixth Sunday in Ordinary Time (Sunday)",
+    "readings": [
+      {"label": "First Reading", "reference": "Sirach 15:15-20", "text": "If you choose, you can keep the commandments."},
+      {"label": "Psalm", "reference": "Psalms 119:1-2, 4-5, 17-18, 33-34, 35", "text": "Blessed are they who follow the law of the Lord!"},
+      {"label": "Second Reading", "reference": "First Corinthians 2:6-10", "text": "We speak a wisdom to those who are mature."},
+      {"label": "Alleluia", "reference": "Matthew 11:25", "text": "You have revealed to little ones the mysteries of the Kingdom."},
+      {"label": "Gospel", "reference": "Matthew 5:20-22, 27-28, 33-34, 37, 38-39, 43-44, 46-47", "text": "Love your enemies and pray for those who persecute you."}
+    ]
+  },
+  {
+    "date": "2025-02-17",
+    "title": "Feast: Ordinary Weekday/Seven Holy Founders of the Servite Order",
+    "readings": [
+      {"label": "First Reading", "reference": "Genesis 4:1-15, 25", "text": "Cain killed Abel, but God gave Adam another son."},
+      {"label": "Psalm", "reference": "Psalms 50:1 and 8, 16bc-17, 20-21", "text": "Offer to God a sacrifice of praise."},
+      {"label": "Alleluia", "reference": "John 8:12", "text": "I am the light of the world, says the Lord."},
+      {"label": "Gospel", "reference": "Mark 8:11-13", "text": "No sign will be given to this generation."}
+    ]
+  },
+  {
+    "date": "2025-02-18",
+    "title": "Feast: Ordinary Weekday",
+    "readings": [
+      {"label": "First Reading", "reference": "Genesis 6:5-8; 7:1-5, 10", "text": "The Lord saw how great was man's wickedness on earth."},
+      {"label": "Psalm", "reference": "Psalms 29:1a and 2, 3ac-4, 3b and 9c-10", "text": "The Lord will bless his people with peace."},
+      {"label": "Alleluia", "reference": "John 10:27", "text": "My sheep hear my voice, says the Lord."},
+      {"label": "Gospel", "reference": "Mark 8:14-21", "text": "Do you still not understand?"}
+    ]
+  },
+  {
+    "date": "2025-02-19",
+    "title": "Feast: Ordinary Weekday",
+    "readings": [
+      {"label": "First Reading", "reference": "Genesis 8:6-13, 20-22", "text": "Noah built an altar to the Lord."},
+      {"label": "Psalm", "reference": "Psalms 116:12-13, 14-15, 18-19", "text": "I will take the cup of salvation, and call on the name of the Lord."},
+      {"label": "Alleluia", "reference": "John 14:6", "text": "I am the way and the truth and the life."},
+      {"label": "Gospel", "reference": "Mark 8:22-26", "text": "He laid hands on him and his sight was restored."}
+    ]
+  },
+  {
+    "date": "2025-02-20",
+    "title": "Feast: Ordinary Weekday",
+    "readings": [
+      {"label": "First Reading", "reference": "Genesis 9:1-13", "text": "I set my bow in the clouds as a sign of my covenant."},
+      {"label": "Psalm", "reference": "Psalms 102:16-18, 19-21, 29, 22-23", "text": "The Lord looked down from his holy height."},
+      {"label": "Alleluia", "reference": "Mark 1:15", "text": "Repent, and believe in the Gospel."},
+      {"label": "Gospel", "reference": "Mark 8:27-33", "text": "You are the Christ."}
+    ]
+  },
+  {
+    "date": "2025-02-21",
+    "title": "Feast: Ordinary Weekday/Peter Damian, Bishop, Doctor",
+    "readings": [
+      {"label": "First Reading", "reference": "Genesis 11:1-9", "text": "The whole world spoke the same language."},
+      {"label": "Psalm", "reference": "Psalms 33:10-11, 12-13, 14-15", "text": "Blessed the people the Lord has chosen to be his own."},
+      {"label": "Alleluia", "reference": "John 14:23", "text": "Whoever loves me will keep my word."},
+      {"label": "Gospel", "reference": "Mark 8:34 - 9:1", "text": "Whoever loses his life for my sake will save it."}
+    ]
+  },
+  {
+    "date": "2025-02-22",
+    "title": "Feast: Chair of Peter, Apostle Feast",
+    "readings": [
+      {"label": "First Reading", "reference": "First Peter 5:1-4", "text": "Tend the flock of God in your midst."},
+      {"label": "Psalm", "reference": "Psalms 23:1-3a, 3b-4, 5, 6", "text": "The Lord is my shepherd; there is nothing I shall want."},
+      {"label": "Alleluia", "reference": "Matthew 16:18", "text": "You are Peter, and upon this rock I will build my church."},
+      {"label": "Gospel", "reference": "Matthew 16:13-19", "text": "You are the Christ, the Son of the living God."}
+    ]
+  },
+  {
+    "date": "2025-02-23",
+    "title": "Feast: Seventh Sunday in Ordinary Time (Sunday)",
+    "readings": [
+      {"label": "First Reading", "reference": "Leviticus 19:1-2, 17-18", "text": "You shall love your neighbor as yourself."},
+      {"label": "Psalm", "reference": "Psalms 103:1-2, 3-4, 8, 10, 12-13", "text": "The Lord is kind and merciful."},
+      {"label": "Second Reading", "reference": "First Corinthians 3:16-23", "text": "You are the temple of God."},
+      {"label": "Alleluia", "reference": "First John 2:5", "text": "Whoever keeps the word of Christ, the love of God is truly perfected in him."},
+      {"label": "Gospel", "reference": "Matthew 5:38-48", "text": "Love your enemies."}
+    ]
+  },
+  {
+    "date": "2025-02-24",
+    "title": "Feast: Ordinary Weekday",
+    "readings": [
+      {"label": "First Reading", "reference": "James 1:1-11", "text": "Consider it all joy when you encounter various trials."},
+      {"label": "Psalm", "reference": "Psalms 119:67, 68, 71, 72, 75, 76", "text": "Teach me wisdom and knowledge, for in your commands I trust."},
+      {"label": "Alleluia", "reference": "John 10:27", "text": "My sheep hear my voice, says the Lord."},
+      {"label": "Gospel", "reference": "Mark 9:14-29", "text": "I do believe, help my unbelief!"}
+    ]
+  },
+  {
+    "date": "2025-02-25",
+    "title": "Feast: Ordinary Weekday",
+    "readings": [
+      {"label": "First Reading", "reference": "James 1:12-18", "text": "Blessed is the man who perseveres in temptation."},
+      {"label": "Psalm", "reference": "Psalms 94:12-13, 14-15, 18-19", "text": "The Lord will not cast off his people."},
+      {"label": "Alleluia", "reference": "James 1:21", "text": "Humbly welcome the word that has been planted in you."},
+      {"label": "Gospel", "reference": "Mark 9:30-37", "text": "If anyone wishes to be first, he shall be the last of all."}
+    ]
+  },
+  {
+    "date": "2025-02-26",
+    "title": "Feast: Ordinary Weekday",
+    "readings": [
+      {"label": "First Reading", "reference": "James 1:19-27", "text": "Be doers of the word and not hearers only."},
+      {"label": "Psalm", "reference": "Psalms 15:2-3ab, 3cd-4a, 5", "text": "He who does justice will live in the presence of the Lord."},
+      {"label": "Alleluia", "reference": "John 13:34", "text": "I give you a new commandment: love one another."},
+      {"label": "Gospel", "reference": "Mark 9:38-40", "text": "Whoever is not against us is for us."}
+    ]
+  },
+  {
+    "date": "2025-02-27",
+    "title": "Feast: Ordinary Weekday",
+    "readings": [
+      {"label": "First Reading", "reference": "James 2:1-9", "text": "Show no partiality as you adhere to the faith."},
+      {"label": "Psalm", "reference": "Psalms 34:2-3, 4-5, 6-7", "text": "The Lord hears the cry of the poor."},
+      {"label": "Alleluia", "reference": "Matthew 5:3", "text": "Blessed are the poor in spirit; the kingdom of heaven is theirs!"},
+      {"label": "Gospel", "reference": "Mark 9:41-50", "text": "If your hand causes you to sin, cut it off."}
+    ]
+  },
+  {
+    "date": "2025-02-28",
+    "title": "Feast: Ordinary Weekday",
+    "readings": [
+      {"label": "First Reading", "reference": "James 2:14-24, 26", "text": "Faith without works is dead."},
+      {"label": "Psalm", "reference": "Psalms 112:1-2, 3-4, 5-6", "text": "Blessed the man who fears the Lord."},
+      {"label": "Alleluia", "reference": "John 14:23", "text": "Whoever loves me will keep my word."},
+      {"label": "Gospel", "reference": "Mark 10:1-12", "text": "What God has joined together, no human being must separate."}
+    ]
+  }
+  ,
+  {
+    "date": "2025-03-01",
+    "title": "Feast: Ordinary Weekday",
+    "readings": [
+      {"label": "First Reading", "reference": "Sirach 17:1-15", "text": "God created man and gave him dominion over all things."},
+      {"label": "Psalm", "reference": "Psalms 103:13-14, 15-16, 17-18", "text": "The Lord's kindness is everlasting to those who fear him."},
+      {"label": "Alleluia", "reference": "Matthew 11:25", "text": "Blessed are you, Father, Lord of heaven and earth."},
+      {"label": "Gospel", "reference": "Mark 10:13-16", "text": "Let the children come to me."}
+    ]
+  },
+  {
+    "date": "2025-03-02",
+    "title": "Feast: Eighth Sunday in Ordinary Time (Sunday)",
+    "readings": [
+      {"label": "First Reading", "reference": "Hosea 2:16, 17c-18, 21-22", "text": "I will allure her and speak tenderly to her."},
+      {"label": "Psalm", "reference": "Psalms 103:1-2, 3-4, 8, 10, 12-13", "text": "The Lord is kind and merciful."},
+      {"label": "Second Reading", "reference": "2 Corinthians 3:1-6", "text": "Our competence comes from God."},
+      {"label": "Alleluia", "reference": "John 14:23", "text": "Whoever loves me will keep my word."},
+      {"label": "Gospel", "reference": "Matthew 6:24-34", "text": "Do not worry about tomorrow."}
+    ]
+  },
+  {
+    "date": "2025-03-03",
+    "title": "Feast: Ordinary Weekday/Katharine Drexel, Virgin",
+    "readings": [
+      {"label": "First Reading", "reference": "Sirach 35:1-12", "text": "Give to the Most High as he has given to you."},
+      {"label": "Psalm", "reference": "Psalms 50:5-6, 7-8, 14 and 23", "text": "To him that goes the right way I will show the salvation of God."},
+      {"label": "Alleluia", "reference": "John 14:23", "text": "Whoever loves me will keep my word."},
+      {"label": "Gospel", "reference": "Mark 10:17-27", "text": "Go, sell what you have, and follow me."}
+    ]
+  },
+  {
+    "date": "2025-03-04",
+    "title": "Feast: Ordinary Weekday/Casimir",
+    "readings": [
+      {"label": "First Reading", "reference": "Sirach 51:13-20", "text": "I sought wisdom openly in my prayer."},
+      {"label": "Psalm", "reference": "Psalms 16:1-2a and 5, 7-8, 11", "text": "You are my inheritance, O Lord."},
+      {"label": "Alleluia", "reference": "John 14:23", "text": "Whoever loves me will keep my word."},
+      {"label": "Gospel", "reference": "Mark 10:28-31", "text": "Many that are first will be last, and the last will be first."}
+    ]
+  },
+  {
+    "date": "2025-03-05",
+    "title": "Feast: Ordinary Weekday",
+    "readings": [
+      {"label": "First Reading", "reference": "Jeremiah 18:18-20", "text": "Remember that I stood before you to speak in their behalf."},
+      {"label": "Psalm", "reference": "Psalms 31:5-6, 14, 15-16", "text": "Save me, O Lord, in your kindness."},
+      {"label": "Alleluia", "reference": "John 8:12", "text": "I am the light of the world, says the Lord."},
+      {"label": "Gospel", "reference": "Matthew 20:17-28", "text": "The Son of Man did not come to be served but to serve."}
+    ]
+  },
+  {
+    "date": "2025-03-06",
+    "title": "Feast: Ordinary Weekday",
+    "readings": [
+      {"label": "First Reading", "reference": "Jeremiah 17:5-10", "text": "Blessed is the man who trusts in the Lord."},
+      {"label": "Psalm", "reference": "Psalms 1:1-2, 3, 4 and 6", "text": "Blessed are they who hope in the Lord."},
+      {"label": "Alleluia", "reference": "Luke 8:15", "text": "Blessed are they who have kept the word with a generous heart."},
+      {"label": "Gospel", "reference": "Luke 16:19-31", "text": "You received what was good during your lifetime."}
+    ]
+  },
+  {
+    "date": "2025-03-07",
+    "title": "Feast: Ordinary Weekday/Perpetua and Felicity, Martyrs",
+    "readings": [
+      {"label": "First Reading", "reference": "Genesis 37:3-4, 12-13a, 17b-28a", "text": "Joseph's brothers sold him to the Ishmaelites."},
+      {"label": "Psalm", "reference": "Psalms 105:16-17, 18-19, 20-21", "text": "Remember the marvels the Lord has done."},
+      {"label": "Alleluia", "reference": "John 3:16", "text": "God so loved the world that he gave his only Son."},
+      {"label": "Gospel", "reference": "Matthew 21:33-43, 45-46", "text": "The stone that the builders rejected has become the cornerstone."}
+    ]
+  },
+  {
+    "date": "2025-03-08",
+    "title": "Feast: Ordinary Weekday/John of God, Religious",
+    "readings": [
+      {"label": "First Reading", "reference": "Micah 7:14-15, 18-20", "text": "You will cast into the depths of the sea all our sins."},
+      {"label": "Psalm", "reference": "Psalms 103:1-2, 3-4, 9-10, 11-12", "text": "The Lord is kind and merciful."},
+      {"label": "Alleluia", "reference": "Luke 15:18", "text": "I will get up and go to my father and shall say to him: Father, I have sinned against heaven and against you."},
+      {"label": "Gospel", "reference": "Luke 15:1-3, 11-32", "text": "There will be joy in heaven over one sinner who repents."}
+    ]
+  },
+  {
+    "date": "2025-03-09",
+    "title": "Feast: First Sunday of Lent (Sunday)",
+    "readings": [
+      {"label": "First Reading", "reference": "Genesis 2:7-9; 3:1-7", "text": "The Lord God formed man from the dust of the ground."},
+      {"label": "Psalm", "reference": "Psalms 51:3-4, 5-6ab, 12-13, 14 and 17", "text": "Be merciful, O Lord, for we have sinned."},
+      {"label": "Second Reading", "reference": "Romans 5:12-19 or Romans 5:12, 17-19", "text": "Where sin increased, grace overflowed all the more."},
+      {"label": "Alleluia", "reference": "Matthew 4:4b", "text": "One does not live on bread alone, but on every word that comes forth from the mouth of God."},
+      {"label": "Gospel", "reference": "Matthew 4:1-11", "text": "Jesus fasted for forty days and was tempted."}
+    ]
+  },
+  {
+    "date": "2025-03-10",
+    "title": "Feast: Lent Weekday",
+    "readings": [
+      {"label": "First Reading", "reference": "Leviticus 19:1-2, 11-18", "text": "You shall love your neighbor as yourself."},
+      {"label": "Psalm", "reference": "Psalms 19:8, 9, 10, 15", "text": "Your words, Lord, are Spirit and life."},
+      {"label": "Alleluia", "reference": "2 Corinthians 6:2b", "text": "Behold, now is a very acceptable time; behold, now is the day of salvation."},
+      {"label": "Gospel", "reference": "Matthew 25:31-46", "text": "Whatever you did for one of these least brothers of mine, you did for me."}
+    ]
+  },
+  {
+    "date": "2025-03-11",
+    "title": "Feast: Lent Weekday",
+    "readings": [
+      {"label": "First Reading", "reference": "Isaiah 55:10-11", "text": "My word shall not return to me void."},
+      {"label": "Psalm", "reference": "Psalms 34:4-5, 6-7, 16-17, 18-19", "text": "From all their distress God rescues the just."},
+      {"label": "Alleluia", "reference": "Matthew 4:4b", "text": "One does not live on bread alone, but on every word that comes forth from the mouth of God."},
+      {"label": "Gospel", "reference": "Matthew 6:7-15", "text": "If you forgive others, your heavenly Father will forgive you."}
+    ]
+  },
+  {
+    "date": "2025-03-12",
+    "title": "Feast: Lent Weekday",
+    "readings": [
+      {"label": "First Reading", "reference": "Jonah 3:1-10", "text": "The people of Nineveh believed God; they proclaimed a fast."},
+      {"label": "Psalm", "reference": "Psalms 51:3-4, 12-13, 18-19", "text": "A heart contrite and humbled, O God, you will not spurn."},
+      {"label": "Alleluia", "reference": "Joel 2:12-13", "text": "Return to me with your whole heart, says the Lord."},
+      {"label": "Gospel", "reference": "Luke 11:29-32", "text": "At the judgment the men of Nineveh will arise with this generation and condemn it."}
+    ]
+  },
+  {
+    "date": "2025-03-13",
+    "title": "Feast: Lent Weekday",
+    "readings": [
+      {"label": "First Reading", "reference": "Esther C:12, 14-16, 23-25", "text": "Queen Esther appeals to the Lord for help."},
+      {"label": "Psalm", "reference": "Psalms 138:1-2ab, 2cde-3, 7c-8", "text": "Lord, on the day I called for help, you answered me."},
+      {"label": "Alleluia", "reference": "Psalms 51:12a, 14a", "text": "A clean heart create for me, O God."},
+      {"label": "Gospel", "reference": "Matthew 7:7-12", "text": "Do to others whatever you would have them do to you."}
+    ]
+  },
+  {
+    "date": "2025-03-14",
+    "title": "Feast: Lent Weekday",
+    "readings": [
+      {"label": "First Reading", "reference": "Ezekiel 18:21-28", "text": "If the wicked man turns away from all his sins, he shall surely live."},
+      {"label": "Psalm", "reference": "Psalms 130:1-2, 3-4, 5-7a, 7bc-8", "text": "If you, O Lord, mark iniquities, who can stand?"},
+      {"label": "Alleluia", "reference": "Ezekiel 18:31", "text": "Cast away from you all the crimes you have committed, says the Lord."},
+      {"label": "Gospel", "reference": "Matthew 5:20-26", "text": "Go first and be reconciled with your brother."}
+    ]
+  },
+  {
+    "date": "2025-03-15",
+    "title": "Feast: Lent Weekday",
+    "readings": [
+      {"label": "First Reading", "reference": "Deuteronomy 26:16-19", "text": "You will be a people sacred to the Lord."},
+      {"label": "Psalm", "reference": "Psalms 119:1-2, 4-5, 7-8", "text": "Blessed are they who follow the law of the Lord!"},
+      {"label": "Alleluia", "reference": "2 Corinthians 6:2b", "text": "Behold, now is a very acceptable time; behold, now is the day of salvation."},
+      {"label": "Gospel", "reference": "Matthew 5:43-48", "text": "Love your enemies and pray for those who persecute you."}
+    ]
+  },
+  {
+    "date": "2025-03-16",
+    "title": "Feast: Second Sunday of Lent (Sunday)",
+    "readings": [
+      {"label": "First Reading", "reference": "Genesis 12:1-4a", "text": "The Lord said to Abram: Go forth from your land."},
+      {"label": "Psalm", "reference": "Psalms 33:4-5, 18-19, 20 and 22", "text": "Lord, let your mercy be on us, as we place our trust in you."},
+      {"label": "Second Reading", "reference": "2 Timothy 1:8b-10", "text": "God has called us to a holy life."},
+      {"label": "Alleluia", "reference": "Matthew 17:5", "text": "This is my beloved Son, hear him."},
+      {"label": "Gospel", "reference": "Matthew 17:1-9", "text": "His face shone like the sun."}
+    ]
+  },
+  {
+    "date": "2025-03-17",
+    "title": "Feast: Lent Weekday/Patrick, Bishop",
+    "readings": [
+      {"label": "First Reading", "reference": "Daniel 9:4b-10", "text": "We have sinned, been wicked and done evil."},
+      {"label": "Psalm", "reference": "Psalms 79:8, 9, 11 and 13", "text": "Lord, do not deal with us according to our sins."},
+      {"label": "Alleluia", "reference": "John 6:63c, 68c", "text": "Your words, Lord, are Spirit and life; you have the words of everlasting life."},
+      {"label": "Gospel", "reference": "Luke 6:36-38", "text": "Forgive, and you will be forgiven."}
+    ]
+  },
+  {
+    "date": "2025-03-18",
+    "title": "Feast: Lent Weekday/Cyril of Jerusalem, Bishop, Doctor",
+    "readings": [
+      {"label": "First Reading", "reference": "Isaiah 1:10, 16-20", "text": "Though your sins be like scarlet, they may become white as snow."},
+      {"label": "Psalm", "reference": "Psalms 50:8-9, 16bc-17, 21 and 23", "text": "To him that goes the right way I will show the salvation of God."},
+      {"label": "Alleluia", "reference": "Ezekiel 18:31", "text": "Cast away from you all the crimes you have committed, says the Lord."},
+      {"label": "Gospel", "reference": "Matthew 23:1-12", "text": "The greatest among you must be your servant."}
+    ]
+  },
+  {
+    "date": "2025-03-19",
+    "title": "Solemnity: Joseph, Spouse of the Blessed Virgin Mary",
+    "readings": [
+      {"label": "First Reading", "reference": "2 Samuel 7:4-5a, 12-14a, 16", "text": "The Lord will give him the throne of David."},
+      {"label": "Psalm", "reference": "Psalms 89:2-3, 4-5, 27 and 29", "text": "The son of David will live for ever."},
+      {"label": "Second Reading", "reference": "Romans 4:13, 16-18, 22", "text": "He is father of all who believe."},
+      {"label": "Alleluia", "reference": "Psalms 84:5", "text": "Blessed are those who dwell in your house, O Lord."},
+      {"label": "Gospel", "reference": "Matthew 1:16, 18-21, 24a or Luke 2:41-51a", "text": "Joseph did as the angel of the Lord had commanded him."}
+    ]
+  },
+  {
+    "date": "2025-03-20",
+    "title": "Feast: Lent Weekday",
+    "readings": [
+      {"label": "First Reading", "reference": "Jeremiah 7:23-28", "text": "This is the nation that does not listen to the voice of the Lord."},
+      {"label": "Psalm", "reference": "Psalms 95:1-2, 6-7, 8-9", "text": "If today you hear his voice, harden not your hearts."},
+      {"label": "Alleluia", "reference": "Joel 2:12-13", "text": "Return to me with your whole heart, says the Lord."},
+      {"label": "Gospel", "reference": "Luke 11:14-23", "text": "Whoever is not with me is against me."}
+    ]
+  },
+  {
+    "date": "2025-03-21",
+    "title": "Feast: Lent Weekday",
+    "readings": [
+      {"label": "First Reading", "reference": "Hosea 14:2-10", "text": "I will heal their defection, says the Lord."},
+      {"label": "Psalm", "reference": "Psalms 81:6c-8a, 8bc-9, 10-11ab, 14 and 17", "text": "I am the Lord your God: hear my voice."},
+      {"label": "Alleluia", "reference": "Matthew 4:17", "text": "Repent, says the Lord; the kingdom of heaven is at hand."},
+      {"label": "Gospel", "reference": "Mark 12:28-34", "text": "Love the Lord your God with all your heart."}
+    ]
+  },
+  {
+    "date": "2025-03-22",
+    "title": "Feast: Lent Weekday",
+    "readings": [
+      {"label": "First Reading", "reference": "Hosea 6:1-6", "text": "For it is love that I desire, not sacrifice."},
+      {"label": "Psalm", "reference": "Psalms 51:3-4, 18-19, 20-21ab", "text": "It is steadfast love, not sacrifice, that pleases God."},
+      {"label": "Alleluia", "reference": "Psalms 95:8", "text": "If today you hear his voice, harden not your hearts."},
+      {"label": "Gospel", "reference": "Luke 18:9-14", "text": "The one who humbles himself will be exalted."}
+    ]
+  },
+  {
+    "date": "2025-03-23",
+    "title": "Feast: Third Sunday of Lent (Sunday)",
+    "readings": [
+      {"label": "First Reading", "reference": "Exodus 17:3-7", "text": "Strike the rock, and the water will flow from it."},
+      {"label": "Psalm", "reference": "Psalms 95:1-2, 6-7, 8-9", "text": "If today you hear his voice, harden not your hearts."},
+      {"label": "Second Reading", "reference": "Romans 5:1-2, 5-8", "text": "The love of God has been poured out into our hearts."},
+      {"label": "Alleluia", "reference": "John 4:42, 15", "text": "Lord, you are truly the Savior of the world; give me living water, that I may never thirst again."},
+      {"label": "Gospel", "reference": "John 4:5-42 or John 4:5-15, 19b-26, 39a, 40-42", "text": "The water that I shall give will become a spring of eternal life."}
+    ]
+  },
+  {
+    "date": "2025-03-24",
+    "title": "Feast: Lent Weekday",
+    "readings": [
+      {"label": "First Reading", "reference": "2 Kings 5:1-15ab", "text": "Naaman's flesh became like the flesh of a little child."},
+      {"label": "Psalm", "reference": "Psalms 42:2, 3; 43:3, 4", "text": "Athirst is my soul for the living God."},
+      {"label": "Alleluia", "reference": "Psalms 130:5, 7", "text": "I hope in the Lord, I trust in his word."},
+      {"label": "Gospel", "reference": "Luke 4:24-30", "text": "No prophet is accepted in his own native place."}
+    ]
+  },
+  {
+    "date": "2025-03-25",
+    "title": "Solemnity: Annunciation of the Lord",
+    "readings": [
+      {"label": "First Reading", "reference": "Isaiah 7:10-14; 8:10", "text": "The virgin shall be with child and bear a son."},
+      {"label": "Psalm", "reference": "Psalms 40:7-8a, 8b-9, 10, 11", "text": "Here am I, Lord; I come to do your will."},
+      {"label": "Second Reading", "reference": "Hebrews 10:4-10", "text": "Behold, I come to do your will, O God."},
+      {"label": "Alleluia", "reference": "John 1:14ab", "text": "The Word became flesh and made his dwelling among us; and we saw his glory."},
+      {"label": "Gospel", "reference": "Luke 1:26-38", "text": "Behold, you will conceive in your womb and bear a son."}
+    ]
+  },
+  {
+    "date": "2025-03-26",
+    "title": "Feast: Lent Weekday",
+    "readings": [
+      {"label": "First Reading", "reference": "Deuteronomy 4:1, 5-9", "text": "Observe these statutes that you may live."},
+      {"label": "Psalm", "reference": "Psalms 147:12-13, 15-16, 19-20", "text": "Praise the Lord, Jerusalem."},
+      {"label": "Alleluia", "reference": "John 6:63c, 68c", "text": "Your words, Lord, are Spirit and life; you have the words of everlasting life."},
+      {"label": "Gospel", "reference": "Matthew 5:17-19", "text": "I have come not to abolish but to fulfill."}
+    ]
+  },
+  {
+    "date": "2025-03-27",
+    "title": "Feast: Lent Weekday",
+    "readings": [
+      {"label": "First Reading", "reference": "Jeremiah 7:23-28", "text": "This is the nation that does not listen to the voice of the Lord."},
+      {"label": "Psalm", "reference": "Psalms 95:1-2, 6-7, 8-9", "text": "If today you hear his voice, harden not your hearts."},
+      {"label": "Alleluia", "reference": "Joel 2:12-13", "text": "Return to me with your whole heart, says the Lord."},
+      {"label": "Gospel", "reference": "Luke 11:14-23", "text": "Whoever is not with me is against me."}
+    ]
+  },
+  {
+    "date": "2025-03-28",
+    "title": "Feast: Lent Weekday",
+    "readings": [
+      {"label": "First Reading", "reference": "Hosea 14:2-10", "text": "I will heal their defection, says the Lord."},
+      {"label": "Psalm", "reference": "Psalms 81:6c-8a, 8bc-9, 10-11ab, 14 and 17", "text": "I am the Lord your God: hear my voice."},
+      {"label": "Alleluia", "reference": "Matthew 4:17", "text": "Repent, says the Lord; the kingdom of heaven is at hand."},
+      {"label": "Gospel", "reference": "Mark 12:28-34", "text": "Love the Lord your God with all your heart."}
+    ]
+  },
+  {
+    "date": "2025-03-29",
+    "title": "Feast: Lent Weekday",
+    "readings": [
+      {"label": "First Reading", "reference": "Hosea 6:1-6", "text": "For it is love that I desire, not sacrifice."},
+      {"label": "Psalm", "reference": "Psalms 51:3-4, 18-19, 20-21ab", "text": "It is steadfast love, not sacrifice, that pleases God."},
+      {"label": "Alleluia", "reference": "Psalms 95:8", "text": "If today you hear his voice, harden not your hearts."},
+      {"label": "Gospel", "reference": "Luke 18:9-14", "text": "The one who humbles himself will be exalted."}
+    ]
+  },
+  {
+    "date": "2025-03-30",
+    "title": "Feast: Fourth Sunday of Lent (Sunday)",
+    "readings": [
+      {"label": "First Reading", "reference": "1 Samuel 16:1b, 6-7, 10-13a", "text": "The Lord looks into the heart."},
+      {"label": "Psalm", "reference": "Psalms 23:1-3a, 3b-4, 5, 6", "text": "The Lord is my shepherd; there is nothing I shall want."},
+      {"label": "Second Reading", "reference": "Ephesians 5:8-14", "text": "Awake, O sleeper, and arise from the dead."},
+      {"label": "Alleluia", "reference": "John 8:12", "text": "I am the light of the world, says the Lord."},
+      {"label": "Gospel", "reference": "John 9:1-41 or John 9:1, 6-9, 13-17, 34-38", "text": "The man who was blind went off and washed himself and came back able to see."}
+    ]
+  },
+  {
+    "date": "2025-03-31",
+    "title": "Feast: Lent Weekday",
+    "readings": [
+      {"label": "First Reading", "reference": "Isaiah 65:17-21", "text": "I create new heavens and a new earth."},
+      {"label": "Psalm", "reference": "Psalms 30:2 and 4, 5-6, 11-12a and 13b", "text": "I will praise you, Lord, for you have rescued me."},
+      {"label": "Alleluia", "reference": "Amos 5:14", "text": "Seek good and not evil so that you may live, and the Lord will be with you."},
+      {"label": "Gospel", "reference": "John 4:43-54", "text": "The royal official believed what Jesus said and left."}
+    ]
+  }
+  ,
+  {
+    "date": "2025-04-01",
+    "title": "Feast: Ordinary Weekday",
+    "readings": [
+      {"label": "First Reading", "reference": "Isaiah 49:1-6", "text": "God called me from birth, formed me as his servant."},
+      {"label": "Psalm", "reference": "Psalms 71:1-2, 3-4a, 5ab-6ab, 15ab and 17", "text": "In you, O Lord, I take refuge."},
+      {"label": "Alleluia", "reference": "Luke 8:15", "text": "Blessed are they who have kept the word with a generous heart."},
+      {"label": "Gospel", "reference": "John 8:21-30", "text": "When you lift up the Son of Man, then you will realize that I AM."}
+    ]
+  },
+  {
+    "date": "2025-04-02",
+    "title": "Feast: Ordinary Weekday/Francis of Paola, Hermit",
+    "readings": [
+      {"label": "First Reading", "reference": "Isaiah 50:4-9a", "text": "The Lord God is my help, therefore I am not disgraced."},
+      {"label": "Psalm", "reference": "Psalms 69:8-10, 10, 21-22, 31 and 33-34", "text": "Lord, in your great love, answer me."},
+      {"label": "Alleluia", "reference": "Psalms 130:5, 7", "text": "I hope in the Lord, I trust in his word."},
+      {"label": "Gospel", "reference": "John 8:31-42", "text": "If you remain in my word, you will truly be my disciples."}
+    ]
+  },
+  {
+    "date": "2025-04-03",
+    "title": "Feast: Ordinary Weekday",
+    "readings": [
+      {"label": "First Reading", "reference": "Exodus 32:7-14", "text": "Turn from your blazing anger; relent in punishing your people."},
+      {"label": "Psalm", "reference": "Psalms 106:19-20, 21-22, 23", "text": "Remember us, O Lord, as you favor your people."},
+      {"label": "Alleluia", "reference": "Psalms 95:7c, 8a", "text": "If today you hear his voice, harden not your hearts."},
+      {"label": "Gospel", "reference": "John 8:51-59", "text": "Before Abraham came to be, I AM."}
+    ]
+  },
+  {
+    "date": "2025-04-04",
+    "title": "Feast: Ordinary Weekday/Isidore, Bishop, Doctor",
+    "readings": [
+      {"label": "First Reading", "reference": "Jeremiah 20:10-13", "text": "The Lord is with me, like a mighty champion."},
+      {"label": "Psalm", "reference": "Psalms 18:2-3a, 3b-4, 5-6, 7", "text": "In my distress I called upon the Lord."},
+      {"label": "Alleluia", "reference": "John 11:28", "text": "The teacher is here and is asking for you."},
+      {"label": "Gospel", "reference": "John 10:31-42", "text": "If I do not perform my Father's works, do not believe me."}
+    ]
+  },
+  {
+    "date": "2025-04-05",
+    "title": "Feast: Ordinary Weekday/Vincent Ferrer, Priest",
+    "readings": [
+      {"label": "First Reading", "reference": "Ezekiel 37:21-28", "text": "I will make them one nation upon the land."},
+      {"label": "Psalm", "reference": "Jeremiah 31:10, 11-12abcd, 13", "text": "The Lord will guard us, as a shepherd guards his flock."},
+      {"label": "Alleluia", "reference": "Ezekiel 33:11", "text": "I take no pleasure in the death of the wicked, but rather that they turn from their ways and live."},
+      {"label": "Gospel", "reference": "John 11:45-56", "text": "Many of the Jews who had come to Mary began to believe in Jesus."}
+    ]
+  },
+  {
+    "date": "2025-04-06",
+    "title": "Feast: Fifth Sunday of Lent (Sunday)",
+    "readings": [
+      {"label": "First Reading", "reference": "Ezekiel 37:12-14", "text": "I will open your graves and have you rise from them."},
+      {"label": "Psalm", "reference": "Psalms 130:1-2, 3-4, 5-6, 7-8", "text": "With the Lord there is mercy and fullness of redemption."},
+      {"label": "Second Reading", "reference": "Romans 8:8-11", "text": "If the Spirit of the one who raised Jesus from the dead dwells in you, you will live."},
+      {"label": "Alleluia", "reference": "John 11:25a, 26a", "text": "I am the resurrection and the life, says the Lord."},
+      {"label": "Gospel", "reference": "John 11:1-45", "text": "Lazarus, come out!"}
+    ]
+  },
+  {
+    "date": "2025-04-07",
+    "title": "Feast: Ordinary Weekday/John Baptist de la Salle, Priest",
+    "readings": [
+      {"label": "First Reading", "reference": "Daniel 13:1-9, 15-17, 19-30, 33-62", "text": "Susanna's innocence is vindicated by Daniel."},
+      {"label": "Psalm", "reference": "Psalms 23:1-3a, 3b-4, 5, 6", "text": "Though I walk in the dark valley, I fear no evil."},
+      {"label": "Alleluia", "reference": "Psalms 130:5, 7", "text": "I hope in the Lord, I trust in his word."},
+      {"label": "Gospel", "reference": "John 8:1-11", "text": "Let the one among you who is without sin be the first to throw a stone."}
+    ]
+  },
+  {
+    "date": "2025-04-08",
+    "title": "Feast: Ordinary Weekday",
+    "readings": [
+      {"label": "First Reading", "reference": "Numbers 21:4-9", "text": "The Lord said to Moses: Make a seraph and mount it on a pole."},
+      {"label": "Psalm", "reference": "Psalms 102:2-3, 16-18, 19-21", "text": "O Lord, hear my prayer, and let my cry come to you."},
+      {"label": "Alleluia", "reference": "John 3:16", "text": "God so loved the world that he gave his only Son."},
+      {"label": "Gospel", "reference": "John 8:21-30", "text": "When you lift up the Son of Man, then you will realize that I AM."}
+    ]
+  },
+  {
+    "date": "2025-04-09",
+    "title": "Feast: Ordinary Weekday",
+    "readings": [
+      {"label": "First Reading", "reference": "Isaiah 49:8-15", "text": "Can a mother forget her infant?"},
+      {"label": "Psalm", "reference": "Psalms 145:8-9, 13cd-14, 17-18", "text": "The Lord is gracious and merciful."},
+      {"label": "Alleluia", "reference": "John 6:63c, 68c", "text": "Your words, Lord, are Spirit and life."},
+      {"label": "Gospel", "reference": "John 5:17-30", "text": "The Father has given all judgment to the Son."}
+    ]
+  },
+  {
+    "date": "2025-04-10",
+    "title": "Feast: Ordinary Weekday",
+    "readings": [
+      {"label": "First Reading", "reference": "Exodus 32:7-14", "text": "Turn from your blazing anger; relent in punishing your people."},
+      {"label": "Psalm", "reference": "Psalms 106:19-20, 21-22, 23", "text": "Remember us, O Lord, as you favor your people."},
+      {"label": "Alleluia", "reference": "John 6:40", "text": "Everyone who believes in the Son has eternal life."},
+      {"label": "Gospel", "reference": "John 5:31-47", "text": "The works the Father gave me to accomplish bear witness to me."}
+    ]
+  },
+  {
+    "date": "2025-04-11",
+    "title": "Feast: Ordinary Weekday",
+    "readings": [
+      {"label": "First Reading", "reference": "Ezekiel 37:1-14", "text": "I will put my spirit in you that you may live."},
+      {"label": "Psalm", "reference": "Psalms 107:2-3, 4-5, 6-7, 8-9", "text": "O give thanks to the Lord, for he is good."},
+      {"label": "Alleluia", "reference": "Luke 1:38", "text": "Behold, I am the handmaid of the Lord."},
+      {"label": "Gospel", "reference": "John 11:1-45", "text": "Lazarus, come out!"}
+    ]
+  },
+  {
+    "date": "2025-04-12",
+    "title": "Feast: Ordinary Weekday",
+    "readings": [
+      {"label": "First Reading", "reference": "Isaiah 49:8-15", "text": "Can a mother forget her infant?"},
+      {"label": "Psalm", "reference": "Psalms 145:8-9, 13cd-14, 17-18", "text": "The Lord is gracious and merciful."},
+      {"label": "Alleluia", "reference": "John 6:63c, 68c", "text": "Your words, Lord, are Spirit and life."},
+      {"label": "Gospel", "reference": "John 5:17-30", "text": "The Father has given all judgment to the Son."}
+    ]
+  },
+  {
+    "date": "2025-04-13",
+    "title": "Feast: Palm Sunday of the Lord's Passion (Sunday)",
+    "readings": [
+      {"label": "First Reading", "reference": "Isaiah 50:4-7", "text": "I gave my back to those who beat me."},
+      {"label": "Psalm", "reference": "Psalms 22:8-9, 17-18a, 19-20, 23-24", "text": "My God, my God, why have you abandoned me?"},
+      {"label": "Second Reading", "reference": "Philippians 2:6-11", "text": "He humbled himself, becoming obedient to death."},
+      {"label": "Alleluia", "reference": "Philippians 2:8-9", "text": "Christ became obedient to the point of death, even death on a cross."},
+      {"label": "Gospel", "reference": "Matthew 26:14-27:66", "text": "The Passion of our Lord Jesus Christ."}
+    ]
+  },
+  {
+    "date": "2025-04-14",
+    "title": "Feast: Monday of Holy Week",
+    "readings": [
+      {"label": "First Reading", "reference": "Isaiah 42:1-7", "text": "Here is my servant whom I uphold."},
+      {"label": "Psalm", "reference": "Psalms 27:1, 2, 3, 13-14", "text": "The Lord is my light and my salvation."},
+      {"label": "Alleluia", "reference": "John 13:34", "text": "I give you a new commandment: love one another."},
+      {"label": "Gospel", "reference": "John 12:1-11", "text": "Mary anointed the feet of Jesus."}
+    ]
+  },
+  {
+    "date": "2025-04-15",
+    "title": "Feast: Tuesday of Holy Week",
+    "readings": [
+      {"label": "First Reading", "reference": "Isaiah 49:1-6", "text": "God called me from birth, formed me as his servant."},
+      {"label": "Psalm", "reference": "Psalms 71:1-2, 3-4a, 5ab-6ab, 15ab and 17", "text": "In you, O Lord, I take refuge."},
+      {"label": "Alleluia", "reference": "John 13:34", "text": "I give you a new commandment: love one another."},
+      {"label": "Gospel", "reference": "John 13:21-33, 36-38", "text": "One of you will betray me."}
+    ]
+  },
+  {
+    "date": "2025-04-16",
+    "title": "Feast: Wednesday of Holy Week",
+    "readings": [
+      {"label": "First Reading", "reference": "Isaiah 50:4-9a", "text": "The Lord God is my help, therefore I am not disgraced."},
+      {"label": "Psalm", "reference": "Psalms 69:8-10, 21-22, 31 and 33-34", "text": "Lord, in your great love, answer me."},
+      {"label": "Alleluia", "reference": "Matthew 26:14-16", "text": "One of you will betray me."},
+      {"label": "Gospel", "reference": "Matthew 26:14-25", "text": "The Son of Man goes as it is written of him."}
+    ]
+  },
+  {
+    "date": "2025-04-17",
+    "title": "Feast: Holy Thursday",
+    "readings": [
+      {"label": "First Reading", "reference": "Exodus 12:1-8, 11-14", "text": "This day shall be a memorial feast for you."},
+      {"label": "Psalm", "reference": "Psalms 116:12-13, 15-16bc, 17-18", "text": "Our blessing-cup is a communion with the Blood of Christ."},
+      {"label": "Second Reading", "reference": "1 Corinthians 11:23-26", "text": "Do this in remembrance of me."},
+      {"label": "Alleluia", "reference": "John 13:34", "text": "I give you a new commandment: love one another."},
+      {"label": "Gospel", "reference": "John 13:1-15", "text": "Jesus washes the disciples' feet."}
+    ]
+  },
+  {
+    "date": "2025-04-18",
+    "title": "Feast: Good Friday",
+    "readings": [
+      {"label": "First Reading", "reference": "Isaiah 52:13-53:12", "text": "He was pierced for our offenses."},
+      {"label": "Psalm", "reference": "Psalms 31:5-6, 11-12, 14, 15-16, 17, 25", "text": "Father, into your hands I commend my spirit."},
+      {"label": "Second Reading", "reference": "Hebrews 4:14-16; 5:7-9", "text": "He learned obedience from what he suffered."},
+      {"label": "Alleluia", "reference": "Philippians 2:8-9", "text": "Christ became obedient to the point of death, even death on a cross."},
+      {"label": "Gospel", "reference": "John 18:1-19:42", "text": "The Passion of our Lord Jesus Christ."}
+    ]
+  },
+  {
+    "date": "2025-04-19",
+    "title": "Feast: Holy Saturday",
+    "readings": [
+      {"label": "First Reading", "reference": "Genesis 1:1-2:2", "text": "In the beginning, God created the heavens and the earth."},
+      {"label": "Psalm", "reference": "Psalms 104:1-2, 5-6, 10, 12, 13-14, 24, 35", "text": "Lord, send out your Spirit, and renew the face of the earth."},
+      {"label": "Second Reading", "reference": "Genesis 22:1-18", "text": "Abraham's faith is tested."},
+      {"label": "Psalm", "reference": "Psalms 16:5, 8, 9-10, 11", "text": "You are my inheritance, O Lord."},
+      {"label": "Third Reading", "reference": "Exodus 14:15-15:1", "text": "The Israelites cross the Red Sea."},
+      {"label": "Psalm", "reference": "Exodus 15:1-2, 3-4, 5-6, 17-18", "text": "Let us sing to the Lord; he has covered himself in glory."},
+      {"label": "Fourth Reading", "reference": "Isaiah 54:5-14", "text": "With enduring love, the Lord takes pity on you."},
+      {"label": "Psalm", "reference": "Psalms 30:2, 4, 5-6, 11, 12a, 13b", "text": "I will praise you, Lord, for you have rescued me."},
+      {"label": "Fifth Reading", "reference": "Isaiah 55:1-11", "text": "Come to me that you may have life."},
+      {"label": "Psalm", "reference": "Isaiah 12:2-3, 4, 5-6", "text": "You will draw water joyfully from the springs of salvation."},
+      {"label": "Sixth Reading", "reference": "Baruch 3:9-15, 32-4:4", "text": "Walk by the light of wisdom."},
+      {"label": "Psalm", "reference": "Psalms 19:8, 9, 10, 11", "text": "Lord, you have the words of everlasting life."},
+      {"label": "Seventh Reading", "reference": "Ezekiel 36:16-17a, 18-28", "text": "I will sprinkle clean water upon you."},
+      {"label": "Psalm", "reference": "Psalms 42:3, 5; 43:3, 4", "text": "Like a deer that longs for running streams, my soul longs for you, my God."},
+      {"label": "Alleluia", "reference": "Psalms 118:1-2, 16-17, 22-23", "text": "The stone rejected by the builders has become the cornerstone."},
+      {"label": "Gospel", "reference": "Matthew 28:1-10", "text": "He has been raised from the dead."}
+    ]
+  },
+  {
+    "date": "2025-04-20",
+    "title": "Feast: Easter Sunday (Sunday)",
+    "readings": [
+      {"label": "First Reading", "reference": "Acts 10:34a, 37-43", "text": "We are witnesses of all that he did."},
+      {"label": "Psalm", "reference": "Psalms 118:1-2, 16-17, 22-23", "text": "This is the day the Lord has made; let us rejoice and be glad."},
+      {"label": "Second Reading", "reference": "Colossians 3:1-4 or 1 Corinthians 5:6b-8", "text": "Seek what is above, where Christ is seated."},
+      {"label": "Alleluia", "reference": "1 Corinthians 5:7b-8a", "text": "Christ, our paschal lamb, has been sacrificed."},
+      {"label": "Gospel", "reference": "John 20:1-9", "text": "He saw and believed."}
+    ]
+  },
+  {
+    "date": "2025-04-21",
+    "title": "Feast: Monday in the Octave of Easter",
+    "readings": [
+      {"label": "First Reading", "reference": "Acts 2:14, 22-33", "text": "God raised this Jesus; of this we are all witnesses."},
+      {"label": "Psalm", "reference": "Psalms 16:1-2a, 5, 7-8, 9-10, 11", "text": "Keep me safe, O God; you are my hope."},
+      {"label": "Alleluia", "reference": "Psalms 118:24", "text": "This is the day the Lord has made; let us rejoice and be glad."},
+      {"label": "Gospel", "reference": "Matthew 28:8-15", "text": "Go tell my brothers to go to Galilee."}
+    ]
+  },
+  {
+    "date": "2025-04-22",
+    "title": "Feast: Tuesday in the Octave of Easter",
+    "readings": [
+      {"label": "First Reading", "reference": "Acts 2:36-41", "text": "Repent and be baptized, every one of you."},
+      {"label": "Psalm", "reference": "Psalms 33:4-5, 18-19, 20, 22", "text": "The earth is full of the goodness of the Lord."},
+      {"label": "Alleluia", "reference": "Psalms 118:24", "text": "This is the day the Lord has made; let us rejoice and be glad."},
+      {"label": "Gospel", "reference": "John 20:11-18", "text": "I have seen the Lord."}
+    ]
+  },
+  {
+    "date": "2025-04-23",
+    "title": "Feast: Wednesday in the Octave of Easter",
+    "readings": [
+      {"label": "First Reading", "reference": "Acts 3:1-10", "text": "Peter took him by the right hand and raised him up."},
+      {"label": "Psalm", "reference": "Psalms 105:1-2, 3-4, 6-7, 8-9", "text": "Rejoice, O hearts that seek the Lord."},
+      {"label": "Alleluia", "reference": "Psalms 118:24", "text": "This is the day the Lord has made; let us rejoice and be glad."},
+      {"label": "Gospel", "reference": "Luke 24:13-35", "text": "He was made known to them in the breaking of the bread."}
+    ]
+  },
+  {
+    "date": "2025-04-24",
+    "title": "Feast: Thursday in the Octave of Easter",
+    "readings": [
+      {"label": "First Reading", "reference": "Acts 3:11-26", "text": "God has glorified his servant Jesus."},
+      {"label": "Psalm", "reference": "Psalms 8:2ab and 5, 6-7, 8-9", "text": "O Lord, our Lord, how glorious is your name!"},
+      {"label": "Alleluia", "reference": "Psalms 118:24", "text": "This is the day the Lord has made; let us rejoice and be glad."},
+      {"label": "Gospel", "reference": "Luke 24:35-48", "text": "Thus it is written that the Christ would suffer and rise from the dead."}
+    ]
+  },
+  {
+    "date": "2025-04-25",
+    "title": "Feast: Mark, Evangelist Feast",
+    "readings": [
+      {"label": "First Reading", "reference": "1 Peter 5:5b-14", "text": "Peace to all of you who are in Christ."},
+      {"label": "Psalm", "reference": "Psalms 89:2-3, 6-7, 16-17", "text": "For ever I will sing the goodness of the Lord."},
+      {"label": "Alleluia", "reference": "Colossians 3:1", "text": "If then you were raised with Christ, seek what is above."},
+      {"label": "Gospel", "reference": "Mark 16:15-20", "text": "Go into the whole world and proclaim the Gospel to every creature."}
+    ]
+  },
+  {
+    "date": "2025-04-26",
+    "title": "Feast: Saturday in the Octave of Easter",
+    "readings": [
+      {"label": "First Reading", "reference": "Acts 4:13-21", "text": "We cannot but speak about what we have seen and heard."},
+      {"label": "Psalm", "reference": "Psalms 118:1, 14-15ab, 16-18, 19-21", "text": "I will give thanks to you, for you have answered me."},
+      {"label": "Alleluia", "reference": "Psalms 118:24", "text": "This is the day the Lord has made; let us rejoice and be glad."},
+      {"label": "Gospel", "reference": "Mark 16:9-15", "text": "Go into the whole world and proclaim the Gospel to every creature."}
+    ]
+  },
+  {
+    "date": "2025-04-27",
+    "title": "Feast: Second Sunday of Easter (Sunday)",
+    "readings": [
+      {"label": "First Reading", "reference": "Acts 2:42-47", "text": "All who believed were together and had all things in common."},
+      {"label": "Psalm", "reference": "Psalms 118:2-4, 13-15, 22-24", "text": "Give thanks to the Lord, for he is good."},
+      {"label": "Second Reading", "reference": "1 Peter 1:3-9", "text": "You rejoice with an indescribable and glorious joy."},
+      {"label": "Alleluia", "reference": "John 20:29", "text": "Blessed are those who have not seen and have believed."},
+      {"label": "Gospel", "reference": "John 20:19-31", "text": "Peace be with you. As the Father has sent me, so I send you."}
+    ]
+  },
+  {
+    "date": "2025-04-28",
+    "title": "Feast: Ordinary Weekday/Peter Chanel, Priest, Martyr/Louis Grignion de Montfort, Priest",
+    "readings": [
+      {"label": "First Reading", "reference": "Acts 4:23-31", "text": "They were all filled with the Holy Spirit and continued to speak the word of God with boldness."},
+      {"label": "Psalm", "reference": "Psalms 2:1-3, 4-5, 6-7, 7-9", "text": "Blessed are all who take refuge in the Lord."},
+      {"label": "Alleluia", "reference": "John 8:12", "text": "I am the light of the world, says the Lord."},
+      {"label": "Gospel", "reference": "John 3:1-8", "text": "No one can see the kingdom of God without being born from above."}
+    ]
+  },
+  {
+    "date": "2025-04-29",
+    "title": "Memorial: Catherine of Siena, Virgin, Doctor",
+    "readings": [
+      {"label": "First Reading", "reference": "Acts 4:32-37", "text": "The community of believers was of one heart and mind."},
+      {"label": "Psalm", "reference": "Psalms 93:1ab, 1c-2, 5", "text": "The Lord is king; he is robed in majesty."},
+      {"label": "Alleluia", "reference": "2 Peter 1:16", "text": "We have come to know and to believe in the love God has for us."},
+      {"label": "Gospel", "reference": "John 3:7b-15", "text": "So must the Son of Man be lifted up."}
+    ]
+  },
+  {
+    "date": "2025-04-30",
+    "title": "Feast: Ordinary Weekday/Pius V, Pope",
+    "readings": [
+      {"label": "First Reading", "reference": "Acts 5:17-26", "text": "Go and take your place in the temple area, and tell the people everything about this life."},
+      {"label": "Psalm", "reference": "Psalms 34:2-3, 4-5, 6-7, 8-9", "text": "The Lord hears the cry of the poor."},
+      {"label": "Alleluia", "reference": "Luke 4:18", "text": "The Lord sent me to bring glad tidings to the poor."},
+      {"label": "Gospel", "reference": "John 3:16-21", "text": "God so loved the world that he gave his only Son."}
+    ]
+  }
+  ,
+  {
+    "date": "2025-05-01",
+    "title": "Memorial: Joseph the Worker",
+    "readings": [
+      {"label": "First Reading", "reference": "Acts 5:27-33", "text": "We must obey God rather than men."},
+      {"label": "Psalm", "reference": "Psalms 34:2 and 9, 17-18, 19-20", "text": "The Lord hears the cry of the poor."},
+      {"label": "Alleluia", "reference": "John 13:34", "text": "I give you a new commandment: love one another."},
+      {"label": "Gospel", "reference": "John 3:31-36", "text": "He who comes from above is above all."}
+    ]
+  },
+  {
+    "date": "2025-05-02",
+    "title": "Memorial: Athanasius, Bishop, Doctor",
+    "readings": [
+      {"label": "First Reading", "reference": "Acts 5:34-42", "text": "They left rejoicing that they had been found worthy to suffer for the name."},
+      {"label": "Psalm", "reference": "Psalms 27:1, 4, 13-14", "text": "The Lord is my light and my salvation."},
+      {"label": "Alleluia", "reference": "Psalms 118:24", "text": "This is the day the Lord has made; let us rejoice and be glad."},
+      {"label": "Gospel", "reference": "John 6:1-15", "text": "Jesus feeds the five thousand."}
+    ]
+  },
+  {
+    "date": "2025-05-03",
+    "title": "Feast: Philip and James, Apostles",
+    "readings": [
+      {"label": "First Reading", "reference": "1 Corinthians 15:1-8", "text": "Last of all, he appeared to me."},
+      {"label": "Psalm", "reference": "Psalms 19:2-3, 4-5", "text": "Their message goes out through all the earth."},
+      {"label": "Alleluia", "reference": "John 14:6", "text": "I am the way and the truth and the life."},
+      {"label": "Gospel", "reference": "John 14:6-14", "text": "Whoever has seen me has seen the Father."}
+    ]
+  },
+  {
+    "date": "2025-05-04",
+    "title": "Feast: Third Sunday of Easter (Sunday)",
+    "readings": [
+      {"label": "First Reading", "reference": "Acts 2:14, 22-33", "text": "God raised Jesus; of this we are all witnesses."},
+      {"label": "Psalm", "reference": "Psalms 16:1-2a, 5, 7-8, 9-10, 11", "text": "You will show me the path to life."},
+      {"label": "Second Reading", "reference": "1 Peter 1:17-21", "text": "You were ransomed with the precious blood of Christ."},
+      {"label": "Alleluia", "reference": "Luke 24:32", "text": "Were not our hearts burning within us while he spoke to us?"},
+      {"label": "Gospel", "reference": "Luke 24:13-35", "text": "He was made known to them in the breaking of the bread."}
+    ]
+  },
+  {
+    "date": "2025-05-05",
+    "title": "Feast: Ordinary Weekday",
+    "readings": [
+      {"label": "First Reading", "reference": "Acts 6:8-15", "text": "Stephen worked great wonders and signs among the people."},
+      {"label": "Psalm", "reference": "Psalms 119:23-24, 26-27, 29-30", "text": "Remove from me the way of falsehood."},
+      {"label": "Alleluia", "reference": "Matthew 4:4b", "text": "One does not live on bread alone, but on every word that comes forth from the mouth of God."},
+      {"label": "Gospel", "reference": "John 6:22-29", "text": "Do not work for food that perishes but for the food that endures."}
+    ]
+  },
+  {
+    "date": "2025-05-06",
+    "title": "Feast: Ordinary Weekday",
+    "readings": [
+      {"label": "First Reading", "reference": "Acts 7:51-8:1a", "text": "Lord, do not hold this sin against them."},
+      {"label": "Psalm", "reference": "Psalms 31:3cd-4, 6, 7b and 8a, 17, 21ab", "text": "Into your hands I commend my spirit."},
+      {"label": "Alleluia", "reference": "Matthew 4:4b", "text": "One does not live on bread alone, but on every word that comes forth from the mouth of God."},
+      {"label": "Gospel", "reference": "John 6:30-35", "text": "I am the bread of life."}
+    ]
+  },
+  {
+    "date": "2025-05-07",
+    "title": "Feast: Ordinary Weekday",
+    "readings": [
+      {"label": "First Reading", "reference": "Acts 8:1b-8", "text": "Philip went down to the city of Samaria and proclaimed the Christ to them."},
+      {"label": "Psalm", "reference": "Psalms 66:1-3a, 4-5, 6-7a", "text": "Let all the earth cry out to God with joy."},
+      {"label": "Alleluia", "reference": "John 13:34", "text": "I give you a new commandment: love one another."},
+      {"label": "Gospel", "reference": "John 6:35-40", "text": "This is the will of my Father, that everyone who sees the Son and believes in him may have eternal life."}
+    ]
+  },
+  {
+    "date": "2025-05-08",
+    "title": "Feast: Ordinary Weekday",
+    "readings": [
+      {"label": "First Reading", "reference": "Acts 8:26-40", "text": "Philip proclaimed Jesus to the Ethiopian."},
+      {"label": "Psalm", "reference": "Psalms 66:8-9, 16-17, 20", "text": "Blessed be God who refused me not my prayer or his kindness!"},
+      {"label": "Alleluia", "reference": "John 10:27", "text": "My sheep hear my voice, says the Lord."},
+      {"label": "Gospel", "reference": "John 6:44-51", "text": "I am the living bread that came down from heaven."}
+    ]
+  },
+  {
+    "date": "2025-05-09",
+    "title": "Feast: Ordinary Weekday",
+    "readings": [
+      {"label": "First Reading", "reference": "Acts 9:1-20", "text": "Saul is converted and baptized."},
+      {"label": "Psalm", "reference": "Psalms 117:1bc, 2", "text": "Go out to all the world and tell the Good News."},
+      {"label": "Alleluia", "reference": "John 6:56", "text": "Whoever eats my flesh and drinks my blood remains in me and I in him."},
+      {"label": "Gospel", "reference": "John 6:52-59", "text": "My flesh is true food, and my blood is true drink."}
+    ]
+  },
+  {
+    "date": "2025-05-10",
+    "title": "Feast: Ordinary Weekday/John of Ávila, Priest, Doctor",
+    "readings": [
+      {"label": "First Reading", "reference": "Acts 9:31-42", "text": "Peter raised Tabitha from the dead."},
+      {"label": "Psalm", "reference": "Psalms 116:12-13, 14-15, 16-17", "text": "I will take the cup of salvation, and call on the name of the Lord."},
+      {"label": "Alleluia", "reference": "John 6:56", "text": "Whoever eats my flesh and drinks my blood remains in me and I in him."},
+      {"label": "Gospel", "reference": "John 6:60-69", "text": "Lord, to whom shall we go? You have the words of eternal life."}
+    ]
+  },
+  {
+    "date": "2025-05-11",
+    "title": "Feast: Fourth Sunday of Easter (Sunday)",
+    "readings": [
+      {"label": "First Reading", "reference": "Acts 2:14a, 36-41", "text": "Repent and be baptized, every one of you."},
+      {"label": "Psalm", "reference": "Psalms 23:1-3a, 3b-4, 5, 6", "text": "The Lord is my shepherd; there is nothing I shall want."},
+      {"label": "Second Reading", "reference": "1 Peter 2:20b-25", "text": "By his wounds you have been healed."},
+      {"label": "Alleluia", "reference": "John 10:14", "text": "I am the good shepherd, says the Lord; I know my sheep, and mine know me."},
+      {"label": "Gospel", "reference": "John 10:1-10", "text": "I am the gate for the sheep."}
+    ]
+  },
+  {
+    "date": "2025-05-12",
+    "title": "Feast: Ordinary Weekday/Nereus and Achilleus, Martyrs/Pancras, Martyr",
+    "readings": [
+      {"label": "First Reading", "reference": "Acts 11:1-18", "text": "God has granted life-giving repentance to the Gentiles too."},
+      {"label": "Psalm", "reference": "Psalms 42:2-3; 43:3, 4", "text": "Athirst is my soul for the living God."},
+      {"label": "Alleluia", "reference": "Matthew 4:4b", "text": "One does not live on bread alone, but on every word that comes forth from the mouth of God."},
+      {"label": "Gospel", "reference": "John 10:11-18", "text": "I am the good shepherd. The good shepherd lays down his life for the sheep."}
+    ]
+  },
+  {
+    "date": "2025-05-13",
+    "title": "Feast: Ordinary Weekday/Our Lady of Fatima",
+    "readings": [
+      {"label": "First Reading", "reference": "Acts 11:19-26", "text": "It was in Antioch that the disciples were first called Christians."},
+      {"label": "Psalm", "reference": "Psalms 87:1-3, 4-5, 6-7", "text": "Glorious things are told of you, O city of God!"},
+      {"label": "Alleluia", "reference": "John 10:27", "text": "My sheep hear my voice, says the Lord."},
+      {"label": "Gospel", "reference": "John 10:22-30", "text": "I give them eternal life, and they shall never perish."}
+    ]
+  },
+  {
+    "date": "2025-05-14",
+    "title": "Feast: Matthias, Apostle",
+    "readings": [
+      {"label": "First Reading", "reference": "Acts 1:15-17, 20-26", "text": "Matthias was added to the eleven apostles."},
+      {"label": "Psalm", "reference": "Psalms 113:1-2, 3-4, 5-6, 7-8", "text": "The Lord will give him a seat with the leaders of his people."},
+      {"label": "Alleluia", "reference": "John 15:16", "text": "I chose you from the world, to go and bear fruit."},
+      {"label": "Gospel", "reference": "John 15:9-17", "text": "Love one another as I love you."}
+    ]
+  },
+  {
+    "date": "2025-05-15",
+    "title": "Feast: Ordinary Weekday",
+    "readings": [
+      {"label": "First Reading", "reference": "Acts 13:13-25", "text": "God raised up David as king."},
+      {"label": "Psalm", "reference": "Psalms 89:2-3, 21-22, 25 and 27", "text": "For ever I will sing the goodness of the Lord."},
+      {"label": "Alleluia", "reference": "John 13:34", "text": "I give you a new commandment: love one another."},
+      {"label": "Gospel", "reference": "John 13:16-20", "text": "Whoever receives the one I send receives me."}
+    ]
+  },
+  {
+    "date": "2025-05-16",
+    "title": "Feast: Ordinary Weekday",
+    "readings": [
+      {"label": "First Reading", "reference": "Acts 13:26-33", "text": "God fulfilled his promise by raising Jesus."},
+      {"label": "Psalm", "reference": "Psalms 2:6-7, 8-9, 10-11ab", "text": "You are my Son; this day I have begotten you."},
+      {"label": "Alleluia", "reference": "Colossians 3:1", "text": "If then you were raised with Christ, seek what is above."},
+      {"label": "Gospel", "reference": "John 14:1-6", "text": "I am the way and the truth and the life."}
+    ]
+  },
+  {
+    "date": "2025-05-17",
+    "title": "Feast: Ordinary Weekday",
+    "readings": [
+      {"label": "First Reading", "reference": "Acts 13:44-52", "text": "The word of the Lord continued to spread through the whole region."},
+      {"label": "Psalm", "reference": "Psalms 98:1, 2-3ab, 3cd-4", "text": "All the ends of the earth have seen the saving power of God."},
+      {"label": "Alleluia", "reference": "John 14:6", "text": "I am the way and the truth and the life."},
+      {"label": "Gospel", "reference": "John 14:7-14", "text": "Whoever has seen me has seen the Father."}
+    ]
+  },
+  {
+    "date": "2025-05-18",
+    "title": "Feast: Fifth Sunday of Easter (Sunday)",
+    "readings": [
+      {"label": "First Reading", "reference": "Acts 6:1-7", "text": "They chose Stephen, a man filled with faith and the Holy Spirit."},
+      {"label": "Psalm", "reference": "Psalms 33:1-2, 4-5, 18-19", "text": "Lord, let your mercy be on us, as we place our trust in you."},
+      {"label": "Second Reading", "reference": "1 Peter 2:4-9", "text": "You are a chosen race, a royal priesthood."},
+      {"label": "Alleluia", "reference": "John 14:6", "text": "I am the way and the truth and the life."},
+      {"label": "Gospel", "reference": "John 14:1-12", "text": "I am in the Father and the Father is in me."}
+    ]
+  },
+  {
+    "date": "2025-05-19",
+    "title": "Feast: Ordinary Weekday",
+    "readings": [
+      {"label": "First Reading", "reference": "Acts 14:5-18", "text": "We are proclaiming good news to you."},
+      {"label": "Psalm", "reference": "Psalms 115:1-2, 3-4, 15-16", "text": "Not to us, O Lord, but to your name give glory."},
+      {"label": "Alleluia", "reference": "John 14:26", "text": "The Holy Spirit will teach you everything."},
+      {"label": "Gospel", "reference": "John 14:21-26", "text": "Whoever loves me will keep my word."}
+    ]
+  },
+  {
+    "date": "2025-05-20",
+    "title": "Feast: Ordinary Weekday/Bernardine of Siena, Priest",
+    "readings": [
+      {"label": "First Reading", "reference": "Acts 14:19-28", "text": "They strengthened the spirits of the disciples."},
+      {"label": "Psalm", "reference": "Psalms 145:10-11, 12-13ab, 21", "text": "Your friends make known, O Lord, the glorious splendor of your kingdom."},
+      {"label": "Alleluia", "reference": "John 14:26", "text": "The Holy Spirit will teach you everything."},
+      {"label": "Gospel", "reference": "John 14:27-31a", "text": "Do not let your hearts be troubled or afraid."}
+    ]
+  },
+  {
+    "date": "2025-05-21",
+    "title": "Feast: Ordinary Weekday/Christopher Magallanes, Priest, and Companions, Martyrs",
+    "readings": [
+      {"label": "First Reading", "reference": "Acts 15:1-6", "text": "Paul and Barnabas went up to Jerusalem to the apostles and presbyters."},
+      {"label": "Psalm", "reference": "Psalms 122:1-2, 3-4ab, 4cd-5", "text": "Let us go rejoicing to the house of the Lord."},
+      {"label": "Alleluia", "reference": "John 15:15b", "text": "I call you my friends, says the Lord."},
+      {"label": "Gospel", "reference": "John 15:1-8", "text": "I am the vine, you are the branches."}
+    ]
+  },
+  {
+    "date": "2025-05-22",
+    "title": "Feast: Ordinary Weekday/Rita of Cascia, Religious",
+    "readings": [
+      {"label": "First Reading", "reference": "Acts 15:7-21", "text": "We believe that we are saved through the grace of the Lord Jesus."},
+      {"label": "Psalm", "reference": "Psalms 96:1-2a, 2b-3, 10", "text": "Proclaim God's marvelous deeds to all the nations."},
+      {"label": "Alleluia", "reference": "John 15:4a, 5b", "text": "Remain in me, as I remain in you, says the Lord."},
+      {"label": "Gospel", "reference": "John 15:9-11", "text": "Remain in my love."}
+    ]
+  },
+  {
+    "date": "2025-05-23",
+    "title": "Feast: Ordinary Weekday",
+    "readings": [
+      {"label": "First Reading", "reference": "Acts 15:22-31", "text": "They sent a letter to the brothers in Antioch."},
+      {"label": "Psalm", "reference": "Psalms 57:8-9, 10 and 12", "text": "I will praise you among the peoples, O Lord."},
+      {"label": "Alleluia", "reference": "John 16:7, 13", "text": "The Spirit of truth will guide you to all truth."},
+      {"label": "Gospel", "reference": "John 15:12-17", "text": "This I command you: love one another."}
+    ]
+  },
+  {
+    "date": "2025-05-24",
+    "title": "Feast: Ordinary Weekday",
+    "readings": [
+      {"label": "First Reading", "reference": "Acts 16:1-10", "text": "Come over to Macedonia and help us."},
+      {"label": "Psalm", "reference": "Psalms 100:1b-2, 3, 5", "text": "Serve the Lord with gladness."},
+      {"label": "Alleluia", "reference": "John 16:13a", "text": "The Spirit of truth will guide you to all truth."},
+      {"label": "Gospel", "reference": "John 15:18-21", "text": "If the world hates you, realize that it hated me first."}
+    ]
+  },
+  {
+    "date": "2025-05-25",
+    "title": "Feast: Ascension of the Lord (Sunday)",
+    "readings": [
+      {"label": "First Reading", "reference": "Acts 1:1-11", "text": "He was lifted up, and a cloud took him from their sight."},
+      {"label": "Psalm", "reference": "Psalms 47:2-3, 6-7, 8-9", "text": "God mounts his throne to shouts of joy."},
+      {"label": "Second Reading", "reference": "Ephesians 1:17-23", "text": "He put all things beneath his feet."},
+      {"label": "Alleluia", "reference": "Matthew 28:19a, 20b", "text": "Go and teach all nations, says the Lord; I am with you always."},
+      {"label": "Gospel", "reference": "Matthew 28:16-20", "text": "Go, therefore, and make disciples of all nations."}
+    ]
+  },
+  {
+    "date": "2025-05-26",
+    "title": "Feast: Ordinary Weekday/Philip Neri, Priest",
+    "readings": [
+      {"label": "First Reading", "reference": "Acts 16:11-15", "text": "The Lord opened her heart to pay attention to what Paul was saying."},
+      {"label": "Psalm", "reference": "Psalms 149:1-2, 3-4, 5-6a and 9b", "text": "The Lord takes delight in his people."},
+      {"label": "Alleluia", "reference": "John 16:13a", "text": "The Spirit of truth will guide you to all truth."},
+      {"label": "Gospel", "reference": "John 15:26-16:4a", "text": "The Spirit of truth will testify to me."}
+    ]
+  },
+  {
+    "date": "2025-05-27",
+    "title": "Feast: Ordinary Weekday/Augustine of Canterbury, Bishop",
+    "readings": [
+      {"label": "First Reading", "reference": "Acts 16:22-34", "text": "Believe in the Lord Jesus and you and your household will be saved."},
+      {"label": "Psalm", "reference": "Psalms 138:1-2ab, 2cde-3, 7c-8", "text": "Your right hand saves me, O Lord."},
+      {"label": "Alleluia", "reference": "John 16:8", "text": "The Spirit will convict the world in regard to sin and righteousness."},
+      {"label": "Gospel", "reference": "John 16:5-11", "text": "If I do not go, the Advocate will not come to you."}
+    ]
+  },
+  {
+    "date": "2025-05-28",
+    "title": "Feast: Ordinary Weekday",
+    "readings": [
+      {"label": "First Reading", "reference": "Acts 17:15, 22-18:1", "text": "What you unknowingly worship, I proclaim to you."},
+      {"label": "Psalm", "reference": "Psalms 148:1-2, 11-12, 13, 14", "text": "He has lifted up the horn of his people."},
+      {"label": "Alleluia", "reference": "John 16:13a", "text": "The Spirit of truth will guide you to all truth."},
+      {"label": "Gospel", "reference": "John 16:12-15", "text": "He will take from what is mine and declare it to you."}
+    ]
+  },
+  {
+    "date": "2025-05-29",
+    "title": "Feast: Ordinary Weekday",
+    "readings": [
+      {"label": "First Reading", "reference": "Acts 18:1-8", "text": "Paul stayed with them and worked, for they were tentmakers by trade."},
+      {"label": "Psalm", "reference": "Psalms 98:1, 2-3ab, 3cd-4", "text": "The Lord has revealed to the nations his saving power."},
+      {"label": "Alleluia", "reference": "John 14:18", "text": "I will not leave you orphans, says the Lord."},
+      {"label": "Gospel", "reference": "John 16:16-20", "text": "You will grieve, but your grief will become joy."}
+    ]
+  },
+  {
+    "date": "2025-05-30",
+    "title": "Feast: Ordinary Weekday",
+    "readings": [
+      {"label": "First Reading", "reference": "Acts 18:9-18", "text": "Do not be afraid. Go on speaking, and do not be silent."},
+      {"label": "Psalm", "reference": "Psalms 47:2-3, 4-5, 6-7", "text": "God is king of all the earth."},
+      {"label": "Alleluia", "reference": "John 15:26b, 27a", "text": "The Spirit of truth will testify to me, says the Lord."},
+      {"label": "Gospel", "reference": "John 16:20-23a", "text": "Your hearts will rejoice, and no one will take your joy away from you."}
+    ]
+  },
+  {
+    "date": "2025-05-31",
+    "title": "Feast: Visitation of the Blessed Virgin Mary",
+    "readings": [
+      {"label": "First Reading", "reference": "Zephaniah 3:14-18a", "text": "The Lord, your God, is in your midst, a mighty savior."},
+      {"label": "Psalm", "reference": "Isaiah 12:2-3, 4bcd, 5-6", "text": "Among you is the great and Holy One of Israel."},
+      {"label": "Second Reading", "reference": "Romans 12:9-16b", "text": "Rejoice with those who rejoice, weep with those who weep."},
+      {"label": "Alleluia", "reference": "Luke 1:45", "text": "Blessed are you, O Virgin Mary, who believed that what was spoken to you by the Lord would be fulfilled."},
+      {"label": "Gospel", "reference": "Luke 1:39-56", "text": "Mary set out and traveled to the hill country in haste."}
+    ]
+  }
+]
