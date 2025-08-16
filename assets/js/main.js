@@ -37,12 +37,13 @@ function getMonthName(m) {
 }
 
 function loadBulletins() {
-  fetch('/api/bulletins')
+  fetch('data/bulletins.json')
     .then(res => res.json())
     .then(files => {
       bulletins = files.map(f => {
         const meta = parseBulletinFilename(f.name);
-        return { ...meta, url: f.url };
+        // For static hosting, construct the URL from the filename
+        return { ...meta, url: `assets/bulletins/${f.name}` };
       });
       filterBulletins();
     });
