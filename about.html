@@ -1,35 +1,417 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width,initial-scale=1.0">
-  <title>About Our Parish | St. Peter Parish</title>
-  <link rel="stylesheet" href="assets/css/style.css">
-  <link href="https://fonts.googleapis.com/css?family=Merriweather:700&display=swap" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css?family=Roboto:400,700&display=swap" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Our Parish | St. Peter The Apostle - Airport Parish</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link href="https://fonts.googleapis.com/css?family=Merriweather:700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:400,700&display=swap" rel="stylesheet">
+    <style>
+        /* New Styling Rules for Content Sections */
+        .main-content-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            padding: 2.5rem 1.5rem;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .main-column {
+            flex: 2;
+            min-width: 300px;
+            margin-right: 2rem;
+        }
+
+        .sidebar-column {
+            flex: 1;
+            min-width: 250px;
+        }
+
+        .section-title {
+            font-family: 'Merriweather', serif;
+            font-size: 2.5rem;
+            font-weight: 700;
+            color: #2c3e50;
+            margin-bottom: 1rem;
+        }
+
+        .section-subtitle {
+            font-family: 'Merriweather', serif;
+            font-size: 1.8rem;
+            font-weight: 700;
+            color: #2c3e50;
+            margin-top: 2.5rem;
+            margin-bottom: 1.2rem;
+        }
+        
+        .card-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+            gap: 1rem;
+            margin-top: 1.2rem;
+        }
+
+        .clergy-card, .team-card {
+            background: #fff;
+            border-radius: 12px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.07);
+            text-align: center;
+            padding: 1.1rem 0.7rem 1rem 0.7rem;
+            transition: box-shadow 0.25s, transform 0.25s;
+            position: relative;
+        }
+        .clergy-card:hover, .team-card:hover {
+            box-shadow: 0 8px 32px rgba(0,0,0,0.16);
+            transform: translateY(-8px) scale(1.04);
+            z-index: 2;
+        }
+        .clergy-img, .team-img {
+            width: 70px;
+            height: 70px;
+            border-radius: 50%;
+            object-fit: cover;
+            margin-bottom: 0.7rem;
+            background: #f7f7f7;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+        }
+        .team-card {
+            background: none;
+            border-radius: 12px;
+            box-shadow: none;
+            border: 1px solid #e0e0e0;
+            text-align: center;
+            padding: 1rem 0.5rem 0.8rem 0.5rem;
+            transition: border-color 0.25s, transform 0.25s;
+            position: relative;
+        }
+        .team-card:hover {
+            border-color: #bdbdbd;
+            transform: translateY(-6px) scale(1.03);
+            z-index: 2;
+        }
+        .team-img {
+            width: 70px;
+            height: 70px;
+            border-radius: 50%;
+            object-fit: cover;
+            margin-bottom: 0.5rem;
+            background: #f7f7f7;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+        }
+        .clergy-name, .team-name {
+            font-family: 'Merriweather', serif;
+            font-size: 1.25rem;
+            font-weight: 700;
+            color: #222;
+            margin-bottom: 0.5rem;
+        }
+        .clergy-role, .team-role {
+            font-family: 'Roboto', sans-serif;
+            font-size: 1rem;
+            color: #7f8c8d;
+            margin-bottom: 0;
+        }
+
+        .ministries-list {
+            list-style: none;
+            padding: 0;
+        }
+        
+        .ministries-list li {
+            background-color: #fff;
+            margin-bottom: 1rem;
+            border-radius: 8px;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+            transition: transform 0.2s ease-in-out;
+        }
+
+        .ministries-list li:hover {
+            transform: translateY(-3px);
+        }
+
+        .ministries-list a {
+            display: block;
+            padding: 1rem 1.5rem;
+            text-decoration: none;
+            color: #34495e;
+            font-weight: 500;
+        }
+
+        /* Sidebar Styling */
+        .sidebar-section {
+            background-color: #fff;
+            padding: 1.5rem;
+            border-radius: 4px;
+            box-shadow: 0 1px 4px rgba(0, 0, 0, 0.05);
+            margin-bottom: 1.5rem;
+        }
+
+        .sidebar-title {
+            font-family: 'Roboto', sans-serif;
+            font-size: 1.1rem;
+            font-weight: bold;
+            text-transform: uppercase;
+            color: #2c3e50;
+            border-bottom: 2px solid #3498db;
+            padding-bottom: 0.5rem;
+            margin-bottom: 1rem;
+        }
+
+        .bulletins-controls {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            margin-bottom: 1rem;
+        }
+
+        .bulletins-list {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        .bulletin-item {
+            border-bottom: 1px solid #eee;
+            padding: 0.75rem 0;
+        }
+
+        .bulletin-item:last-child {
+            border-bottom: none;
+        }
+
+        .bulletin-link {
+            color: #3498db;
+            text-decoration: none;
+            font-weight: 500;
+        }
+
+        .bulletin-link:hover {
+            text-decoration: underline;
+        }
+
+        @media (max-width: 900px) {
+            .main-column {
+                margin-right: 0;
+            }
+            .sidebar-column {
+                margin-top: 2rem;
+            }
+            .card-container {
+                grid-template-columns: 1fr;
+                justify-items: center;
+                padding-right: 0.5rem;
+            }
+            .clergy-card, .team-card {
+                margin-left: auto;
+                margin-right: auto;
+                border-left: none !important;
+                border-right: none !important;
+                border-top: 1px solid #e0e0e0;
+                border-bottom: 1px solid #e0e0e0;
+            }
+        }
+
+        /* Updated Styling for Clergy Cards */
+        .clergy-card {
+            background: none;
+            border-radius: 12px;
+            box-shadow: none;
+            border: 1px solid #e0e0e0;
+            text-align: center;
+            padding: 1rem 0.5rem 0.8rem 0.5rem;
+            transition: box-shadow 0.25s, transform 0.25s, border-color 0.25s;
+            position: relative;
+        }
+        .clergy-card:hover {
+            box-shadow: 0 8px 32px rgba(0,0,0,0.10);
+            border-color: #bdbdbd;
+            transform: translateY(-6px) scale(1.03);
+            z-index: 2;
+        }
+    </style>
 </head>
 <body>
-  <!-- Header -->
-  <header class="site-header">
-    <div class="branding">
-      <img src="assets/img/logo.png" alt="Parish Logo" class="parish-logo" style="display:none;" />
-      <h1>St. Peter The Apostle - Airport Parish</h1>
-    </div>
-    <div id="nav-container"></div>
-  </header>
-  <main class="main-content">
-    <section>
-      <h1>About Our Parish</h1>
-      <p>
-        St. Peter The Apostle - Airport Parish has served our community with faith and devotion for decades. Our mission is to foster a welcoming, prayerful, and vibrant Catholic community rooted in the Gospel and sacramental life. We strive to be a place where all people can encounter Christ and grow in their spiritual journey.
-      </p>
-    </section>
-    <section>
-      <h2>Our Clergy & Staff</h2>
-      <div id="clergy-container"></div>
-    </section>
-  </main>
-  <div id="footer-container"></div>
-  <script src="assets/js/main.js"></script>
+    <header class="site-header">
+        <div class="branding">
+            <img src="assets/img/logo.png" alt="Parish Logo" class="parish-logo" style="display:none;" />
+            <h1>St. Peter The Apostle - Airport Parish</h1>
+        </div>
+        <div id="nav-container"></div>
+    </header>
+
+    <main class="main-content-container">
+        <section class="main-column">
+            <div class="section-about">
+                <h1 class="section-title">About Our Parish</h1>
+                <p>
+                    St. Peter The Apostle - Airport Parish has served our community with faith and devotion for decades. Our mission is to foster a welcoming, prayerful, and vibrant Catholic community rooted in the Gospel and sacramental life. We strive to be a place where all people can encounter Christ and grow in their spiritual journey.
+                </p>
+            </div>
+
+            <div class="section-clergy">
+                <h2 class="section-subtitle">Our Clergy</h2>
+                <div class="card-container" id="clergy-list"></div>
+            </div>
+
+            <div class="section-parish-team">
+                <h2 class="section-subtitle">Parish Coordinating Team</h2>
+                <div class="card-container" id="team-list"></div>
+            </div>
+
+            <div class="section-ministries">
+                <h2 class="section-subtitle">Ministries & SCC</h2>
+                <ul class="ministries-list">
+                    <li><a href="ministries/youth-ministry.html">Youth Ministry</a></li>
+                    <li><a href="ministries/st-joseph-scc.html">St. Joseph SCC</a></li>
+                    <li><a href="ministries/st-bernadette-scc.html">St. Bernadette SCC</a></li>
+                    <li><a href="ministries/st-francis-scc.html">St. Francis SCC</a></li>
+                    <li><a href="ministries/st-charles-lwanga-scc.html">St. Charles Lwanga SCC</a></li>
+                    <li><a href="ministries/st-paul-scc.html">St. Paul SCC</a></li>
+                </ul>
+            </div>
+        </section>
+
+        <aside class="sidebar-column">
+            <div class="sidebar-section">
+                <h3 class="sidebar-title">Daily Readings</h3>
+                <label for="readings-date">Select Date:</label>
+                <input type="date" id="readings-date" name="readings-date" />
+                <div id="readings-content"></div>
+            </div>
+            
+            <div class="sidebar-section">
+                <h3 class="sidebar-title">Recent Bulletins</h3>
+                <div class="bulletins-controls">
+                    <label for="bulletin-section">Section:</label>
+                    <select id="bulletin-section">
+                        <option value="All">All</option>
+                        <option value="Homily">Homily</option>
+                        <option value="Announcement">Announcement</option>
+                        <option value="Event">Event</option>
+                    </select>
+                </div>
+                <div id="bulletins-list" class="bulletins-list"></div>
+                <div id="bulletin-error" style="display:none;color:#c00;margin-top:8px;"></div>
+                <div class="bulletin-footer">
+                    <a href="bulletin.html" class="view-all-link">View All Bulletins</a>
+                </div>
+            </div>
+        </aside>
+    </main>
+
+    <div id="footer-container"></div>
+    <script>
+        // Dynamic bulletin logic from homepage
+        const bulletinsList = document.getElementById('bulletins-list');
+        const bulletinError = document.getElementById('bulletin-error');
+        const sectionSelect = document.getElementById('bulletin-section');
+
+        function parseBulletinFilename(filename) {
+            const match = filename.match(/^(\w+)-(\d{4}-\d{2}-\d{2})-(.+)\.pdf$/i);
+            if (!match) return null;
+            const [year, month, day] = match[2].split('-');
+            const dateObj = new Date(`${year}-${month}-${day}`);
+            const dateStr = dateObj.toLocaleDateString('en-GB', { day: 'numeric', month: 'long', year: 'numeric' });
+            return {
+                section: match[1].charAt(0).toUpperCase() + match[1].slice(1),
+                date: match[2],
+                title: `${match[3].replace(/-/g, ' ')} (${dateStr})`,
+                url: `assets/bulletins/${filename}`
+            };
+        }
+
+        function renderBulletins(bulletins, section = 'All') {
+            bulletinsList.innerHTML = '';
+            let filtered = bulletins;
+            if (section !== 'All') {
+                filtered = bulletins.filter(b => b.section === section);
+            }
+            filtered = filtered.sort((a, b) => new Date(b.date) - new Date(a.date)).slice(0, 5);
+            if (filtered.length === 0) {
+                bulletinsList.innerHTML = '<li>No bulletins found.</li>';
+                return;
+            }
+            filtered.forEach(bulletin => {
+                const li = document.createElement('li');
+                li.className = 'bulletin-item';
+                li.innerHTML = `
+                    <a href="${bulletin.url}" target="_blank" class="bulletin-link">
+                        ${bulletin.title}
+                    </a>
+                `;
+                bulletinsList.appendChild(li);
+            });
+        }
+
+        fetch('/api/bulletins')
+            .then(response => response.json())
+            .then(data => {
+                const bulletins = data.map(b => parseBulletinFilename(b.name)).filter(Boolean);
+                if (bulletins.length === 0) {
+                    bulletinsList.innerHTML = '<li>No bulletins found.</li>';
+                    return;
+                }
+                renderBulletins(bulletins);
+                sectionSelect.addEventListener('change', function() {
+                    renderBulletins(bulletins, this.value);
+                });
+            })
+            .catch((err) => {
+                bulletinError.style.display = 'block';
+                bulletinError.textContent = 'No bulletins found (fetch error).';
+                bulletinsList.innerHTML = '';
+                console.error('Bulletin fetch error:', err);
+            });
+
+                // Dynamic clergy rendering from clergy.json
+                fetch('data/clergy.json')
+                    .then(response => response.json())
+                    .then(clergy => {
+                        const clergyList = document.getElementById('clergy-list');
+                        clergyList.innerHTML = '';
+                        clergy.forEach(member => {
+                            const card = document.createElement('div');
+                            card.className = 'clergy-card';
+                            card.innerHTML = `
+                                <img src="${member.photoUrl}" alt="${member.name}" class="clergy-img" />
+                                <div class="clergy-name">${member.name}</div>
+                                <div class="clergy-role">${member.title}</div>
+                                <div class="clergy-role" style="font-size:0.95em;color:#555;margin-top:0.3em;">${member.bio}</div>
+                            `;
+                            clergyList.appendChild(card);
+                        });
+                    })
+                    .catch(err => {
+                        console.error('Error loading clergy data:', err);
+                        const clergyList = document.getElementById('clergy-list');
+                        clergyList.innerHTML = '<div style="color:#c00;">Error loading clergy information.</div>';
+                    });
+
+                // Dynamic coordinating team rendering from coordinating_team.json
+                fetch('data/coordinating_team.json')
+                    .then(response => response.json())
+                    .then(team => {
+                        const teamList = document.getElementById('team-list');
+                        teamList.innerHTML = '';
+                        team.forEach(member => {
+                            const card = document.createElement('div');
+                            card.className = 'team-card';
+                            card.innerHTML = `
+                                <img src="${member.photoUrl}" alt="${member.name}" class="team-img" />
+                                <div class="team-name">${member.name}</div>
+                                <div class="team-role">${member.role}</div>
+                            `;
+                            teamList.appendChild(card);
+                        });
+                    })
+                    .catch(err => {
+                        console.error('Error loading team data:', err);
+                        const teamList = document.getElementById('team-list');
+                        teamList.innerHTML = '<div style="color:#c00;">Error loading team information.</div>';
+                    });
+    </script>
+    <script src="assets/js/main.js"></script>
 </body>
 </html>

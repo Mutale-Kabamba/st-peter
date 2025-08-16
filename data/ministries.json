@@ -1,17 +1,32 @@
 [
   {
-    "name": "Lectors",
-    "description": "Proclaim the Word of God during Mass. New members are always welcome to join this important ministry.",
-    "contact": "ministries@stpeterairport.org"
-  },
-  {
-    "name": "Altar Servers",
-    "description": "Assist the priest during Mass. This ministry is open to all youth who have received their First Holy Communion.",
-    "contact": "ministries@stpeterairport.org"
-  },
-  {
-    "name": "Youth Group",
+    "name": "Youth Ministry",
     "description": "A vibrant community for teens to grow in faith and fellowship. Regular meetings and events are held.",
     "contact": "youth@stpeterairport.org"
+  },
+  {
+    "name": "St. Joseph SCC",
+    "description": "Small Christian Community focused on prayer, fellowship, and service.",
+    "contact": "ministries@stpeterairport.org"
+  },
+  {
+    "name": "St. Bernadette SCC",
+    "description": "Small Christian Community dedicated to spiritual growth and outreach.",
+    "contact": "ministries@stpeterairport.org"
+  },
+  {
+    "name": "St. Francis SCC",
+    "description": "A group committed to living the Gospel through community and service.",
+    "contact": "ministries@stpeterairport.org"
+  },
+  {
+    "name": "St. Charles Lwanga SCC",
+    "description": "Community inspired by St. Charles Lwanga, focused on faith and action.",
+    "contact": "ministries@stpeterairport.org"
+  },
+  {
+    "name": "St. Paul SCC",
+    "description": "Small Christian Community fostering faith, hope, and love.",
+    "contact": "ministries@stpeterairport.org"
   }
 ]

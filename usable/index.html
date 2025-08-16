@@ -1,0 +1,414 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1.0">
+  <title>St. Peter The Apostle - Airport Parish</title>
+  <link rel="stylesheet" href="assets/css/style.css">
+  <link href="https://fonts.googleapis.com/css?family=Merriweather:700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Roboto:400,700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <!-- Header -->
+  <header class="site-header">
+    <div class="branding">
+      <img src="assets/img/logo.png" alt="Parish Logo" class="parish-logo" style="display:none;" />
+      <h1>St. Peter The Apostle - Airport Parish</h1>
+    </div>
+    <div id="nav-container"></div>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="hero" style="background-image: url('assets/img/hero-church.jpg');">
+    <div class="hero-overlay"></div>
+    <div class="hero-content">
+      <h2 class="hero-title">St. Peter The Apostle - Airport Parish</h2>
+      <p class="hero-subtitle">A welcoming and vibrant community of faith</p>
+    </div>
+  </section>
+
+  <!-- Main Content Grid Layout -->
+<main class="dashboard-grid">
+  <section class="dashboard-left">
+    <div class="card about-church">
+      <h2>About the Church</h2>
+      <p>Short intro about St. Peter The Apostle - Airport Parish.</p>
+    </div>
+    <div class="card mass-times">
+      <h2>Main Mass Times</h2>
+      <ul>
+        <li>Sunday: 08:00 & 10:00</li>
+        <li>Weekdays: 07:00</li>
+      </ul>
+      <a href="mass-times.html" class="view-all-btn">View All</a>
+    </div>
+    <div class="card announcements">
+      <h2>Parish Announcements</h2>
+      <ul id="announcements-list">
+        <!-- Announcements will be loaded here -->
+      </ul>
+    </div>
+    <div class="card events">
+      <h2>Upcoming Events</h2>
+      <ul id="events-list">
+        <!-- Events will be loaded here -->
+      </ul>
+    </div>
+  </section>
+  <section class="dashboard-right">
+    <div class="card readings">
+      <h2>Daily Readings</h2>
+      <label for="readings-date">Select Date:</label>
+      <input type="date" id="readings-date" name="readings-date" />
+      <div id="readings-content">
+        <!-- Readings will be loaded here -->
+      </div>
+    </div>
+      <div class="card bulletins">
+        <h2>Recent Bulletins</h2>
+        <div class="bulletins-controls">
+          <label for="bulletin-section">Section:</label>
+          <select id="bulletin-section">
+            <option value="All">All</option>
+            <option value="Homily">Homily</option>
+            <option value="Announcement">Announcement</option>
+            <option value="Event">Event</option>
+          </select>
+        </div>
+          <div id="bulletins-list" class="bulletins-list">
+            <!-- Bulletins will be loaded here by JS -->
+          </div>
+        <div id="bulletin-error" style="display:none;color:#c00;margin-top:8px;"></div>
+        <div class="bulletin-footer">
+          <a href="bulletin.html" class="view-all-btn">View All Bulletins</a>
+        </div>
+      </div>
+  </section>
+</main>
+<script>
+// Dynamic bulletin logic: generate list from PDF files in assets/bulletins
+const bulletinsList = document.getElementById('bulletins-list');
+const bulletinError = document.getElementById('bulletin-error');
+const sectionSelect = document.getElementById('bulletin-section');
+
+function parseBulletinFilename(filename) {
+  // Example: homily-2025-08-06-Homily for the Transfiguration of the Lord.pdf
+  const match = filename.match(/^(\w+)-(\d{4}-\d{2}-\d{2})-(.+)\.pdf$/i);
+  if (!match) return null;
+  // Format date as '6 August 2025'
+  const [year, month, day] = match[2].split('-');
+  const dateObj = new Date(`${year}-${month}-${day}`);
+  const dateStr = dateObj.toLocaleDateString('en-GB', { day: 'numeric', month: 'long', year: 'numeric' });
+  return {
+    section: match[1].charAt(0).toUpperCase() + match[1].slice(1),
+    date: match[2],
+    title: `${match[3].replace(/-/g, ' ')} (${dateStr})`,
+    url: `assets/bulletins/${filename}`
+  };
+}
+
+function renderBulletins(bulletins, section = 'All') {
+  bulletinsList.innerHTML = '';
+  let filtered = bulletins;
+  if (section !== 'All') {
+    filtered = bulletins.filter(b => b.section === section);
+  }
+  filtered = filtered.sort((a, b) => new Date(b.date) - new Date(a.date)).slice(0, 5);
+  if (filtered.length === 0) {
+    bulletinsList.innerHTML = '<li>No bulletins found.</li>';
+    return;
+  }
+  filtered.forEach(bulletin => {
+    const li = document.createElement('li');
+    li.className = 'bulletin-item';
+    li.innerHTML = `
+      <a href="${bulletin.url}" target="_blank" class="bulletin-link">
+        ${bulletin.title}
+      </a>
+    `;
+    bulletinsList.appendChild(li);
+  });
+}
+
+// Fetch the list of PDF files from the API endpoint
+fetch('/api/bulletins')
+  .then(response => response.json())
+  .then(data => {
+    const bulletins = data.map(b => parseBulletinFilename(b.name)).filter(Boolean);
+    if (bulletins.length === 0) {
+      bulletinsList.innerHTML = '<li>No bulletins found.</li>';
+      return;
+    }
+    renderBulletins(bulletins);
+    sectionSelect.addEventListener('change', function() {
+      renderBulletins(bulletins, this.value);
+    });
+  })
+  .catch((err) => {
+    bulletinError.style.display = 'block';
+    bulletinError.textContent = 'No bulletins found (fetch error).';
+    bulletinsList.innerHTML = '';
+    console.error('Bulletin fetch error:', err);
+  });
+</script>
+
+  <!-- Footer -->
+  <div id="footer-container"></div>
+  <style>
+    body {
+      background: #f7f7e6;
+      font-family: 'Roboto', Arial, sans-serif;
+      color: #222;
+      margin: 0;
+      padding: 0;
+    }
+    .site-header {
+      background: #fffbe6;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.07);
+      padding: 1.2rem 0 0.7rem 0;
+      margin-bottom: 0.5rem;
+    }
+    .branding h1 {
+      font-family: 'Merriweather', serif;
+      font-size: 2.1rem;
+      color: #2d3a00;
+      margin: 0;
+      letter-spacing: 1px;
+    }
+    .dashboard-grid {
+      display: grid;
+      grid-template-columns: 1.1fr 0.9fr;
+      gap: 2.2rem;
+      max-width: 1200px;
+      margin: 2.5rem auto 2.5rem auto;
+      padding: 0 1.2rem;
+    }
+    .dashboard-left, .dashboard-right {
+      display: flex;
+      flex-direction: column;
+      gap: 1.5rem;
+    }
+    .card {
+      background: #fff;
+      border-radius: 18px;
+      box-shadow: 0 2px 16px rgba(0,0,0,0.08);
+      padding: 1.5rem 1.3rem;
+      margin-bottom: 0;
+      transition: box-shadow 0.2s;
+    }
+    .card:hover {
+      box-shadow: 0 4px 24px rgba(0,0,0,0.13);
+    }
+    .card h2 {
+      font-family: 'Merriweather', serif;
+      font-size: 1.35rem;
+      color: #2d3a00;
+      margin-bottom: 0.7rem;
+      font-weight: 700;
+    }
+    .card ul {
+      list-style: none;
+      padding: 0;
+      margin: 0.2rem 0 0 0;
+    }
+    .card li {
+      margin-bottom: 0.7rem;
+      font-size: 1rem;
+    }
+    .view-all-btn {
+      display: inline-block;
+      background: #e6ff4a;
+      color: #2d3a00;
+      font-weight: 700;
+      border-radius: 8px;
+      padding: 0.45rem 1.2rem;
+      text-decoration: none;
+      margin-top: 0.7rem;
+      box-shadow: 0 1px 4px rgba(0,0,0,0.07);
+      transition: background 0.2s, color 0.2s;
+    }
+    .view-all-btn:hover {
+      background: #d4e63a;
+      color: #1a2200;
+    }
+    .hero {
+      position: relative;
+      width: 100vw;
+      min-height: 340px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background-size: cover;
+      background-position: center;
+      margin: 0;
+      padding: 0;
+      box-shadow: 0 2px 16px rgba(0,0,0,0.10);
+      border-radius: 0;
+      overflow: hidden;
+    }
+    .hero-overlay {
+      position: absolute;
+      top: 0; left: 0; right: 0; bottom: 0;
+      background: linear-gradient(120deg, rgba(24,24,24,0.55) 0%, rgba(24,24,24,0.25) 100%);
+      z-index: 1;
+    }
+    .hero-content {
+      position: relative;
+      z-index: 2;
+      text-align: center;
+      width: 100%;
+      max-width: 700px;
+      margin: 0 auto;
+      padding: 2.5rem 1.2rem;
+      color: #fff;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      background: rgba(24,24,24,0.18);
+      border-radius: 18px;
+      box-shadow: 0 2px 16px rgba(0,0,0,0.10);
+    }
+    .hero-title {
+      font-family: 'Merriweather', serif;
+      font-size: 2.7rem;
+      font-weight: 700;
+      margin-bottom: 0.7rem;
+      color: #e6ff4a;
+      text-shadow: 0 2px 12px rgba(0,0,0,0.18);
+      letter-spacing: 1px;
+    }
+    .hero-subtitle {
+      font-family: 'Roboto', sans-serif;
+      font-size: 1.35rem;
+      font-weight: 400;
+      margin-bottom: 0;
+      color: #fff;
+      text-shadow: 0 1px 8px rgba(0,0,0,0.18);
+    }
+    /* Announcements styling */
+    .announcements ul {
+      margin-top: 0.2rem;
+    }
+    .announcements li {
+      background: #f7f7e6;
+      border-left: 4px solid #e6ff4a;
+      border-radius: 8px;
+      padding: 0.7rem 1rem;
+      margin-bottom: 0.7rem;
+      box-shadow: 0 1px 4px rgba(0,0,0,0.04);
+      font-size: 1rem;
+    }
+    .announcements li strong {
+      color: #2d3a00;
+    }
+    /* Events styling */
+    .events li {
+      background: #f7f7e6;
+      border-left: 4px solid #aee6ff;
+      border-radius: 8px;
+      padding: 0.7rem 1rem;
+      margin-bottom: 0.7rem;
+      box-shadow: 0 1px 4px rgba(0,0,0,0.04);
+      font-size: 1rem;
+    }
+    /* Readings styling */
+    .readings label {
+      font-weight: 500;
+      margin-bottom: 0.3rem;
+      display: block;
+    }
+    #readings-date {
+      padding: 0.3rem 0.7rem;
+      border-radius: 6px;
+      border: 1px solid #d4d4d4;
+      font-size: 1rem;
+      margin-bottom: 0.7rem;
+      background: #f7f7e6;
+    }
+    #readings-content {
+      margin-top: 0.7rem;
+    }
+    #readings-content .reading-item {
+      background: #fffbe6;
+      border-left: 4px solid #e6ff4a;
+      border-radius: 8px;
+      padding: 0.7rem 1rem;
+      margin-bottom: 0.7rem;
+      box-shadow: 0 1px 4px rgba(0,0,0,0.04);
+      font-size: 1rem;
+    }
+    /* Bulletins styling */
+    .bulletins-controls {
+      margin-bottom: 0.7rem;
+      display: flex;
+      align-items: center;
+      gap: 0.7rem;
+    }
+    #bulletin-section {
+      padding: 0.3rem 0.7rem;
+      border-radius: 6px;
+      border: 1px solid #d4d4d4;
+      font-size: 1rem;
+      background: #f7f7e6;
+    }
+    .bulletins-list {
+      margin-top: 0.7rem;
+      margin-bottom: 0.7rem;
+    }
+    .bulletin-item {
+      background: #fffbe6;
+      border-left: 4px solid #e6ff4a;
+      border-radius: 8px;
+      padding: 0.7rem 1rem;
+      margin-bottom: 0.7rem;
+      box-shadow: 0 1px 4px rgba(0,0,0,0.04);
+      font-size: 1rem;
+      transition: background 0.2s;
+    }
+    .bulletin-link {
+      color: #2d3a00;
+      text-decoration: none;
+      font-weight: 500;
+      transition: color 0.2s;
+    }
+    .bulletin-link:hover {
+      color: #1a2200;
+      text-decoration: underline;
+    }
+    .bulletin-footer {
+      margin-top: 0.7rem;
+      text-align: right;
+    }
+    /* Responsive styles */
+    @media (max-width: 900px) {
+      .dashboard-grid {
+        grid-template-columns: 1fr;
+        gap: 1.2rem;
+      }
+      .hero {
+        min-height: 220px;
+      }
+      .hero-title {
+        font-size: 1.7rem;
+      }
+      .hero-content {
+        padding: 1.2rem 0.5rem;
+      }
+      .hero-subtitle {
+        font-size: 1rem;
+      }
+    }
+    @media (max-width: 600px) {
+      .dashboard-grid {
+        padding: 0 0.2rem;
+      }
+      .card {
+        padding: 1rem 0.5rem;
+      }
+    }
+  </style>
+  <script src="assets/js/main.js"></script>
+  <script src="assets/js/main.js"></script>
+</body>
+</html>
