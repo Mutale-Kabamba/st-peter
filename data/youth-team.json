@@ -1,0 +1,22 @@
+[
+  {
+    "name": "Alex Rodriguez",
+    "role": "Youth Leader",
+    "image": "https://placehold.co/100x100/3498db/FFFFFF?text=Alex"
+  },
+  {
+    "name": "Maria Garcia",
+    "role": "Assistant Youth Leader",
+    "image": "https://placehold.co/100x100/e74c3c/FFFFFF?text=Maria"
+  },
+  {
+    "name": "David Chen",
+    "role": "Social Coordinator",
+    "image": "https://placehold.co/100x100/2ecc71/FFFFFF?text=David"
+  },
+  {
+    "name": "Sarah Miller",
+    "role": "Treasurer",
+    "image": "https://placehold.co/100x100/f1c40f/FFFFFF?text=Sarah"
+  }
+]

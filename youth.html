@@ -1,0 +1,442 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Youth Ministry | St. Peter The Apostle - Airport Parish</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link href="https://fonts.googleapis.com/css?family=Merriweather:700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:400,700&display=swap" rel="stylesheet">
+    <style>
+        /* Shared layout styling from other pages */
+        body {
+            font-family: 'Roboto', sans-serif;
+            color: #444;
+            background-color: #f7f7f7;
+            margin: 0;
+            padding: 0;
+        }
+
+        .main-content-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            padding: 2.5rem 1.5rem;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .main-column {
+            flex: 2;
+            min-width: 300px;
+            margin-right: 2rem;
+        }
+
+        .sidebar-column {
+            flex: 1;
+            min-width: 250px;
+        }
+
+        .section-title {
+            font-family: 'Merriweather', serif;
+            font-size: 2.5rem;
+            font-weight: 700;
+            color: #2c3e50;
+            margin-bottom: 1rem;
+        }
+
+        .section-subtitle {
+            font-family: 'Merriweather', serif;
+            font-size: 1.8rem;
+            font-weight: 700;
+            color: #2c3e50;
+            margin-top: 2.5rem;
+            margin-bottom: 1.2rem;
+        }
+
+        .card-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+            gap: 1.5rem;
+            margin-top: 1.5rem;
+        }
+
+        .card {
+            background-color: #ffffff;
+            border-radius: 8px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+            text-align: center;
+            padding: 1rem;
+        }
+
+        .card-image {
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+            object-fit: cover;
+            margin-bottom: 0.75rem;
+        }
+
+        .card-name {
+            font-family: 'Merriweather', serif;
+            font-size: 1.2rem;
+            font-weight: 700;
+            margin: 0;
+            color: #2c3e50;
+        }
+
+        .card-role {
+            font-family: 'Roboto', sans-serif;
+            font-size: 0.9rem;
+            color: #7f8c8d;
+            margin: 0;
+        }
+
+        .dynamic-count {
+            font-size: 2rem;
+            font-weight: bold;
+            color: #3498db;
+            margin-top: 1rem;
+        }
+
+        .list-item {
+            background-color: #fff;
+            padding: 1rem 1.5rem;
+            border-radius: 8px;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+            margin-bottom: 1rem;
+        }
+        
+        .list-item h4 {
+            font-family: 'Merriweather', serif;
+            font-size: 1.1rem;
+            margin-bottom: 0.5rem;
+        }
+
+        .list-item p {
+            font-size: 0.9rem;
+            color: #555;
+            margin: 0;
+        }
+        
+        /* Sidebar Styling */
+        .sidebar-section {
+            background-color: #fff;
+            padding: 1.5rem;
+            border-radius: 4px;
+            box-shadow: 0 1px 4px rgba(0, 0, 0, 0.05);
+            margin-bottom: 1.5rem;
+        }
+
+        .sidebar-title {
+            font-family: 'Roboto', sans-serif;
+            font-size: 1.1rem;
+            font-weight: bold;
+            text-transform: uppercase;
+            color: #2c3e50;
+            border-bottom: 2px solid #3498db;
+            padding-bottom: 0.5rem;
+            margin-bottom: 1rem;
+        }
+
+        .bulletins-controls {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            margin-bottom: 1rem;
+        }
+
+        .bulletins-list {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        .bulletin-item {
+            border-bottom: 1px solid #eee;
+            padding: 0.75rem 0;
+        }
+
+        .bulletin-item:last-child {
+            border-bottom: none;
+        }
+
+        .bulletin-link {
+            color: #3498db;
+            text-decoration: none;
+            font-weight: 500;
+        }
+
+        .bulletin-link:hover {
+            text-decoration: underline;
+        }
+
+        @media (max-width: 900px) {
+            .main-column {
+                margin-right: 0;
+            }
+            .sidebar-column {
+                margin-top: 2rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header class="site-header">
+        <div class="branding">
+            <img src="assets/img/logo.png" alt="Parish Logo" class="parish-logo" style="display:none;" />
+            <h1>St. Peter The Apostle - Airport Parish</h1>
+        </div>
+        <div id="nav-container"></div>
+    </header>
+
+    <main class="main-content-container">
+        <section class="main-column">
+            <div class="section-about">
+                <h1 class="section-title">About Youth Ministry</h1>
+                <p>
+                    The Youth Ministry of St. Peter The Apostle - Airport Parish is a vibrant and welcoming community for young people to grow in their faith, serve others, and build lasting friendships. We offer a variety of programs, events, and activities designed to support the spiritual, social, and personal development of our youth.
+                </p>
+                <div class="dynamic-count">Active Youth: <span id="youth-count">Loading...</span></div>
+            </div>
+
+            <div class="section-team">
+                <h2 class="section-subtitle">Youth Coordinating Team</h2>
+                <div id="team-container" class="card-container">
+                    <p>Loading team members...</p>
+                </div>
+            </div>
+
+            <div class="section-events">
+                <h2 class="section-subtitle">Upcoming Youth Events</h2>
+                <ul id="events-list">
+                    <li class="list-item">Loading youth events...</li>
+                </ul>
+            </div>
+
+            <div class="section-announcements">
+                <h2 class="section-subtitle">Youth Announcements</h2>
+                <!-- The list will be populated by the JavaScript below -->
+                <ul id="announcements-list">
+                    <li>Loading announcements...</li>
+                </ul>
+            </div>
+        </section>
+
+        <aside class="sidebar-column">
+            <div class="sidebar-section">
+                <h3 class="sidebar-title">Daily Readings</h3>
+                <label for="readings-date">Select Date:</label>
+                <input type="date" id="readings-date" name="readings-date" />
+                <div id="readings-content"></div>
+            </div>
+            
+            <div class="sidebar-section">
+                <h3 class="sidebar-title">Recent Bulletins</h3>
+                <div class="bulletins-controls">
+                    <label for="bulletin-section">Section:</label>
+                    <select id="bulletin-section">
+                        <option value="All">All</option>
+                        <option value="Homily">Homily</option>
+                        <option value="Announcement">Announcement</option>
+                        <option value="Event">Event</option>
+                    </select>
+                </div>
+                <div id="bulletins-list" class="bulletins-list"></div>
+                <div id="bulletin-error" style="display:none;color:#c00;margin-top:8px;"></div>
+                <div class="bulletin-footer">
+                    <a href="bulletin.html" class="view-all-link">View All Bulletins</a>
+                </div>
+            </div>
+        </aside>
+    </main>
+
+    <div id="footer-container"></div>
+
+    <script>
+        // Use a base path to make it easy to change the data directory
+        const basePath = 'data/';
+    
+        // --- Data Fetching and Rendering Logic ---
+
+        // Expected JSON structure for youth-register.json
+        // { "activeYouth": 150 }
+        fetch(basePath + 'youth-register.json')
+            .then(response => {
+                if (!response.ok) throw new Error('Network response was not ok');
+                return response.json();
+            })
+            .then(data => {
+                document.getElementById('youth-count').textContent = data.activeYouth;
+            })
+            .catch(error => {
+                console.error('Error fetching youth count:', error);
+                document.getElementById('youth-count').textContent = 'N/A';
+            });
+
+        // Expected JSON structure for youth-team.json
+        // [
+        //   { "name": "Jane Doe", "role": "Youth Team Leader", "image": "assets/img/youth-team-1.jpg" },
+        //   { "name": "John Smith", "role": "Treasurer", "image": "assets/img/youth-team-2.jpg" }
+        // ]
+        fetch(basePath + 'youth-team.json')
+            .then(response => {
+                if (!response.ok) throw new Error('Network response was not ok');
+                return response.json();
+            })
+            .then(teamMembers => {
+                const container = document.getElementById('team-container');
+                container.innerHTML = ''; // Clear loading message
+                if (teamMembers.length === 0) {
+                    container.innerHTML = '<p>No team members listed at this time.</p>';
+                    return;
+                }
+                teamMembers.forEach(member => {
+                    const card = document.createElement('div');
+                    card.className = 'card';
+                    card.innerHTML = `
+                        <img src="${member.image}" alt="${member.name}" class="card-image" onerror="this.onerror=null;this.src='https://placehold.co/100x100/AAB7B8/FFFFFF?text=Photo';">
+                        <h3 class="card-name">${member.name}</h3>
+                        <p class="card-role">${member.role}</p>
+                    `;
+                    container.appendChild(card);
+                });
+            })
+            .catch(error => {
+                console.error('Error fetching youth team:', error);
+                document.getElementById('team-container').innerHTML = '<p>Failed to load team members.</p>';
+            });
+
+        // Expected JSON structure for youth-events.json
+        // [
+        //   { "title": "Youth Fellowship", "date": "Every Sunday at 6 PM", "description": "Join us for fellowship and refreshments." },
+        //   { "title": "Annual Retreat", "date": "December 1-3, 2025", "description": "Our yearly retreat to deepen our faith." }
+        // ]
+        fetch(basePath + 'youth-events.json')
+            .then(response => {
+                if (!response.ok) throw new Error('Network response was not ok');
+                return response.json();
+            })
+            .then(events => {
+                const list = document.getElementById('events-list');
+                list.innerHTML = '';
+                if (!Array.isArray(events) || events.length === 0) {
+                    list.innerHTML = '<li>No upcoming youth events at this time.</li>';
+                    return;
+                }
+                // Only show events from youth-events.json
+                events.forEach(event => {
+                    const li = document.createElement('li');
+                    li.className = 'list-item';
+                    li.innerHTML = `
+                        <h4>${event.title}</h4>
+                        <p>${event.date}</p>
+                        <p>${event.description}</p>
+                    `;
+                    list.appendChild(li);
+                });
+            })
+            .catch(error => {
+                console.error('Error fetching youth events:', error);
+                document.getElementById('events-list').innerHTML = '<li>Failed to load youth events.</li>';
+            });
+        
+        // Expected JSON structure for youth-announcements.json
+        // [
+        //   { "title": "New Registration for Fall", "date": "September 1, 2025", "description": "New members are welcome to register for the upcoming semester." },
+        //   { "title": "Volunteer Call", "date": "July 25, 2025", "description": "We're looking for volunteers to help with the summer picnic." }
+        // ]
+        fetch(basePath + 'youth-announcements.json')
+            .then(response => {
+                if (!response.ok) throw new Error('Network response was not ok');
+                return response.json();
+            })
+            .then(announcements => {
+                const list = document.getElementById('announcements-list');
+                list.innerHTML = '';
+                if (!Array.isArray(announcements) || announcements.length === 0) {
+                    list.innerHTML = '<li>No youth announcements at this time.</li>';
+                    return;
+                }
+                // Only show announcements from youth-announcements.json
+                announcements.forEach(announcement => {
+                    const li = document.createElement('li');
+                    li.className = 'list-item';
+                    li.innerHTML = `
+                        <h4>${announcement.title}</h4>
+                        <p>${announcement.date}</p>
+                        <p>${announcement.description}</p>
+                    `;
+                    list.appendChild(li);
+                });
+            })
+            .catch(error => {
+                console.error('Error fetching youth announcements:', error);
+                document.getElementById('announcements-list').innerHTML = '<li>Failed to load youth announcements.</li>';
+            });
+
+        // --- Bulletin and Reading Logic (from homepage) ---
+        const bulletinsList = document.getElementById('bulletins-list');
+        const bulletinError = document.getElementById('bulletin-error');
+        const sectionSelect = document.getElementById('bulletin-section');
+
+        function parseBulletinFilename(filename) {
+            const match = filename.match(/^(\w+)-(\d{4}-\d{2}-\d{2})-(.+)\.pdf$/i);
+            if (!match) return null;
+            const [year, month, day] = match[2].split('-');
+            const dateObj = new Date(`${year}-${month}-${day}`);
+            const dateStr = dateObj.toLocaleDateString('en-GB', { day: 'numeric', month: 'long', year: 'numeric' });
+            return {
+                section: match[1].charAt(0).toUpperCase() + match[1].slice(1),
+                date: match[2],
+                title: `${match[3].replace(/-/g, ' ')} (${dateStr})`,
+                url: `assets/bulletins/${filename}`
+            };
+        }
+
+        function renderBulletins(bulletins, section = 'All') {
+            bulletinsList.innerHTML = '';
+            let filtered = bulletins;
+            if (section !== 'All') {
+                filtered = bulletins.filter(b => b.section === section);
+            }
+            filtered = filtered.sort((a, b) => new Date(b.date) - new Date(a.date)).slice(0, 5);
+            if (filtered.length === 0) {
+                bulletinsList.innerHTML = '<li>No bulletins found.</li>';
+                return;
+            }
+            filtered.forEach(bulletin => {
+                const li = document.createElement('li');
+                li.className = 'bulletin-item';
+                li.innerHTML = `
+                    <a href="${bulletin.url}" target="_blank" class="bulletin-link">
+                        ${bulletin.title}
+                    </a>
+                `;
+                bulletinsList.appendChild(li);
+            });
+        }
+
+        fetch('/api/bulletins')
+            .then(response => response.json())
+            .then(data => {
+                const bulletins = data.map(b => parseBulletinFilename(b.name)).filter(Boolean);
+                if (bulletins.length === 0) {
+                    bulletinsList.innerHTML = '<li>No bulletins found.</li>';
+                    return;
+                }
+                renderBulletins(bulletins);
+                sectionSelect.addEventListener('change', function() {
+                    renderBulletins(bulletins, this.value);
+                });
+            })
+            .catch((err) => {
+                bulletinError.style.display = 'block';
+                bulletinError.textContent = 'No bulletins found (fetch error).';
+                bulletinsList.innerHTML = '';
+                console.error('Bulletin fetch error:', err);
+            });
+    </script>
+    <script src="assets/js/main.js"></script>
+</body>
+</html>

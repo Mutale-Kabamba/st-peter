@@ -132,46 +132,62 @@ document.head.appendChild(style);
 
 document.addEventListener('DOMContentLoaded', () => {
   // ...existing code...
-  if (document.getElementById('bulletin-section')) {
-    document.getElementById('bulletin-section').addEventListener('change', filterBulletins);
-    document.getElementById('bulletin-month').addEventListener('change', filterBulletins);
-    document.getElementById('bulletin-year').addEventListener('change', filterBulletins);
+  const sectionEl = document.getElementById('bulletin-section');
+  const monthEl = document.getElementById('bulletin-month');
+  const yearEl = document.getElementById('bulletin-year');
+  if (sectionEl) {
+    sectionEl.addEventListener('change', filterBulletins);
+    if (monthEl) monthEl.addEventListener('change', filterBulletins);
+    if (yearEl) yearEl.addEventListener('change', filterBulletins);
     loadBulletins();
   }
 });
 // Dynamically load nav and footer HTML
-function loadHTML(selector, url) {
+function loadHTML(selector, url, callback) {
   fetch(url)
     .then(response => response.text())
     .then(data => {
       document.querySelector(selector).innerHTML = data;
+      if (typeof callback === 'function') callback();
     });
 }
 
 document.addEventListener('DOMContentLoaded', () => {
-  loadHTML('#nav-container', 'assets/html/nav.html');
+  loadHTML('#nav-container', 'assets/html/nav.html', () => {
+    // Highlight active nav link
+    const path = window.location.pathname.split('/').pop();
+    if (path === 'index.html' || path === '') {
+      document.getElementById('nav-home')?.classList.add('active');
+    } else if (path === 'about.html') {
+      document.getElementById('nav-about')?.classList.add('active');
+    } else if (path === 'mass-times.html') {
+      document.getElementById('nav-mass')?.classList.add('active');
+    } else if (path === 'ministries.html') {
+      document.getElementById('nav-ministries')?.classList.add('active');
+    } else if (path === 'bulletin.html') {
+      document.getElementById('nav-bulletin')?.classList.add('active');
+    } else if (path === 'contact.html') {
+      document.getElementById('nav-contact')?.classList.add('active');
+    }
+    // Hamburger menu logic
+    const menuToggle = document.getElementById('menu-toggle');
+    const navLinks = document.getElementById('nav-links');
+      // Always close menu on load for mobile/tablet
+      if (window.innerWidth <= 900 && navLinks.classList.contains('open')) {
+        navLinks.classList.remove('open');
+      }
+      // Also forcibly hide menu regardless of class
+      if (window.innerWidth <= 900) {
+        navLinks.style.display = 'none';
+      }
+    if (menuToggle && navLinks) {
+      menuToggle.addEventListener('click', () => {
+        navLinks.classList.toggle('open');
+        menuToggle.classList.toggle('active');
+      });
+    }
+  });
   loadHTML('#footer-container', 'assets/html/footer.html');
-
-  // Highlight active nav link after nav loads
-  fetch('assets/html/nav.html')
-    .then(() => {
-      setTimeout(() => {
-        const path = window.location.pathname.split('/').pop();
-        if (path === 'index.html' || path === '') {
-          document.getElementById('nav-home')?.classList.add('active');
-        } else if (path === 'about.html') {
-          document.getElementById('nav-about')?.classList.add('active');
-        } else if (path === 'mass-times.html') {
-          document.getElementById('nav-mass')?.classList.add('active');
-        } else if (path === 'ministries.html') {
-          document.getElementById('nav-ministries')?.classList.add('active');
-        } else if (path === 'bulletin.html') {
-          document.getElementById('nav-bulletin')?.classList.add('active');
-        } else if (path === 'contact.html') {
-          document.getElementById('nav-contact')?.classList.add('active');
-        }
-      }, 100);
-    });
 });
 document.addEventListener('DOMContentLoaded', () => {
   // Hamburger menu logic
@@ -230,25 +246,53 @@ document.addEventListener('DOMContentLoaded', () => {
   }
 
   // Fetch and render announcements (first 3 events as announcements)
-  if (document.getElementById('announcements-list')) {
-    fetch('data/events.json')
+  // Removed global events.json loader for announcements-list to prevent non-youth announcements from appearing in youth.html
+// Home page: Load parish events and parish announcements from their respective JSON files
+document.addEventListener('DOMContentLoaded', () => {
+  // Parish Events
+  if (document.getElementById('events-list')) {
+    fetch('data/parish-events.json')
       .then(res => res.json())
       .then(events => {
-        const container = document.getElementById('announcements-list');
+        const container = document.getElementById('events-list');
+        container.innerHTML = '';
         if (!events.length) {
-          container.innerHTML = '<li>No announcements at this time.</li>';
+          container.innerHTML = '<li>No upcoming parish events.</li>';
           return;
         }
-        events.slice(0, 3).forEach(event => {
+        events.forEach(event => {
           const li = document.createElement('li');
-          li.innerHTML = `<strong>${event.title}</strong>: ${event.description}`;
+          li.innerHTML = `<strong>${event.title}</strong> <span>(${event.date}${event.location ? ' @ ' + event.location : ''})</span><br>${event.description}`;
           container.appendChild(li);
         });
       })
       .catch(() => {
-        document.getElementById('announcements-list').innerHTML = '<li>Unable to load announcements.</li>';
+        document.getElementById('events-list').innerHTML = '<li>Unable to load parish events.</li>';
       });
   }
+
+  // Parish Announcements
+  if (document.getElementById('announcements-list')) {
+    fetch('data/parish-announcements.json')
+      .then(res => res.json())
+      .then(announcements => {
+        const container = document.getElementById('announcements-list');
+        container.innerHTML = '';
+        if (!announcements.length) {
+          container.innerHTML = '<li>No parish announcements at this time.</li>';
+          return;
+        }
+        announcements.forEach(announcement => {
+          const li = document.createElement('li');
+          li.innerHTML = `<strong>${announcement.title}</strong><br><span>${announcement.date}</span><br>${announcement.description}`;
+          container.appendChild(li);
+        });
+      })
+      .catch(() => {
+        document.getElementById('announcements-list').innerHTML = '<li>Unable to load parish announcements.</li>';
+      });
+  }
+});
 
   // Fetch and render daily readings from readings.json with date selection
 
@@ -369,23 +413,5 @@ document.addEventListener('DOMContentLoaded', () => {
   }
 
   // Fetch and render upcoming events (all events)
-  if (document.getElementById('events-list')) {
-    fetch('data/events.json')
-      .then(res => res.json())
-      .then(events => {
-        const container = document.getElementById('events-list');
-        if (!events.length) {
-          container.innerHTML = '<li>No upcoming events.</li>';
-          return;
-        }
-        events.forEach(event => {
-          const li = document.createElement('li');
-          li.innerHTML = `<strong>${event.title}</strong> <span>(${event.date} @ ${event.location})</span><br>${event.description}`;
-          container.appendChild(li);
-        });
-      })
-      .catch(() => {
-        document.getElementById('events-list').innerHTML = '<li>Unable to load events.</li>';
-      });
-  }
+  // Removed global events.json loader to prevent non-youth events from appearing in youth.html
 });

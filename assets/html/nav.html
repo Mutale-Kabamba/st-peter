@@ -6,8 +6,8 @@
     </a>
     <ul class="nav-links" id="nav-links">
   <li><a href="index.html" class="nav-link" id="nav-home">Home</a></li>
-  <li><a href="about.html" class="nav-link" id="nav-about">About Us</a></li>
-  <li><a href="mass-times.html" class="nav-link" id="nav-mass">Mass Times</a></li>
+  <li><a href="about.html" class="nav-link" id="nav-about">About</a></li>
+  <li><a href="youth.html" class="nav-link" id="nav-mass">Youth</a></li>
   <li><a href="ministries.html" class="nav-link" id="nav-ministries">Ministries</a></li>
   <li><a href="bulletin.html" class="nav-link" id="nav-bulletin">Bulletins</a></li>
   <li><a href="contact.html" class="contact-btn nav-link" id="nav-contact">Contact</a></li>
@@ -29,6 +29,7 @@
     width: 100vw;
     margin: 0;
     border-radius: 0;
+    height: 58px;
   }
   body {
     margin: 0;
@@ -41,8 +42,9 @@
     width: 100%;
     max-width: 1400px;
     margin: 0 auto;
-    padding: 0.7rem 2.2rem;
+    padding: 0.3rem 1.2rem;
     box-sizing: border-box;
+    min-height: 58px;
   }
   .nav-logo {
     display: flex;
@@ -51,13 +53,13 @@
     text-decoration: none;
   }
   .nav-logo img {
-  height: 40px;
-  width: auto;
-  border-radius: 8px;
-  background: transparent;
-  box-shadow: none;
-  object-fit: contain;
-  margin-right: 0.3rem;
+    height: 32px;
+    width: auto;
+    border-radius: 8px;
+    background: transparent;
+    box-shadow: none;
+    object-fit: contain;
+    margin-right: 0.2rem;
   }
   .nav-title {
     color: #fff;
@@ -68,7 +70,7 @@
   }
   .nav-links {
     display: flex;
-    gap: 2.2rem;
+    gap: 1.2rem;
     list-style: none;
     margin: 0;
     padding: 0;
@@ -78,8 +80,8 @@
     color: #fff;
     text-decoration: none;
     font-weight: 500;
-    font-size: 1.08rem;
-    padding: 0.3rem 0.9rem;
+    font-size: 1rem;
+    padding: 0.2rem 0.7rem;
     border-radius: 8px;
     transition: background 0.2s, color 0.2s;
     border: none;
@@ -106,8 +108,8 @@
     background: #e6ff4a;
     color: #181818;
     font-weight: 700;
-    border-radius: 18px;
-    padding: 0.3rem 1.2rem;
+    border-radius: 16px;
+    padding: 0.2rem 1rem;
     box-shadow: 0 1px 6px rgba(0,0,0,0.08);
     border: 2px solid #e6ff4a;
     transition: background 0.2s, color 0.2s, border 0.2s;
@@ -122,12 +124,12 @@
     background: none;
     border: none;
     cursor: pointer;
-    padding: 0.5rem;
-    margin-left: 1rem;
+    padding: 0.2rem;
+    margin-left: 0.7rem;
   }
   .hamburger {
     display: block;
-    width: 28px;
+    width: 22px;
     height: 3px;
     background: #fff;
     position: relative;
@@ -150,77 +152,55 @@
     top: 8px;
   }
   @media (max-width: 900px) {
+    .main-nav {
+      height: 52px;
+    }
     .nav-content {
       flex-direction: row;
       justify-content: space-between;
-      padding: 0.7rem 1rem;
+      padding: 0.2rem 0.7rem;
+      min-height: 52px;
     }
     .nav-logo {
       margin-right: 0;
     }
+    .nav-logo img {
+      height: 28px;
+    }
     .nav-links {
       position: absolute;
-      top: 60px;
+      top: 52px;
       left: 0;
       right: 0;
       background: #181818;
       flex-direction: column;
       gap: 0;
-      display: none;
+      display: none !important;
       box-shadow: 0 2px 8px rgba(0,0,0,0.07);
-      border-radius: 0 0 18px 18px;
+      border-radius: 0 0 16px 16px;
     }
     .nav-links.open {
-      display: flex;
+      display: flex !important;
     }
     .nav-links li a {
-      padding: 1rem 2rem;
-      font-size: 1.15rem;
+      padding: 0.7rem 1.2rem;
+      font-size: 1.08rem;
       border-radius: 0;
       border-bottom: 1px solid #fff2;
     }
-    .nav-links li a.active {
-      background: #e6ff4a;
-      color: #181818 !important;
-      font-weight: 700;
-      border: 2px solid #e6ff4a;
-    }
-    .nav-links li .contact-btn.active {
-      background: #181818;
-      color: #e6ff4a !important;
-      border: 2px solid #e6ff4a;
-    }
     .nav-links li .contact-btn {
-      margin: 0.7rem 0;
-      border-radius: 18px;
-      font-size: 1.15rem;
-      padding: 0.7rem 2rem;
+      margin: 0.5rem 0;
+      border-radius: 16px;
+      font-size: 1.08rem;
+      padding: 0.7rem 1.2rem;
     }
     .mobile-menu-toggle {
       display: block;
+      padding: 0.2rem;
+      margin-left: 0.5rem;
+    }
+    .hamburger {
+      width: 18px;
     }
   }
 </style>
-<script>
-// After loading nav.html
-loadHTML('#nav-container', 'assets/html/nav.html');
-loadHTML('#footer-container', 'assets/html/footer.html');
-
-// Highlight active nav link
-document.addEventListener('DOMContentLoaded', function() {
-  const path = window.location.pathname.split('/').pop();
-  if (path === 'index.html' || path === '') {
-    document.getElementById('nav-home')?.classList.add('active');
-  } else if (path === 'about.html') {
-    document.getElementById('nav-about')?.classList.add('active');
-  } else if (path === 'mass-times.html') {
-    document.getElementById('nav-mass')?.classList.add('active');
-  } else if (path === 'ministries.html') {
-    document.getElementById('nav-ministries')?.classList.add('active');
-  } else if (path === 'bulletin.html') {
-    document.getElementById('nav-bulletin')?.classList.add('active');
-  } else if (path === 'contact.html') {
-    document.getElementById('nav-contact')?.classList.add('active');
-  }
-});
-</script>

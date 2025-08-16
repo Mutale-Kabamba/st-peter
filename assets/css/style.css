@@ -304,10 +304,11 @@
     right: 0;
     background: var(--primary);
     flex-direction: column;
-    display: none;
+    display: none !important;
+    z-index: 999;
   }
   .main-nav ul.open {
-    display: flex;
+    display: flex !important;
   }
   .mobile-menu-toggle {
     display: block;
@@ -341,30 +342,33 @@ html, body {
 
 .nav-links {
   display: flex;
-  gap: 1rem;
+  gap: 2.2rem;
   list-style: none;
   margin: 0;
   padding: 0;
+  align-items: center;
+}
+@media (max-width: 900px) {
+  .nav-links {
+    display: none;
+    position: absolute;
+    top: 60px;
+    left: 0;
+    right: 0;
+    background: #181818;
+    flex-direction: column;
+    gap: 0;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.07);
+    border-radius: 0 0 18px 18px;
+    z-index: 999;
+  }
+  .nav-links.open {
+    display: flex;
+  }
+}
 }
 
-.nav-links li a {
-  color: #fff;
-  text-decoration: none;
-  font-weight: 700;
-  padding: 0.5rem 0.75rem;
-}
-
-.nav-links li a:hover {
-  color: var(--accent);
-}
-
-.hamburger {
-  background: none;
-  border: none;
-  color: #fff;
-  font-size: 2rem;
-  cursor: pointer;
-  display: none;
+/* Remove duplicate mobile nav-links rules here. Use only @media rules for mobile/tablet. */
 }
 
 .hero {
@@ -629,10 +633,109 @@ footer {
     flex-direction: column;
     display: none;
   }
-  .nav-links.open {
-    display: flex;
+    .nav-links {
+      position: absolute;
+      top: 60px;
+      left: 0;
+      right: 0;
+      background: #181818;
+      flex-direction: column;
+      gap: 0;
+      display: none !important;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.07);
+      border-radius: 0 0 18px 18px;
+      z-index: 999;
+    }
+    .nav-links {
+      position: absolute;
+      top: 60px;
+      left: 0;
+      right: 0;
+      background: #181818;
+      flex-direction: column;
+      gap: 0;
+      display: none !important;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.07);
+      border-radius: 0 0 18px 18px;
+      z-index: 999;
+    }
+    .nav-links.open {
+      display: flex !important;
+    }
+}
+
+/* Dashboard styles */
+.dashboard-grid {
+  display: grid;
+  grid-template-columns: 3fr 1fr;
+  gap: 2rem;
+  max-width: 1200px;
+  margin: 2rem auto;
+  padding: 0 1rem;
+}
+.dashboard-left, .dashboard-right {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+.card {
+  background: #fff;
+  border-radius: 14px;
+  box-shadow: 0 2px 12px rgba(0,0,0,0.07);
+  padding: 1.5rem 1.2rem;
+  margin-bottom: 0;
+}
+.card h2 {
+  font-size: 1.25rem;
+  margin-bottom: 0.7rem;
+  color: #1a1a1a;
+  font-family: 'Merriweather', serif;
+}
+.card ul {
+  margin: 0 0 0.7rem 0;
+  padding: 0;
+  list-style: none;
+}
+.view-all-btn {
+  display: inline-block;
+  padding: 0.4rem 1.1rem;
+  background: #e6ff4a;
+  color: #222;
+  border-radius: 22px;
+  font-weight: 600;
+  text-decoration: none;
+  font-size: 0.95rem;
+  margin-top: 0.5rem;
+  transition: background 0.2s;
+}
+.view-all-btn:hover {
+  background: #d4e63a;
+}
+@media (max-width: 900px) {
+  .dashboard-grid {
+    grid-template-columns: 1fr;
+    gap: 1.2rem;
+    padding: 0 0.5rem;
   }
-  .hamburger {
-    display: block;
+  .dashboard-left, .dashboard-right {
+    gap: 1rem;
   }
+  .card {
+    padding: 1rem 0.7rem;
+  }
+}
+
+/* Optional: Add spacing between each event item */
+.events-list li {
+    margin-bottom: 1rem;
+}
+
+.events-list {
+    list-style: none;
+    padding-left: 0; /* Ensures left alignment */
+    margin: 0; /* Removes any default list margin that might be affecting alignment */
+}
+
+.section-events .events-list {
+    padding-left: 0;
 }

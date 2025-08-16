@@ -1,141 +1,357 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width,initial-scale=1.0">
-  <title>St. Peter The Apostle - Airport Parish</title>
-  <link rel="stylesheet" href="assets/css/style.css">
-  <link href="https://fonts.googleapis.com/css?family=Merriweather:700&display=swap" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css?family=Roboto:400,700&display=swap" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>St. Peter The Apostle - Airport Parish</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link href="https://fonts.googleapis.com/css?family=Merriweather:700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:400,700&display=swap" rel="stylesheet">
 </head>
 <body>
-  <!-- Header -->
-  <header class="site-header">
-    <div class="branding">
-      <img src="assets/img/logo.png" alt="Parish Logo" class="parish-logo" style="display:none;" />
-      <h1>St. Peter The Apostle - Airport Parish</h1>
-    </div>
-    <div id="nav-container"></div>
-  </header>
+    <header class="site-header">
+        <div class="branding">
+            <img src="assets/img/logo.png" alt="Parish Logo" class="parish-logo" style="display:none;" />
+            <h1>St. Peter The Apostle - Airport Parish</h1>
+        </div>
+        <div id="nav-container"></div>
+    </header>
 
-  <!-- Hero Section -->
-  <section class="hero" style="background-image: url('assets/img/hero-church.jpg');">
-    <div class="hero-overlay"></div>
-    <div class="hero-content">
-      <h2 class="hero-title">St. Peter The Apostle - Airport Parish</h2>
-      <p class="hero-subtitle">A welcoming and vibrant community of faith</p>
-    </div>
-  </section>
+    <section class="hero" style="background-image: url('assets/img/hero-church.jpg');">
+        <div class="hero-overlay"></div>
+        <div class="hero-content">
+            <h2 class="hero-title">St. Peter The Apostle - Airport Parish</h2>
+            <p class="hero-subtitle">A welcoming and vibrant community of faith</p>
+        </div>
+    </section>
 
-  <!-- Key Information Section -->
-  <section class="key-info">
-    <a href="mass-times.html" class="cta-btn">View Mass & Confession Times</a>
-    <div class="mission-statement">
-      <p>We are committed to living and sharing the Gospel, fostering spiritual growth, and serving our community with love and compassion.</p>
-    </div>
-  </section>
+    <main class="main-content-container">
+        <section class="main-column">
+            <div class="section-about">
+                <h1 class="section-title">About the Church</h1>
+                <p>St. Peter The Apostle - Airport Parish is a vibrant and welcoming community of faith, committed to serving God and our neighbors. We believe in creating a space where everyone feels at home and can grow in their spiritual journey. Our parish is built on the foundation of love, compassion, and service, guided by the teachings of Jesus Christ. We offer various ministries and programs to meet the needs of our diverse community, fostering a strong sense of belonging and a shared purpose.</p>
+                <hr class="section-divider">
+            </div>
 
-  <!-- Parish Announcements Section -->
-  <section class="announcements-section">
-    <h2>Parish Announcements</h2>
-    <ul id="announcements-list">
-      <!-- Announcements will be loaded here -->
-    </ul>
-  </section>
+            <div class="section-mass-times">
+                <h2 class="section-subtitle">Main Mass Times</h2>
+                <ul class="mass-times-list">
+                    <li><b>Sunday:</b> 8:00 AM & 10:00 AM</li>
+                    <li><b>Weekdays:</b> 7:00 AM</li>
+                </ul>
+                <a href="mass-times.html" class="view-all-link">View All Mass Times</a>
+            </div>
 
-  <!-- Upcoming Events Section -->
-  <section class="events-section">
-    <h2>Upcoming Events</h2>
-    <ul id="events-list">
-      <!-- Events will be loaded here -->
-    </ul>
-  </section>
+            <div class="section-announcements">
+                <h2 class="section-subtitle">Parish Announcements</h2>
+                <ul id="announcements-list" class="announcements-list">
+                    </ul>
+            </div>
 
-  <!-- Daily Readings Section -->
-  <section class="readings-section">
-    <h2>Daily Readings</h2>
-    <label for="readings-date">Select Date:</label>
-    <input type="date" id="readings-date" name="readings-date" />
-    <div id="readings-content">
-      <!-- Readings will be loaded here -->
-    </div>
-  </section>
+            <div class="section-events">
+                <h2 class="section-subtitle">Upcoming Events</h2>
+                <ul id="events-list" class="events-list">
+                    </ul>
+            </div>
+        </section>
 
+        <aside class="sidebar-column">
+            <div class="sidebar-section">
+                <h3 class="sidebar-title">Daily Readings</h3>
+                <label for="readings-date">Select Date:</label>
+                <input type="date" id="readings-date" name="readings-date" />
+                <div id="readings-content">
+                    </div>
+            </div>
 
-  <!-- Footer -->
-  <div id="footer-container"></div>
-  <style>
-    .hero {
-      position: relative;
-      width: 100vw;
-      min-height: 340px;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      background-size: cover;
-      background-position: center;
-      margin: 0;
-      padding: 0;
-      box-shadow: 0 2px 16px rgba(0,0,0,0.10);
-      border-radius: 0;
-      overflow: hidden;
-    }
-    .hero-overlay {
-      position: absolute;
-      top: 0; left: 0; right: 0; bottom: 0;
-      background: linear-gradient(120deg, rgba(24,24,24,0.55) 0%, rgba(24,24,24,0.25) 100%);
-      z-index: 1;
-    }
-    .hero-content {
-      position: relative;
-      z-index: 2;
-      text-align: center;
-      width: 100%;
-      max-width: 700px;
-      margin: 0 auto;
-      padding: 2.5rem 1.2rem;
-      color: #fff;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      justify-content: center;
-      background: rgba(24,24,24,0.18);
-      border-radius: 18px;
-      box-shadow: 0 2px 16px rgba(0,0,0,0.10);
-    }
-    .hero-title {
-      font-family: 'Merriweather', serif;
-      font-size: 2.7rem;
-      font-weight: 700;
-      margin-bottom: 0.7rem;
-      color: #e6ff4a;
-      text-shadow: 0 2px 12px rgba(0,0,0,0.18);
-      letter-spacing: 1px;
-    }
-    .hero-subtitle {
-      font-family: 'Roboto', sans-serif;
-      font-size: 1.35rem;
-      font-weight: 400;
-      margin-bottom: 0;
-      color: #fff;
-      text-shadow: 0 1px 8px rgba(0,0,0,0.18);
-    }
-    @media (max-width: 900px) {
-      .hero {
-        min-height: 220px;
-      }
-      .hero-title {
-        font-size: 1.7rem;
-      }
-      .hero-content {
-        padding: 1.2rem 0.5rem;
-      }
-      .hero-subtitle {
-        font-size: 1rem;
-      }
-    }
-  </style>
-  <script src="assets/js/main.js"></script>
-  <script src="assets/js/main.js"></script>
+            <div class="sidebar-section">
+                <h3 class="sidebar-title">Recent Bulletins</h3>
+                <div class="bulletins-controls">
+                    <label for="bulletin-section">Section:</label>
+                    <select id="bulletin-section">
+                        <option value="All">All</option>
+                        <option value="Homily">Homily</option>
+                        <option value="Announcement">Announcement</option>
+                        <option value="Event">Event</option>
+                    </select>
+                </div>
+                <div id="bulletins-list" class="bulletins-list">
+                    </div>
+                <div id="bulletin-error" style="display:none;color:#c00;margin-top:8px;"></div>
+                <div class="bulletin-footer">
+                    <a href="bulletin.html" class="view-all-link">View All Bulletins</a>
+                </div>
+            </div>
+        </aside>
+    </main>
+
+    <div id="footer-container"></div>
+    <script>
+        // Dynamic bulletin logic remains the same
+        const bulletinsList = document.getElementById('bulletins-list');
+        const bulletinError = document.getElementById('bulletin-error');
+        const sectionSelect = document.getElementById('bulletin-section');
+
+        function parseBulletinFilename(filename) {
+            const match = filename.match(/^(\w+)-(\d{4}-\d{2}-\d{2})-(.+)\.pdf$/i);
+            if (!match) return null;
+            const [year, month, day] = match[2].split('-');
+            const dateObj = new Date(`${year}-${month}-${day}`);
+            const dateStr = dateObj.toLocaleDateString('en-GB', { day: 'numeric', month: 'long', year: 'numeric' });
+            return {
+                section: match[1].charAt(0).toUpperCase() + match[1].slice(1),
+                date: match[2],
+                title: `${match[3].replace(/-/g, ' ')} (${dateStr})`,
+                url: `assets/bulletins/${filename}`
+            };
+        }
+
+        function renderBulletins(bulletins, section = 'All') {
+            bulletinsList.innerHTML = '';
+            let filtered = bulletins;
+            if (section !== 'All') {
+                filtered = bulletins.filter(b => b.section === section);
+            }
+            filtered = filtered.sort((a, b) => new Date(b.date) - new Date(a.date)).slice(0, 5);
+            if (filtered.length === 0) {
+                bulletinsList.innerHTML = '<li>No bulletins found.</li>';
+                return;
+            }
+            filtered.forEach(bulletin => {
+                const li = document.createElement('li');
+                li.className = 'bulletin-item';
+                li.innerHTML = `
+                    <a href="${bulletin.url}" target="_blank" class="bulletin-link">
+                        ${bulletin.title}
+                    </a>
+                `;
+                bulletinsList.appendChild(li);
+            });
+        }
+
+        fetch('/api/bulletins')
+            .then(response => response.json())
+            .then(data => {
+                const bulletins = data.map(b => parseBulletinFilename(b.name)).filter(Boolean);
+                if (bulletins.length === 0) {
+                    bulletinsList.innerHTML = '<li>No bulletins found.</li>';
+                    return;
+                }
+                renderBulletins(bulletins);
+                sectionSelect.addEventListener('change', function() {
+                    renderBulletins(bulletins, this.value);
+                });
+            })
+            .catch((err) => {
+                bulletinError.style.display = 'block';
+                bulletinError.textContent = 'No bulletins found (fetch error).';
+                bulletinsList.innerHTML = '';
+                console.error('Bulletin fetch error:', err);
+            });
+    </script>
+    <style>
+        /* General Body & Typography */
+        body {
+            font-family: 'Roboto', sans-serif;
+            color: #444;
+            background-color: #f7f7f7;
+            margin: 0;
+            padding: 0;
+        }
+
+        .main-content-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            padding: 2.5rem 1.5rem;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .main-column {
+            flex: 2;
+            min-width: 300px;
+            margin-right: 2rem;
+        }
+
+        .sidebar-column {
+            flex: 1;
+            min-width: 250px;
+        }
+
+        /* Hero Section Styling (already provided, but included for completeness) */
+        .hero {
+            position: relative;
+            width: 100vw;
+            min-height: 340px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background-size: cover;
+            background-position: center;
+            margin: 0;
+            padding: 0;
+            box-shadow: 0 2px 16px rgba(0, 0, 0, 0.10);
+            border-radius: 0;
+            overflow: hidden;
+        }
+        .hero-overlay {
+            position: absolute;
+            top: 0; left: 0; right: 0; bottom: 0;
+            background: linear-gradient(120deg, rgba(24, 24, 24, 0.55) 0%, rgba(24, 24, 24, 0.25) 100%);
+            z-index: 1;
+        }
+        .hero-content {
+            position: relative;
+            z-index: 2;
+            text-align: center;
+            width: 100%;
+            max-width: 700px;
+            margin: 0 auto;
+            padding: 2.5rem 1.2rem;
+            color: #fff;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            background: rgba(24, 24, 24, 0.18);
+            border-radius: 18px;
+            box-shadow: 0 2px 16px rgba(0, 0, 0, 0.10);
+        }
+        .hero-title {
+            font-family: 'Merriweather', serif;
+            font-size: 2.7rem;
+            font-weight: 700;
+            margin-bottom: 0.7rem;
+            color: #e6ff4a;
+            text-shadow: 0 2px 12px rgba(0, 0, 0, 0.18);
+            letter-spacing: 1px;
+        }
+        .hero-subtitle {
+            font-family: 'Roboto', sans-serif;
+            font-size: 1.35rem;
+            font-weight: 400;
+            margin-bottom: 0;
+            color: #fff;
+            text-shadow: 0 1px 8px rgba(0, 0, 0, 0.18);
+        }
+        @media (max-width: 900px) {
+            .hero {
+                min-height: 220px;
+            }
+            .hero-title {
+                font-size: 1.7rem;
+            }
+            .hero-content {
+                padding: 1.2rem 0.5rem;
+            }
+            .hero-subtitle {
+                font-size: 1rem;
+            }
+            .main-column {
+                margin-right: 0;
+            }
+            .sidebar-column {
+                margin-top: 2rem;
+            }
+        }
+
+        /* New Styling Rules for Content Sections */
+        .section-title {
+            font-family: 'Merriweather', serif;
+            font-size: 2.5rem;
+            font-weight: 700;
+            color: #2c3e50;
+            margin-bottom: 1rem;
+        }
+
+        .section-subtitle {
+            font-family: 'Merriweather', serif;
+            font-size: 1.8rem;
+            font-weight: 700;
+            color: #2c3e50;
+            margin-top: 2.5rem;
+            margin-bottom: 1.2rem;
+        }
+
+        .section-divider {
+            border: none;
+            height: 1px;
+            background-color: #ddd;
+            margin: 2.5rem 0;
+        }
+
+        .view-all-link {
+            display: inline-block;
+            font-family: 'Roboto', sans-serif;
+            font-weight: bold;
+            color: #3498db;
+            text-decoration: none;
+            margin-top: 1rem;
+            transition: color 0.2s ease-in-out;
+        }
+
+        .view-all-link:hover {
+            color: #2980b9;
+            text-decoration: underline;
+        }
+
+        /* Sidebar Styling */
+        .sidebar-section {
+            background-color: #fff;
+            padding: 1.5rem;
+            border-radius: 4px;
+            box-shadow: 0 1px 4px rgba(0, 0, 0, 0.05);
+            margin-bottom: 1.5rem;
+        }
+
+        .sidebar-title {
+            font-family: 'Roboto', sans-serif;
+            font-size: 1.1rem;
+            font-weight: bold;
+            text-transform: uppercase;
+            color: #2c3e50;
+            border-bottom: 2px solid #3498db;
+            padding-bottom: 0.5rem;
+            margin-bottom: 1rem;
+        }
+
+        /* Specific section styling adjustments */
+        .mass-times-list {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        .mass-times-list li {
+            margin-bottom: 0.5rem;
+        }
+        
+        #announcements-list {
+            list-style: none;
+            padding: 0;
+        }
+
+        .bulletin-item {
+            border-bottom: 1px solid #eee;
+            padding: 0.75rem 0;
+            list-style: none;
+        }
+
+        .bulletin-item:last-child {
+            border-bottom: none;
+        }
+
+        .bulletin-link {
+            color: #3498db;
+            text-decoration: none;
+            font-weight: 500;
+        }
+
+        .bulletin-link:hover {
+            text-decoration: underline;
+        }
+    </style>
+    <script src="assets/js/main.js"></script>
 </body>
 </html>
