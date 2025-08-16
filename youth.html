@@ -417,7 +417,7 @@
             });
         }
 
-        fetch('/api/bulletins')
+        fetch('data/bulletins.json')
             .then(response => response.json())
             .then(data => {
                 const bulletins = data.map(b => parseBulletinFilename(b.name)).filter(Boolean);
