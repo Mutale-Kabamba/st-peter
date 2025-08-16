@@ -320,7 +320,7 @@ document.addEventListener('DOMContentLoaded', () => {
   }
 
   function renderReadingsForDate(dateStr) {
-    fetch('data/readings.json')
+    fetch('data/readings_2025.json')
       .then(res => res.json())
       .then(allReadings => {
         const reading = allReadings.find(r => r.date === dateStr);
