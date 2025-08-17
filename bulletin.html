@@ -17,11 +17,58 @@
     <div id="nav-container"></div>
   </header>
   <section class="hero" style="background-image: url('assets/img/hero-church.jpg');">
-    <div class="hero-overlay"></div>
-    <div class="hero-content">
-        <h2 class="hero-title">St. Peter The Apostle - Airport Parish</h2>
-        <p class="hero-subtitle">A welcoming and vibrant community of faith</p>
-    </div>
+  <style>
+    .hero-content {
+      position: relative;
+      z-index: 2;
+      text-align: center;
+      width: 100%;
+      max-width: 700px;
+      margin: 0 auto;
+      padding: 2.5rem 1.2rem;
+      color: #fff;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      background: rgba(24, 24, 24, 0.18);
+      border-radius: 18px;
+      box-shadow: 0 2px 16px rgba(0, 0, 0, 0.10);
+    }
+    .hero-title {
+      font-family: 'Merriweather', serif;
+      font-size: 2.7rem;
+      font-weight: 700;
+      margin-bottom: 0.7rem;
+      color: #e6ff4a;
+      text-shadow: 0 2px 12px rgba(0, 0, 0, 0.18);
+      letter-spacing: 1px;
+    }
+    .hero-subtitle {
+      font-family: 'Roboto', sans-serif;
+      font-size: 1.35rem;
+      font-weight: 400;
+      margin-bottom: 0;
+      color: #fff;
+      text-shadow: 0 1px 8px rgba(0, 0, 0, 0.18);
+    }
+    @media (max-width: 900px) {
+      .hero-content {
+        padding: 1.2rem 0.5rem;
+      }
+      .hero-title {
+        font-size: 1.7rem;
+      }
+      .hero-subtitle {
+        font-size: 1rem;
+      }
+    }
+  </style>
+  <div class="hero-overlay"></div>
+  <div class="hero-content">
+    <h2 class="hero-title">Parish Bulletins</h2>
+    <p class="hero-subtitle">Stay updated with our latest news and homilies</p>
+  </div>
   </section>
   <main class="main-content">
     <section>
