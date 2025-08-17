@@ -298,8 +298,8 @@
     padding: 0.5rem;
   }
   .main-nav ul {
-    position: absolute;
-    top: 56px;
+  position: absolute;
+  top: 0;
     left: 0;
     right: 0;
     background: var(--primary);
@@ -351,8 +351,8 @@ html, body {
 @media (max-width: 900px) {
   .nav-links {
     display: none;
-    position: absolute;
-    top: 60px;
+  position: absolute;
+  top: 0;
     left: 0;
     right: 0;
     background: #181818;

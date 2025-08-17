@@ -1,0 +1,38 @@
+[
+  {
+    "title": "Parish Youth Sports Day",
+    "description": "A fun-filled day of sports and games for all parish youth. Join us for football, volleyball, and more!",
+    "date": "August 25, 2025",
+    "location": "St. Peter Parish Grounds",
+    "images": [
+      "assets/img/team1.png",
+      "assets/img/team2.png",
+      "assets/img/team3.png"
+    ],
+    "eventType": { "level": "Parish", "group": "Youth" }
+  },
+  {
+    "title": "Deanery Lay Group Retreat",
+    "description": "Lay groups from the deanery gather for a weekend of prayer, reflection, and fellowship.",
+    "date": "September 12, 2025",
+    "location": "Holy Family Retreat Center",
+    "images": [
+      "assets/img/team4.png",
+      "assets/img/team5.png",
+      "assets/img/team6.png"
+    ],
+    "eventType": { "level": "Deanery", "group": "Lay Group" }
+  },
+  {
+    "title": "Diocesan Holy Childhood Mass",
+    "description": "Children from across the diocese come together for a special Mass and celebration.",
+    "date": "October 3, 2025",
+    "location": "Cathedral of the Child Jesus",
+    "images": [
+      "assets/img/team7.png",
+      "assets/img/team8.png",
+      "assets/img/logo2.png"
+    ],
+    "eventType": { "level": "Diocese", "group": "Holy Childhood" }
+  }
+]

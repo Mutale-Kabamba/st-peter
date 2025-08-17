@@ -48,10 +48,21 @@
                     </ul>
             </div>
 
-            <div class="section-events">
-                <h2 class="section-subtitle">Upcoming Events</h2>
-                <ul id="events-list" class="events-list">
-                    </ul>
+            <div class="section-blog">
+                <h2 class="section-subtitle">Parish Blog</h2>
+                <div id="blog-slider" class="blog-slider">
+                    <p>Loading blog posts...</p>
+                </div>
+                <div id="blog-modal" class="blog-modal" style="display:none;">
+                    <div class="blog-modal-content">
+                        <span id="blog-modal-close" class="blog-modal-close">&times;</span>
+                        <div id="blog-modal-slider">
+                            <button id="blog-modal-prev" class="blog-modal-nav">&#10094;</button>
+                            <img id="blog-modal-img" class="blog-modal-img" src="" alt="Blog Image" />
+                            <button id="blog-modal-next" class="blog-modal-nav">&#10095;</button>
+                        </div>
+                    </div>
+                </div>
             </div>
         </section>
 
@@ -63,6 +74,11 @@
                 <div id="readings-content">
                     </div>
             </div>
+            <div class="sidebar-section">
+                <h3 class="sidebar-title">Upcoming Parish Events</h3>
+                <ul id="events-list" class="events-list">
+                    </ul>
+            </div>
 
             <div class="sidebar-section">
                 <h3 class="sidebar-title">Recent Bulletins</h3>
@@ -70,9 +86,10 @@
                     <label for="bulletin-section">Section:</label>
                     <select id="bulletin-section">
                         <option value="All">All</option>
-                        <option value="Homily">Homily</option>
-                        <option value="Announcement">Announcement</option>
-                        <option value="Event">Event</option>
+                        <option value="homilies">Homilies</option>
+                        <option value="announcements">Announcements</option>
+                        <option value="reports">Reports</option>
+                        <option value="lessons">Lessons</option>
                     </select>
                 </div>
                 <div id="bulletins-list" class="bulletins-list">
@@ -110,11 +127,14 @@
             bulletinsList.innerHTML = '';
             let filtered = bulletins;
             if (section !== 'All') {
-                filtered = bulletins.filter(b => b.section === section);
+                filtered = bulletins.filter(b => b.section.toLowerCase() === section.toLowerCase());
             }
             filtered = filtered.sort((a, b) => new Date(b.date) - new Date(a.date)).slice(0, 5);
             if (filtered.length === 0) {
-                bulletinsList.innerHTML = '<li>No bulletins found.</li>';
+                const li = document.createElement('li');
+                li.className = 'bulletin-item';
+                li.textContent = 'No bulletins found.';
+                bulletinsList.appendChild(li);
                 return;
             }
             filtered.forEach(bulletin => {
@@ -148,8 +168,401 @@
                 bulletinsList.innerHTML = '';
                 console.error('Bulletin fetch error:', err);
             });
+
+        // Parish Announcements
+        const announcementsList = document.getElementById('announcements-list');
+        announcementsList.innerHTML = '<li>Loading announcements...</li>';
+        fetch('data/parish-announcements.json')
+            .then(response => response.json())
+            .then(announcements => {
+                announcementsList.innerHTML = '';
+                if (!Array.isArray(announcements) || announcements.length === 0) {
+                    announcementsList.innerHTML = '<li>No parish announcements at this time.</li>';
+                    return;
+                }
+                announcements.forEach(announcement => {
+                    const li = document.createElement('li');
+                    li.className = 'list-item';
+                    li.innerHTML = `
+                        <h4>${announcement.title}</h4>
+                        <p>${announcement.date}</p>
+                        <p>${announcement.description}</p>
+                    `;
+                    announcementsList.appendChild(li);
+                });
+            })
+            .catch(error => {
+                console.error('Error fetching parish announcements:', error);
+                announcementsList.innerHTML = '<li>Failed to load parish announcements.</li>';
+            });
+
+        // Parish Events
+        const eventsList = document.getElementById('events-list');
+        eventsList.innerHTML = '<li>Loading events...</li>';
+        fetch('data/parish-events.json')
+            .then(response => response.json())
+            .then(events => {
+                eventsList.innerHTML = '';
+                if (!Array.isArray(events) || events.length === 0) {
+                    eventsList.innerHTML = '<li>No upcoming parish events at this time.</li>';
+                    return;
+                }
+                events.forEach(event => {
+                    const li = document.createElement('li');
+                    li.className = 'list-item';
+                    li.innerHTML = `
+                        <h4>${event.title}</h4>
+                        <p>${event.date}</p>
+                        <p>${event.description}</p>
+                    `;
+                    eventsList.appendChild(li);
+                });
+            })
+            .catch(error => {
+                console.error('Error fetching parish events:', error);
+                eventsList.innerHTML = '<li>Failed to load parish events.</li>';
+            });
+
+        // Mini Blog Slider Section
+        const blogSlider = document.getElementById('blog-slider');
+        const blogModal = document.getElementById('blog-modal');
+    const blogModalImg = document.getElementById('blog-modal-img');
+    const blogModalClose = document.getElementById('blog-modal-close');
+    const blogModalPrev = document.getElementById('blog-modal-prev');
+    const blogModalNext = document.getElementById('blog-modal-next');
+    let blogModalImagesArr = [];
+    let blogModalCurrentIndex = 0;
+        let blogPosts = [];
+        let currentBlogIndex = 0;
+        let sliderInterval = null;
+
+        function showBlogCard(index) {
+            const post = blogPosts[index];
+            if (!post) return;
+            blogSlider.innerHTML = '';
+            const div = document.createElement('div');
+            div.className = 'blog-card blog-slider-card';
+            div.innerHTML = `
+                <div class="blog-slider-image-container">
+                    <img src="${post.images && post.images.length ? post.images[0] : 'https://placehold.co/320x200/AAB7B8/FFFFFF?text=Image'}" alt="Blog Main Image" class="blog-slider-img" id="blog-main-img" style="cursor:pointer;" onerror="this.onerror=null;this.src='https://placehold.co/320x200/AAB7B8/FFFFFF?text=Image';">
+                </div>
+                <div class="blog-content">
+                    <h3 class="blog-title">${post.title}</h3>
+                    <p class="blog-desc">${post.description}</p>
+                    <div class="blog-meta">
+                        <span class="blog-date">${post.date}</span> |
+                        <span class="blog-location">${post.location}</span>
+                    </div>
+                    <div class="blog-event-type">
+                        ${post.eventType ? `<span class="event-type-label">${post.eventType.level}: ${post.eventType.group}</span>` : ''}
+                    </div>
+                </div>
+            `;
+            blogSlider.appendChild(div);
+
+            // Add click event for main image to show modal
+            const mainImg = div.querySelector('#blog-main-img');
+            if (mainImg) {
+                mainImg.onclick = function() {
+                    showBlogModal(post.images);
+                };
+            }
+        }
+
+        function showBlogModal(images) {
+            blogModalImagesArr = images || [];
+            blogModalCurrentIndex = 0;
+            updateBlogModalImage();
+            blogModal.style.display = 'flex';
+        }
+
+        function updateBlogModalImage() {
+            if (!blogModalImagesArr.length) {
+                blogModalImg.src = 'https://placehold.co/320x200/AAB7B8/FFFFFF?text=Image';
+                return;
+            }
+            blogModalImg.src = blogModalImagesArr[blogModalCurrentIndex];
+            blogModalImg.onerror = function() { this.src = 'https://placehold.co/320x200/AAB7B8/FFFFFF?text=Image'; };
+        }
+
+        blogModalPrev.onclick = function(e) {
+            e.stopPropagation();
+            blogModalCurrentIndex = (blogModalCurrentIndex - 1 + blogModalImagesArr.length) % blogModalImagesArr.length;
+            updateBlogModalImage();
+        };
+        blogModalNext.onclick = function(e) {
+            e.stopPropagation();
+            blogModalCurrentIndex = (blogModalCurrentIndex + 1) % blogModalImagesArr.length;
+            updateBlogModalImage();
+        };
+
+        blogModalClose.onclick = function() {
+            blogModal.style.display = 'none';
+        };
+        window.onclick = function(event) {
+            if (event.target === blogModal) {
+                blogModal.style.display = 'none';
+            }
+        };
+
+        function startBlogSlider() {
+            if (sliderInterval) clearInterval(sliderInterval);
+            sliderInterval = setInterval(() => {
+                currentBlogIndex = (currentBlogIndex + 1) % blogPosts.length;
+                showBlogCard(currentBlogIndex);
+            }, 4000);
+        }
+
+        fetch('data/blog.json')
+            .then(response => response.json())
+            .then(posts => {
+                if (!Array.isArray(posts) || posts.length === 0) {
+                    blogSlider.innerHTML = '<p>No blog posts found.</p>';
+                    return;
+                }
+                blogPosts = posts;
+                currentBlogIndex = 0;
+                showBlogCard(currentBlogIndex);
+                startBlogSlider();
+            })
+            .catch(error => {
+                console.error('Error fetching blog posts:', error);
+                blogSlider.innerHTML = '<p>Failed to load blog posts.</p>';
+            });
     </script>
     <style>
+        /* Blog Slider Styles */
+        .blog-slider {
+            position: relative;
+            min-height: 320px;
+            width: 100%;
+            margin: 0;
+        }
+        .blog-slider-card {
+            flex-direction: column;
+            align-items: stretch;
+            padding: 0;
+            box-shadow: 0 2px 12px rgba(0,0,0,0.07);
+            border-radius: 8px;
+            background: #fff;
+            display: flex;
+            gap: 0;
+            width: 100%;
+        }
+        .blog-slider-image-container {
+            width: 100%;
+            margin-bottom: 0;
+        }
+        .blog-slider-img {
+            width: 100%;
+            height: 340px;
+            object-fit: cover;
+            border-radius: 8px 8px 0 0;
+            box-shadow: 0 1px 8px rgba(52,152,219,0.10);
+            cursor: pointer;
+            background: #eee;
+            display: block;
+        }
+        /* Blog Modal Styles */
+        .blog-modal {
+            position: fixed;
+            z-index: 9999;
+            left: 0;
+            top: 0;
+            width: 100vw;
+            height: 100vh;
+            background: rgba(0,0,0,0.5);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .blog-modal-content {
+            background: none;
+            padding: 0;
+            border-radius: 0;
+            box-shadow: none;
+            max-width: 100vw;
+            width: auto;
+            position: relative;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        .blog-modal-close {
+            position: absolute;
+            top: -40px;
+            right: 0;
+            font-size: 2.5rem;
+            color: #3498db;
+            cursor: pointer;
+            font-weight: bold;
+            background: none;
+            border: none;
+        }
+        #blog-modal-slider {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 1.5rem;
+            width: 100%;
+        }
+        .blog-modal-img {
+            width: 80vw;
+            max-width: 700px;
+            height: 60vh;
+            object-fit: contain;
+            border-radius: 12px;
+            background: none;
+            box-shadow: 0 2px 24px rgba(0,0,0,0.18);
+        }
+        .blog-modal-nav {
+            background: rgba(255,255,255,0.8);
+            border: none;
+            font-size: 2.5rem;
+            color: #3498db;
+            cursor: pointer;
+            border-radius: 50%;
+            width: 48px;
+            height: 48px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            box-shadow: 0 2px 12px rgba(0,0,0,0.10);
+            transition: background 0.2s;
+        }
+        .blog-modal-nav:hover {
+            background: #e6ff4a;
+        }
+        @media (max-width: 900px) {
+            .blog-modal-img {
+                width: 98vw;
+                max-width: 98vw;
+                height: 40vh;
+            }
+            .blog-modal-close {
+                top: -30px;
+                font-size: 2rem;
+            }
+            .blog-modal-nav {
+                font-size: 2rem;
+                width: 38px;
+                height: 38px;
+            }
+            .blog-slider-img {
+                width: 100%;
+                height: 160px;
+            }
+            .blog-modal-content {
+                padding: 1rem;
+            }
+            .blog-slider-card {
+                padding: 0.5rem 0.2rem;
+            }
+            .blog-content {
+                padding: 0.5rem 0.2rem;
+            }
+            .blog-title {
+                font-size: 1.1rem;
+                margin-bottom: 0.2rem;
+            }
+            .blog-desc {
+                font-size: 0.97rem;
+                margin-bottom: 0.3rem;
+            }
+            .blog-meta {
+                font-size: 0.9rem;
+                margin-bottom: 0.2rem;
+            }
+            .blog-event-type {
+                font-size: 0.9rem;
+                margin-bottom: 0.2rem;
+            }
+            .event-type-label {
+                display: inline-block;
+                margin-top: 0.3rem;
+                font-size: 0.9rem;
+                padding: 2px 6px;
+            }
+        }
+        /* Mini Blog Section */
+        .section-blog {
+            margin-top: 2.5rem;
+        }
+        #blog-list {
+            display: flex;
+            flex-direction: column;
+            gap: 1.5rem;
+        }
+        .blog-card {
+            background: #fff;
+            border-radius: 8px;
+            box-shadow: 0 2px 12px rgba(0,0,0,0.07);
+            padding: 1.2rem 1.5rem;
+            display: flex;
+            gap: 1.2rem;
+            align-items: flex-start;
+        }
+        .blog-images {
+            display: flex;
+            flex-direction: column;
+            gap: 0.5rem;
+        }
+        .blog-img {
+            width: 80px;
+            height: 80px;
+            object-fit: cover;
+            border-radius: 6px;
+            background: #eee;
+        }
+        .blog-content {
+            flex: 1;
+        }
+        .blog-title {
+            font-family: 'Merriweather', serif;
+            font-size: 1.25rem;
+            font-weight: bold;
+            margin-bottom: 0.3rem;
+            color: #2c3e50;
+        }
+        .blog-desc {
+            font-size: 1rem;
+            color: #444;
+            margin-bottom: 0.5rem;
+        }
+        .blog-meta {
+            font-size: 0.95rem;
+            color: #888;
+            margin-bottom: 0.3rem;
+        }
+        .blog-event-type {
+            font-size: 0.95rem;
+            color: #3498db;
+            font-weight: 500;
+        }
+        .event-type-label {
+            background: #e6ff4a;
+            color: #222;
+            border-radius: 4px;
+            padding: 2px 8px;
+            font-size: 0.93rem;
+            margin-right: 0.5rem;
+        }
+        @media (max-width: 900px) {
+            .blog-card {
+                flex-direction: column;
+                align-items: stretch;
+                padding: 1rem 0.7rem;
+            }
+            .blog-images {
+                flex-direction: row;
+                gap: 0.5rem;
+                margin-bottom: 0.7rem;
+            }
+            .blog-img {
+                width: 60px;
+                height: 60px;
+            }
+        }
         /* General Body & Typography */
         body {
             font-family: 'Roboto', sans-serif;
@@ -166,51 +579,59 @@
             padding: 2.5rem 1.5rem;
             max-width: 1200px;
             margin: 0 auto;
+            box-sizing: border-box;
         }
 
         .main-column {
             flex: 2;
             min-width: 300px;
             margin-right: 2rem;
+            box-sizing: border-box;
         }
 
         .sidebar-column {
             flex: 1;
             min-width: 250px;
+            box-sizing: border-box;
         }
 
         /* Hero Section Styling (already provided, but included for completeness) */
-        .hero {
+        .blog-slider {
             position: relative;
-            width: 100vw;
-            min-height: 340px;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            background-size: cover;
-            background-position: center;
-            margin: 0;
-            padding: 0;
-            box-shadow: 0 2px 16px rgba(0, 0, 0, 0.10);
-            border-radius: 0;
-            overflow: hidden;
-        }
-        .hero-overlay {
-            position: absolute;
-            top: 0; left: 0; right: 0; bottom: 0;
-            background: linear-gradient(120deg, rgba(24, 24, 24, 0.55) 0%, rgba(24, 24, 24, 0.25) 100%);
-            z-index: 1;
-        }
-        .hero-content {
-            position: relative;
-            z-index: 2;
-            text-align: center;
+            min-height: 320px;
             width: 100%;
-            max-width: 700px;
             margin: 0 auto;
-            padding: 2.5rem 1.2rem;
-            color: #fff;
+            box-sizing: border-box;
+        }
+        .blog-slider-card {
+            flex-direction: column;
+            align-items: stretch;
+            padding: 0;
+            box-shadow: 0 2px 12px rgba(0,0,0,0.07);
+            border-radius: 8px;
+            background: #fff;
             display: flex;
+            gap: 0;
+            width: 100%;
+            max-width: 100%;
+            box-sizing: border-box;
+        }
+        .blog-slider-image-container {
+            width: 100%;
+            margin-bottom: 0;
+            box-sizing: border-box;
+        }
+        .blog-slider-img {
+            width: 100%;
+            height: 340px;
+            object-fit: cover;
+            border-radius: 8px 8px 0 0;
+            box-shadow: 0 1px 8px rgba(52,152,219,0.10);
+            cursor: pointer;
+            background: #eee;
+            display: block;
+            box-sizing: border-box;
+        }
             flex-direction: column;
             align-items: center;
             justify-content: center;
@@ -300,20 +721,71 @@
         .sidebar-section {
             background-color: #fff;
             padding: 1.5rem;
-            border-radius: 4px;
-            box-shadow: 0 1px 4px rgba(0, 0, 0, 0.05);
+            border-radius: 8px;
+            box-shadow: 0 2px 12px rgba(0,0,0,0.07);
             margin-bottom: 1.5rem;
         }
 
         .sidebar-title {
             font-family: 'Roboto', sans-serif;
-            font-size: 1.1rem;
+            font-size: 1.15rem;
             font-weight: bold;
             text-transform: uppercase;
             color: #2c3e50;
             border-bottom: 2px solid #3498db;
             padding-bottom: 0.5rem;
             margin-bottom: 1rem;
+            letter-spacing: 0.5px;
+        }
+
+        /* Daily Readings Card Styling */
+        #readings-content {
+            margin-top: 1rem;
+        }
+        .reading-feast {
+            font-size: 1rem;
+            font-weight: 500;
+            color: #444;
+            margin-bottom: 0.7rem;
+        }
+        .reading-list {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+        .reading-card {
+            background: #fff;
+            border-radius: 7px;
+            box-shadow: 0 1px 6px rgba(52,152,219,0.07);
+            padding: 0.9rem 1.1rem;
+            margin-bottom: 0.8rem;
+            border-left: 5px solid #ffe066;
+            transition: box-shadow 0.2s;
+        }
+        .reading-card:last-child {
+            margin-bottom: 0;
+        }
+        .reading-title {
+            font-weight: 600;
+            color: #2c3e50;
+            font-size: 1.07rem;
+            margin-bottom: 0.2rem;
+        }
+        .reading-ref {
+            font-size: 0.97rem;
+            color: #888;
+            font-style: italic;
+        }
+        @media (max-width: 900px) {
+            .sidebar-section {
+                padding: 1rem;
+            }
+            #readings-content {
+                margin-top: 0.7rem;
+            }
+            .reading-card {
+                padding: 0.7rem 0.7rem;
+            }
         }
 
         /* Specific section styling adjustments */
