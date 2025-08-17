@@ -86,9 +86,10 @@
                     <label for="bulletin-section">Section:</label>
                     <select id="bulletin-section">
                         <option value="All">All</option>
-                        <option value="Homily">Homily</option>
-                        <option value="Announcement">Announcement</option>
-                        <option value="Event">Event</option>
+                        <option value="homilies">Homilies</option>
+                        <option value="announcements">Announcements</option>
+                        <option value="reports">Reports</option>
+                        <option value="lessons">Lessons</option>
                     </select>
                 </div>
                 <div id="bulletins-list" class="bulletins-list">
@@ -126,11 +127,14 @@
             bulletinsList.innerHTML = '';
             let filtered = bulletins;
             if (section !== 'All') {
-                filtered = bulletins.filter(b => b.section === section);
+                filtered = bulletins.filter(b => b.section.toLowerCase() === section.toLowerCase());
             }
             filtered = filtered.sort((a, b) => new Date(b.date) - new Date(a.date)).slice(0, 5);
             if (filtered.length === 0) {
-                bulletinsList.innerHTML = '<li>No bulletins found.</li>';
+                const li = document.createElement('li');
+                li.className = 'bulletin-item';
+                li.textContent = 'No bulletins found.';
+                bulletinsList.appendChild(li);
                 return;
             }
             filtered.forEach(bulletin => {
@@ -444,19 +448,40 @@
                 width: 38px;
                 height: 38px;
             }
-        }
-        @media (max-width: 900px) {
             .blog-slider-img {
                 width: 100%;
                 height: 160px;
             }
-            .blog-modal-img {
-                width: 100%;
-                max-width: 220px;
-                height: 120px;
-            }
             .blog-modal-content {
                 padding: 1rem;
+            }
+            .blog-slider-card {
+                padding: 0.5rem 0.2rem;
+            }
+            .blog-content {
+                padding: 0.5rem 0.2rem;
+            }
+            .blog-title {
+                font-size: 1.1rem;
+                margin-bottom: 0.2rem;
+            }
+            .blog-desc {
+                font-size: 0.97rem;
+                margin-bottom: 0.3rem;
+            }
+            .blog-meta {
+                font-size: 0.9rem;
+                margin-bottom: 0.2rem;
+            }
+            .blog-event-type {
+                font-size: 0.9rem;
+                margin-bottom: 0.2rem;
+            }
+            .event-type-label {
+                display: inline-block;
+                margin-top: 0.3rem;
+                font-size: 0.9rem;
+                padding: 2px 6px;
             }
         }
         /* Mini Blog Section */

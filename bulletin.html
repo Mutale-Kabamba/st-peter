@@ -52,6 +52,59 @@
       color: #fff;
       text-shadow: 0 1px 8px rgba(0, 0, 0, 0.18);
     }
+    .bulletin-filters {
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      gap: 1.2rem;
+      align-items: center;
+      margin-bottom: 1.5rem;
+      background: #f8f8f8;
+      border-radius: 10px;
+      padding: 1rem 1.2rem;
+      box-shadow: 0 2px 12px rgba(0,0,0,0.06);
+      justify-content: flex-start;
+    }
+    .bulletin-filters label {
+      font-size: 1.08rem;
+      margin-right: 0.3rem;
+      color: #222;
+      font-weight: 500;
+    }
+    .bulletin-filters select {
+      font-size: 1.08rem;
+      padding: 0.35rem 0.9rem;
+      border-radius: 6px;
+      border: 1px solid #d1d1d1;
+      background: #fff;
+      margin-right: 0.5rem;
+      min-width: 110px;
+      box-shadow: 0 1px 4px rgba(0,0,0,0.04);
+      transition: border-color 0.2s;
+    }
+    .bulletin-filters select:focus {
+      border-color: #e6ff4a;
+      outline: none;
+    }
+    #bulletin-results {
+      margin-top: 1.2rem;
+      font-size: 1.12rem;
+      background: #fff;
+      border-radius: 10px;
+      box-shadow: 0 2px 12px rgba(0,0,0,0.06);
+      padding: 1.1rem 1.2rem;
+      min-height: 60px;
+    }
+    #bulletin-results a {
+      color: #1a3a7c;
+      text-decoration: underline;
+      font-weight: 500;
+      transition: color 0.2s;
+    }
+    #bulletin-results a:hover {
+      color: #e6ff4a;
+      text-decoration: underline;
+    }
     @media (max-width: 900px) {
       .hero-content {
         padding: 1.2rem 0.5rem;
@@ -61,6 +114,24 @@
       }
       .hero-subtitle {
         font-size: 1rem;
+      }
+      .bulletin-filters {
+        flex-direction: column;
+        align-items: stretch;
+        gap: 0.5rem;
+        padding: 0.7rem 0.5rem;
+      }
+      .bulletin-filters label,
+      .bulletin-filters select {
+        font-size: 0.98rem;
+        margin-right: 0;
+        width: 100%;
+        min-width: unset;
+        box-sizing: border-box;
+      }
+      #bulletin-results {
+        font-size: 1rem;
+        padding: 0.7rem 0.5rem;
       }
     }
   </style>
