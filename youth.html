@@ -100,23 +100,24 @@
         }
 
         .list-item {
-            background-color: #fff;
-            padding: 1rem 1.5rem;
-            border-radius: 8px;
-            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
-            margin-bottom: 1rem;
+            background: none;
+            box-shadow: none;
+            border-radius: 0;
+            padding: 0;
+            margin-bottom: 1.2rem;
+            list-style: none;
         }
-        
         .list-item h4 {
             font-family: 'Merriweather', serif;
-            font-size: 1.1rem;
-            margin-bottom: 0.5rem;
+            font-size: 1.08rem;
+            font-weight: bold;
+            margin-bottom: 0.2rem;
+            color: #222;
         }
-
         .list-item p {
-            font-size: 0.9rem;
-            color: #555;
-            margin: 0;
+            font-size: 1rem;
+            color: #444;
+            margin: 0 0 0.5rem 0;
         }
         
         /* Sidebar Styling */
@@ -261,13 +262,6 @@
                 </div>
             </div>
 
-            <div class="section-events">
-                <h2 class="section-subtitle">Upcoming Youth Events</h2>
-                <ul id="events-list">
-                    <li class="list-item">Loading youth events...</li>
-                </ul>
-            </div>
-
             <div class="section-announcements">
                 <h2 class="section-subtitle">Youth Announcements</h2>
                 <!-- The list will be populated by the JavaScript below -->
@@ -284,7 +278,12 @@
                 <input type="date" id="readings-date" name="readings-date" />
                 <div id="readings-content"></div>
             </div>
-            
+            <div class="sidebar-section">
+                <h3 class="sidebar-title">Upcoming Youth Events</h3>
+                <ul id="events-list">
+                    <li class="list-item">Loading youth events...</li>
+                </ul>
+            </div>
             <div class="sidebar-section">
                 <h3 class="sidebar-title">Recent Bulletins</h3>
                 <div class="bulletins-controls">
