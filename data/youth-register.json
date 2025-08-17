@@ -1,3 +1,56 @@
-{
-  "activeYouth": 185
-}
+[
+  {
+    "name": "MUTALE KABAMBA",
+    "position": "COORDINATOR",
+    "scc": "ST JOSEPH",
+    "phone": "772640546",
+    "dob": "1995-03-12",
+    "occupation": "Student",
+    "address": "Plot 12, Airport Area"
+  },
+  {
+    "name": "BRUCE CHENGO CHIBWE",
+    "position": "VICE COORDINATOR",
+    "scc": "ST JOSEPH",
+    "phone": "971439944",
+    "dob": "1996-07-22",
+    "occupation": "Accountant",
+    "address": "House 34, St. Joseph Compound"
+  },
+  {
+    "name": "OLIPA MUFANA",
+    "position": "SECRETARY",
+    "scc": "ST FRANCIS",
+    "phone": "",
+    "dob": "1997-11-05",
+    "occupation": "Teacher",
+    "address": "Flat 8, Francis Block"
+  },
+  {
+    "name": "PHELLON TEMBO",
+    "position": "VICE SECRETARY",
+    "scc": "ST. FRANCIS",
+    "phone": "",
+    "dob": "1998-02-18",
+    "occupation": "Student",
+    "address": "Room 2, Francis Hostel"
+  },
+  {
+    "name": "ESTHER MAKUMBI",
+    "position": "TREASURER",
+    "scc": "ST. JOSEPH",
+    "phone": "",
+    "dob": "1995-09-30",
+    "occupation": "Nurse",
+    "address": "Plot 7, Joseph Area"
+  },
+  {
+    "name": "CHOOLWE MAUMA",
+    "position": "VICE TREASURER",
+    "scc": "ST. BERNEDETTE",
+    "phone": "777051701",
+    "dob": "1996-12-14",
+    "occupation": "Engineer",
+    "address": "House 22, Bernadette Street"
+  }
+]
