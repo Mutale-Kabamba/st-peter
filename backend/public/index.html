@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1.0">
+  <title>Youth Register Admin Dashboard</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Youth Register Admin Dashboard</h1>
+    <form id="login-form">
+      <input type="text" id="username" placeholder="Username" required>
+      <input type="password" id="password" placeholder="Password" required>
+      <button type="submit">Login</button>
+    </form>
+    <div id="dashboard" style="display:none;">
+      <button id="logout">Logout</button>
+      <h2>Register</h2>
+      <form id="add-youth-form">
+        <input type="text" name="name" placeholder="Name" required>
+        <input type="text" name="position" placeholder="Position" required>
+        <input type="text" name="scc" placeholder="SCC" required>
+        <input type="text" name="phone" placeholder="Phone">
+        <input type="date" name="dob" placeholder="DOB">
+        <input type="text" name="occupation" placeholder="Occupation">
+        <input type="text" name="address" placeholder="Address">
+        <button type="submit">Add Youth</button>
+      </form>
+      <h2>Youth List</h2>
+      <table id="youth-table">
+        <thead>
+          <tr>
+            <th>Name</th><th>Position</th><th>SCC</th><th>Phone</th><th>DOB</th><th>Occupation</th><th>Address</th><th>Active</th><th>Actions</th>
+          </tr>
+        </thead>
+        <tbody></tbody>
+      </table>
+      <h2>Statistics</h2>
+      <div id="stats"></div>
+    </div>
+  </div>
+  <script src="main.js"></script>
+</body>
+</html>
+app.use('/admin', express.static(path.join(__dirname, 'public')));
