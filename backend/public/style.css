@@ -1,0 +1,12 @@
+body { font-family: Arial, sans-serif; background: #f8f8f8; margin: 0; }
+.container { max-width: 900px; margin: 2rem auto; background: #fff; border-radius: 10px; box-shadow: 0 2px 12px rgba(0,0,0,0.08); padding: 2rem; }
+h1 { color: #1a3a7c; }
+form { margin-bottom: 1.5rem; }
+input, button { margin: 0.3rem 0.5rem 0.3rem 0; padding: 0.5rem; border-radius: 5px; border: 1px solid #ccc; }
+table { width: 100%; border-collapse: collapse; margin-top: 1rem; }
+th, td { border: 1px solid #ddd; padding: 0.5rem; text-align: left; }
+th { background: #e6ff4a; }
+tr:nth-child(even) { background: #f2f2f2; }
+#stats { margin-top: 1rem; background: #f9f9f9; padding: 1rem; border-radius: 8px; }
+button { background: #1a3a7c; color: #fff; border: none; cursor: pointer; }
+button:hover { background: #e6ff4a; color: #181818; }
