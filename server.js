@@ -6,10 +6,6 @@ const fs = require('fs');
 const app = express();
 const PORT = process.env.PORT || 3000;
 
-// Set EJS as the view engine
-app.set('view engine', 'ejs');
-app.set('views', path.join(__dirname, 'views'));
-
 // Serve static files from the root directory
 app.use(express.static(path.join(__dirname)));
 
@@ -28,27 +24,37 @@ app.get('/api/bulletins', (req, res) => {
 
 // About page
 app.get('/about', (req, res) => {
-  res.render('about');
+  res.sendFile(path.join(__dirname, 'about.html'));
 });
 
 // Mass Times page
 app.get('/mass-times', (req, res) => {
-  res.render('mass-times');
+  res.sendFile(path.join(__dirname, 'mass-times.html'));
 });
 
 // Ministries page
 app.get('/ministries', (req, res) => {
-  res.render('ministries');
+  res.sendFile(path.join(__dirname, 'ministries.html'));
 });
 
 // Route for contact page
 app.get('/contact', (req, res) => {
-  res.render('contact');
+  res.sendFile(path.join(__dirname, 'contact.html'));
 });
 
-// Default route renders index.ejs
+// Bulletin page
+app.get('/bulletin', (req, res) => {
+  res.sendFile(path.join(__dirname, 'bulletin.html'));
+});
+
+// Youth page
+app.get('/youth', (req, res) => {
+  res.sendFile(path.join(__dirname, 'youth.html'));
+});
+
+// Default route renders index.html
 app.get('/', (req, res) => {
-  res.render('index');
+  res.sendFile(path.join(__dirname, 'index.html'));
 });
 
 app.listen(PORT, () => {
