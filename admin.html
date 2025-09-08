@@ -1,0 +1,532 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Admin Dashboard - St. Peter The Apostle Parish</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background: #f5f5f5;
+      color: #333;
+    }
+    
+    .header {
+      background: #1e3a8a;
+      color: white;
+      padding: 1rem 2rem;
+      box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    }
+    
+    .header h1 {
+      font-size: 1.5rem;
+      margin-bottom: 0.5rem;
+    }
+    
+    .header p {
+      opacity: 0.9;
+    }
+    
+    .container {
+      max-width: 1200px;
+      margin: 2rem auto;
+      padding: 0 2rem;
+    }
+    
+    .dashboard-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 2rem;
+      margin-bottom: 2rem;
+    }
+    
+    .card {
+      background: white;
+      border-radius: 8px;
+      padding: 1.5rem;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    }
+    
+    .card h2 {
+      color: #1e3a8a;
+      margin-bottom: 1rem;
+      font-size: 1.2rem;
+    }
+    
+    .dataset-list {
+      list-style: none;
+    }
+    
+    .dataset-item {
+      padding: 0.75rem;
+      border: 1px solid #e5e7eb;
+      border-radius: 4px;
+      margin-bottom: 0.5rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      cursor: pointer;
+      transition: background 0.2s;
+    }
+    
+    .dataset-item:hover {
+      background: #f9fafb;
+    }
+    
+    .btn {
+      padding: 0.5rem 1rem;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+      font-size: 0.9rem;
+      transition: background 0.2s;
+    }
+    
+    .btn-primary {
+      background: #1e3a8a;
+      color: white;
+    }
+    
+    .btn-primary:hover {
+      background: #1e40af;
+    }
+    
+    .btn-danger {
+      background: #dc2626;
+      color: white;
+    }
+    
+    .btn-danger:hover {
+      background: #b91c1c;
+    }
+    
+    .btn-success {
+      background: #059669;
+      color: white;
+    }
+    
+    .btn-success:hover {
+      background: #047857;
+    }
+    
+    .modal {
+      display: none;
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: rgba(0,0,0,0.5);
+      z-index: 1000;
+    }
+    
+    .modal-content {
+      background: white;
+      border-radius: 8px;
+      padding: 2rem;
+      max-width: 800px;
+      max-height: 80vh;
+      margin: 5vh auto;
+      position: relative;
+      overflow-y: auto;
+    }
+    
+    .modal-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 1rem;
+    }
+    
+    .close {
+      font-size: 1.5rem;
+      cursor: pointer;
+      color: #666;
+    }
+    
+    .close:hover {
+      color: #000;
+    }
+    
+    .form-group {
+      margin-bottom: 1rem;
+    }
+    
+    .form-group label {
+      display: block;
+      margin-bottom: 0.5rem;
+      font-weight: 500;
+    }
+    
+    .form-group input,
+    .form-group textarea {
+      width: 100%;
+      padding: 0.75rem;
+      border: 1px solid #d1d5db;
+      border-radius: 4px;
+      font-size: 0.9rem;
+    }
+    
+    .form-group textarea {
+      height: 400px;
+      font-family: 'Courier New', monospace;
+    }
+    
+    .bulletin-item {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 0.75rem;
+      border: 1px solid #e5e7eb;
+      border-radius: 4px;
+      margin-bottom: 0.5rem;
+    }
+    
+    .bulletin-info {
+      flex: 1;
+    }
+    
+    .bulletin-name {
+      font-weight: 500;
+      color: #1e3a8a;
+    }
+    
+    .bulletin-size {
+      font-size: 0.8rem;
+      color: #666;
+    }
+    
+    .upload-area {
+      border: 2px dashed #d1d5db;
+      border-radius: 8px;
+      padding: 2rem;
+      text-align: center;
+      margin-bottom: 1rem;
+    }
+    
+    .status-message {
+      padding: 0.75rem;
+      border-radius: 4px;
+      margin-bottom: 1rem;
+      display: none;
+    }
+    
+    .status-success {
+      background: #d1fae5;
+      border: 1px solid #059669;
+      color: #059669;
+    }
+    
+    .status-error {
+      background: #fee2e2;
+      border: 1px solid #dc2626;
+      color: #dc2626;
+    }
+    
+    @media (max-width: 768px) {
+      .dashboard-grid {
+        grid-template-columns: 1fr;
+      }
+      
+      .container {
+        padding: 0 1rem;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="header">
+    <h1>Admin Dashboard</h1>
+    <p>St. Peter The Apostle Parish - Content Management</p>
+  </div>
+  
+  <div class="container">
+    <div class="status-message" id="statusMessage"></div>
+    
+    <div class="dashboard-grid">
+      <div class="card">
+        <h2>JSON Datasets</h2>
+        <p style="margin-bottom: 1rem; color: #666;">Manage parish data files</p>
+        <ul class="dataset-list" id="datasetList">
+          <!-- Datasets will be loaded here -->
+        </ul>
+      </div>
+      
+      <div class="card">
+        <h2>Bulletins</h2>
+        <p style="margin-bottom: 1rem; color: #666;">Manage PDF bulletins</p>
+        <button class="btn btn-primary" onclick="showUploadModal()">Upload New Bulletin</button>
+        <div id="bulletinList" style="margin-top: 1rem;">
+          <!-- Bulletins will be loaded here -->
+        </div>
+      </div>
+    </div>
+    
+    <div class="card">
+      <h2>Quick Links</h2>
+      <p style="margin-bottom: 1rem; color: #666;">Navigate to public site</p>
+      <a href="/" class="btn btn-primary" style="text-decoration: none; display: inline-block;">View Public Site</a>
+    </div>
+  </div>
+  
+  <!-- Dataset Edit Modal -->
+  <div class="modal" id="datasetModal">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h3 id="modalTitle">Edit Dataset</h3>
+        <span class="close" onclick="closeModal()">&times;</span>
+      </div>
+      <form id="datasetForm">
+        <div class="form-group">
+          <label for="datasetContent">JSON Content:</label>
+          <textarea id="datasetContent" placeholder="Enter valid JSON..."></textarea>
+        </div>
+        <div class="form-group">
+          <button type="submit" class="btn btn-success">Save Changes</button>
+          <button type="button" class="btn btn-primary" onclick="closeModal()">Cancel</button>
+        </div>
+      </form>
+    </div>
+  </div>
+  
+  <!-- Bulletin Upload Modal -->
+  <div class="modal" id="uploadModal">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h3>Upload Bulletin</h3>
+        <span class="close" onclick="closeUploadModal()">&times;</span>
+      </div>
+      <form id="uploadForm" enctype="multipart/form-data">
+        <div class="upload-area">
+          <p>Drag and drop a PDF file here, or click to select</p>
+          <input type="file" id="bulletinFile" name="bulletin" accept=".pdf" style="margin-top: 1rem;">
+        </div>
+        <div class="form-group">
+          <label for="filename">Filename (optional):</label>
+          <input type="text" id="filename" name="filename" placeholder="e.g., homily-2025-01-15-Sunday-Homily.pdf">
+        </div>
+        <div class="form-group">
+          <button type="submit" class="btn btn-success">Upload Bulletin</button>
+          <button type="button" class="btn btn-primary" onclick="closeUploadModal()">Cancel</button>
+        </div>
+      </form>
+    </div>
+  </div>
+  
+  <script>
+    let currentDataset = null;
+    
+    // Load datasets on page load
+    document.addEventListener('DOMContentLoaded', function() {
+      loadDatasets();
+      loadBulletins();
+    });
+    
+    async function loadDatasets() {
+      try {
+        const response = await fetch('/admin/api/datasets');
+        const datasets = await response.json();
+        
+        const list = document.getElementById('datasetList');
+        list.innerHTML = '';
+        
+        datasets.forEach(dataset => {
+          const li = document.createElement('li');
+          li.className = 'dataset-item';
+          li.innerHTML = `
+            <span>${dataset}</span>
+            <button class="btn btn-primary" onclick="editDataset('${dataset}')">Edit</button>
+          `;
+          list.appendChild(li);
+        });
+      } catch (error) {
+        showStatus('Error loading datasets: ' + error.message, 'error');
+      }
+    }
+    
+    async function loadBulletins() {
+      try {
+        const response = await fetch('/admin/api/bulletins');
+        const bulletins = await response.json();
+        
+        const list = document.getElementById('bulletinList');
+        list.innerHTML = '';
+        
+        if (bulletins.length === 0) {
+          list.innerHTML = '<p style="color: #666; font-style: italic;">No bulletins found.</p>';
+          return;
+        }
+        
+        bulletins.forEach(bulletin => {
+          const div = document.createElement('div');
+          div.className = 'bulletin-item';
+          div.innerHTML = `
+            <div class="bulletin-info">
+              <div class="bulletin-name">${bulletin.name}</div>
+              <div class="bulletin-size">${formatFileSize(bulletin.size)}</div>
+            </div>
+            <div>
+              <a href="${bulletin.url}" target="_blank" class="btn btn-primary" style="text-decoration: none; margin-right: 0.5rem;">View</a>
+              <button class="btn btn-danger" onclick="deleteBulletin('${bulletin.name}')">Delete</button>
+            </div>
+          `;
+          list.appendChild(div);
+        });
+      } catch (error) {
+        showStatus('Error loading bulletins: ' + error.message, 'error');
+      }
+    }
+    
+    async function editDataset(dataset) {
+      try {
+        const response = await fetch(`/admin/api/data/${dataset}`);
+        const data = await response.json();
+        
+        currentDataset = dataset;
+        document.getElementById('modalTitle').textContent = `Edit Dataset: ${dataset}`;
+        document.getElementById('datasetContent').value = JSON.stringify(data, null, 2);
+        document.getElementById('datasetModal').style.display = 'block';
+      } catch (error) {
+        showStatus('Error loading dataset: ' + error.message, 'error');
+      }
+    }
+    
+    document.getElementById('datasetForm').addEventListener('submit', async function(e) {
+      e.preventDefault();
+      
+      try {
+        const content = document.getElementById('datasetContent').value;
+        const jsonData = JSON.parse(content); // Validate JSON
+        
+        const response = await fetch(`/admin/api/data/${currentDataset}`, {
+          method: 'PUT',
+          headers: { 'Content-Type': 'application/json' },
+          body: content
+        });
+        
+        const result = await response.json();
+        
+        if (result.success) {
+          showStatus('Dataset updated successfully!', 'success');
+          closeModal();
+        } else {
+          showStatus('Error: ' + result.error, 'error');
+        }
+      } catch (error) {
+        showStatus('Invalid JSON format: ' + error.message, 'error');
+      }
+    });
+    
+    document.getElementById('uploadForm').addEventListener('submit', async function(e) {
+      e.preventDefault();
+      
+      const formData = new FormData();
+      const fileInput = document.getElementById('bulletinFile');
+      const filename = document.getElementById('filename').value;
+      
+      if (!fileInput.files[0]) {
+        showStatus('Please select a file to upload.', 'error');
+        return;
+      }
+      
+      formData.append('bulletin', fileInput.files[0]);
+      if (filename) {
+        formData.append('filename', filename);
+      }
+      
+      try {
+        const response = await fetch('/admin/api/bulletins', {
+          method: 'POST',
+          body: formData
+        });
+        
+        const result = await response.json();
+        
+        if (result.success) {
+          showStatus('Bulletin uploaded successfully!', 'success');
+          closeUploadModal();
+          loadBulletins();
+        } else {
+          showStatus('Error: ' + result.error, 'error');
+        }
+      } catch (error) {
+        showStatus('Upload failed: ' + error.message, 'error');
+      }
+    });
+    
+    async function deleteBulletin(filename) {
+      if (!confirm(`Are you sure you want to delete "${filename}"?`)) {
+        return;
+      }
+      
+      try {
+        const response = await fetch(`/admin/api/bulletins/${encodeURIComponent(filename)}`, {
+          method: 'DELETE'
+        });
+        
+        const result = await response.json();
+        
+        if (result.success) {
+          showStatus('Bulletin deleted successfully!', 'success');
+          loadBulletins();
+        } else {
+          showStatus('Error: ' + result.error, 'error');
+        }
+      } catch (error) {
+        showStatus('Delete failed: ' + error.message, 'error');
+      }
+    }
+    
+    function showUploadModal() {
+      document.getElementById('uploadModal').style.display = 'block';
+    }
+    
+    function closeModal() {
+      document.getElementById('datasetModal').style.display = 'none';
+      currentDataset = null;
+    }
+    
+    function closeUploadModal() {
+      document.getElementById('uploadModal').style.display = 'none';
+      document.getElementById('uploadForm').reset();
+    }
+    
+    function showStatus(message, type) {
+      const statusEl = document.getElementById('statusMessage');
+      statusEl.textContent = message;
+      statusEl.className = `status-message status-${type}`;
+      statusEl.style.display = 'block';
+      
+      setTimeout(() => {
+        statusEl.style.display = 'none';
+      }, 5000);
+    }
+    
+    function formatFileSize(bytes) {
+      if (bytes === 0) return '0 Bytes';
+      const k = 1024;
+      const sizes = ['Bytes', 'KB', 'MB', 'GB'];
+      const i = Math.floor(Math.log(bytes) / Math.log(k));
+      return parseFloat((bytes / Math.pow(k, i)).toFixed(2)) + ' ' + sizes[i];
+    }
+    
+    // Close modals when clicking outside
+    window.onclick = function(event) {
+      const datasetModal = document.getElementById('datasetModal');
+      const uploadModal = document.getElementById('uploadModal');
+      if (event.target === datasetModal) {
+        closeModal();
+      }
+      if (event.target === uploadModal) {
+        closeUploadModal();
+      }
+    }
+  </script>
+</body>
+</html>
