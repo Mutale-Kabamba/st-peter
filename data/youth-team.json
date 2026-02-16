@@ -3,36 +3,42 @@
     "name": "MUTALE KABAMBA",
     "role": "COORDINATOR",
     "phone": "772640546",
-    "scc": "ST JOSEPH"
+    "scc": "ST JOSEPH",
+    "image": "https://placehold.co/100x100/3498db/FFFFFF?text=MUTALE"
   },
   {
     "name": "BRUCE CHENGO CHIBWE",
     "role": "VICE COORDINATOR",
     "phone": "971439944",
-    "scc": "ST JOSEPH"
+    "scc": "ST JOSEPH",
+    "image": "https://placehold.co/100x100/e74c3c/FFFFFF?text=BRUCE"
   },
   {
     "name": "OLIPA MUFANA",
     "role": "SECRETARY",
     "phone": "",
-    "scc": "ST FRANCIS"
+    "scc": "ST FRANCIS",
+    "image": "https://placehold.co/100x100/2ecc71/FFFFFF?text=OLIPA"
   },
   {
     "name": "PHELLON TEMBO",
     "role": "VICE SECRETARY",
     "phone": "",
-    "scc": "ST. FRANCIS"
+    "scc": "ST. FRANCIS",
+    "image": "https://placehold.co/100x100/f1c40f/FFFFFF?text=PHELLON"
   },
   {
     "name": "ESTHER MAKUMBI",
     "role": "TREASURER",
     "phone": "",
-    "scc": "ST. JOSEPH"
+    "scc": "ST. JOSEPH",
+    "image": "https://placehold.co/100x100/9b59b6/FFFFFF?text=ESTHER"
   },
   {
     "name": "CHOOLWE MAUMA",
     "role": "VICE TREASURER",
     "phone": "777051701",
-    "scc": "ST. BERNEDETTE"
+    "scc": "ST. BERNEDETTE",
+    "image": "https://placehold.co/100x100/34495e/FFFFFF?text=CHOOLWE"
   }
 ]
